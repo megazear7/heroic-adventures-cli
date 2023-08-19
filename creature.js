@@ -22,7 +22,7 @@ export default class Creature {
         logger.debug('constructor creature');
     }
 
-    takeAction(encounter, enemyTeam) {
-        this.logger.debug('takeAction', this.team.name, enemyTeam.name);
+    takeAction(encounter, enemyTeam, isBonus) {
+        this.logger.debug('takeAction', this.team.name, enemyTeam.name, isBonus);
     }
 }

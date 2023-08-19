@@ -11,6 +11,8 @@ export default class Encounter {
         this.team2 = team2;
         this.logger = logger;
         this.deck = new Deck({ logger });
+        this.previousCard = undefined;
+        this.currentCard = undefined;
         logger.debug('constructor encounter');
     }
 
@@ -34,7 +36,7 @@ export default class Encounter {
 
     createDeck() {
         this.logger.debug('createDeck');
-        this.creatures.forEach(creature => this.deck.addInit(creature.init));
+        this.creatures.forEach(creature => this.deck.addInit(creature.team, creature.init));
     }
 
     initRound() {
@@ -54,15 +56,20 @@ export default class Encounter {
         return this.deck.drawPile.length === 0;
     }
 
-    creaturesWithMatchingInit(init) {
-        this.logger.debug('creaturesWithMatchingInit', init);
-        return this.creatures.filter(creature => creature.init === init);
+    creaturesWithMatchingInit(team, init) {
+        this.logger.debug('creaturesWithMatchingInit', team.name, init);
+        return team.creatures.filter(creature => creature.init === init);
+    }
+
+    isBonus() {
+        return this.currentCard.bonus && this.currentCard?.init > this.previousCard?.init;
     }
 
     doTurn() {
-        this.logger.debug('doTurn');
-        const card = this.deck.drawCard();
-        const creatures = this.creaturesWithMatchingInit(card.init);
-        creatures.forEach(creature => creature.takeAction(this, creature.team === this.team1 ? this.team2 : this.team1));
+        this.logger.debug('doTurn', this.previousCard?.init, this.currentCard?.init);
+        this.previousCard = this.currentCard;
+        this.currentCard = this.deck.drawCard();
+        const creatures = this.creaturesWithMatchingInit(this.currentCard.team, this.currentCard.init);
+        creatures.forEach(creature => creature.takeAction(this, creature.team === this.team1 ? this.team2 : this.team1, this.isBonus()));
     }
 }

@@ -11,7 +11,7 @@ export default class Deck {
         logger.debug('constructor deck');
     }
 
-    addInit(init) {
+    addInit(team, init) {
         this.logger.debug('addInit', init);
 
         const count = {
@@ -32,8 +32,8 @@ export default class Deck {
             15: 4,
         }[init];
 
-        if (this.allCards().find(card => card.init === init)) {
-            this.logger.debug('deck already has init', init);
+        if (this.allCards().find(card => card.init === init && card.team === team)) {
+            this.logger.debug('deck already has init for team', team, init);
             return;
         }
 
@@ -43,7 +43,8 @@ export default class Deck {
 
         for (let i = 0; i < count; i++) {
             const card = new Card({
-                init: init,
+                team,
+                init,
                 bonus: i === 0,
                 logger: this.logger,
             });
