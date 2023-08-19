@@ -37,25 +37,29 @@ export default class Creature {
     }
 
     minorAction(enemyTeam) {
-        this.logger.log(40, 'minorAction', this.name, enemyTeam.name);
+        this.logger.log(40, 'minorAction', this.name);
     }
 
     majorAction(enemyTeam) {
+        this.logger.log(40, 'majorAction', this.name);
         const target = enemyTeam.target();
-        this.logger.log(40, 'majorAction', this.name, target.name);
 
         if (target) {
-            this.logger.log(30, `${this.name} is attacking ${target.name}`);
+            this.makeAttack(target);
         }
     }
 
     bonusAction(enemyTeam) {
+        this.logger.log(40, 'bonusAction', this.name);
         const target = enemyTeam.target();
-        this.logger.log(40, 'bonusAction', this.name, target.name);
 
         if (target) {
-            this.logger.log(30, `${this.name} has bonus attack against ${target.name}`);
+            this.makeAttack(target);
         } 
+    }
+
+    makeAttack(target) {
+        this.logger.log(20, `${this.name} is attacking ${target.name}`);
     }
 
     alive() {
