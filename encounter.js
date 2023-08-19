@@ -43,7 +43,6 @@ export default class Encounter {
         this.logger.debug('initRound');
         this.deck.shuffle();
         this.creatures.forEach(creature => creature.usedMajorAction = false);
-        this.creatures.forEach(creature => creature.usedHeroicAction = false);
     }
 
     encounterFinished() {
@@ -70,6 +69,6 @@ export default class Encounter {
         this.previousCard = this.currentCard;
         this.currentCard = this.deck.drawCard();
         const creatures = this.creaturesWithMatchingInit(this.currentCard.team, this.currentCard.init);
-        creatures.forEach(creature => creature.takeAction(this, creature.team === this.team1 ? this.team2 : this.team1, this.isBonus()));
+        creatures.forEach(creature => creature.takeAction(creature.team === this.team1 ? this.team2 : this.team1, this.isBonus()));
     }
 }

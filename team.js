@@ -9,4 +9,8 @@ export default class Team {
         this.logger = logger;
         this.creatures.forEach(creature => creature.team = this);
     }
+
+    target() {
+        return this.creatures.find(creature => creature.alive());
+    }
 }

@@ -9,6 +9,7 @@ const team1 = new Team({
     name: 'Characters',
     creatures: [new Creature({
         name: 'Slighter',
+        health: 10,
         skill: 1,
         agility: 1,
         arcana: 1,
@@ -24,6 +25,7 @@ const team2 = new Team({
     name: 'Monsters',
     creatures: [new Creature({
         name: 'Orc',
+        health: 10,
         skill: 1,
         agility: 1,
         arcana: 1,
