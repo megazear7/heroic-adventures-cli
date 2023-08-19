@@ -1,4 +1,5 @@
 import Deck from "./deck.js";
+import { ask, close } from "./utils.js";
 
 export default class Encounter {
     constructor({
@@ -11,15 +12,18 @@ export default class Encounter {
         logger.debug('constructor encounter');
     }
 
-    fight() {
+    async fight() {
         this.logger.debug('fight');
         this.createDeck();
-        //while (!this.encounterFinished()) {
+        while (!this.encounterFinished()) {
             if (this.startOfRound()) {
                 this.initRound();
             }
             this.doTurn();
-        //}
+            this.logger.pause && await ask('Proceed?');
+        }
+
+        close();
     }
 
     createDeck() {
@@ -29,6 +33,7 @@ export default class Encounter {
 
     initRound() {
         this.logger.debug('initRound');
+        this.deck.shuffle();
     }
 
     encounterFinished() {
@@ -38,7 +43,7 @@ export default class Encounter {
 
     startOfRound() {
         this.logger.debug('startOfRound');
-        return true;
+        return this.deck.drawPile.length === 0;
     }
 
     doTurn() {

@@ -3,10 +3,12 @@ export default class Logger {
         log,
         debug,
         error,
+        pause,
     }) {
         this.log = log;
         this.debug = debug;
         this.error = error;
+        this.pause = pause;
     }
 }
 
@@ -16,7 +18,8 @@ Logger.standard = new Logger({
     error: msg => {
         console.error(msg);
         process.exit(1);
-    }
+    },
+    pause: false,
 });
 
 Logger.debug = new Logger({
@@ -25,5 +28,6 @@ Logger.debug = new Logger({
     error: (...args) => {
         console.error(...args);
         process.exit(1);
-    }
+    },
+    pause: true,
 });

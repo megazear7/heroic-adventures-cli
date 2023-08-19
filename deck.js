@@ -1,10 +1,12 @@
 import Card from "./card.js";
+import { shuffle } from "./utils.js";
 
 export default class Deck {
     constructor({
         logger,
     }) {
-        this.cards = [],
+        this.discardPile = [];
+        this.drawPile = [];
         this.logger = logger;
         logger.debug('constructor deck');
     }
@@ -30,8 +32,13 @@ export default class Deck {
             15: 4,
         }[init];
 
+        if (this.allCards().find(card => card.init === init)) {
+            this.logger.debug('deck already has init', init);
+            return;
+        }
+
         if (!count) {
-            this.logger.error('No count found for initiative: ' + init);
+            this.logger.error('no count found for initiative', init);
         }
 
         for (let i = 0; i < count; i++) {
@@ -40,7 +47,21 @@ export default class Deck {
                 bonus: i === 0,
                 logger: this.logger,
             });
-            this.cards.push(card);
+            this.logger.debug('adding card', card);
+            this.discardPile.push(card);
         }
+    }
+
+    allCards() {
+        this.logger.debug('allCards');
+        return shuffle([ ...this.discardPile, ... this.drawPile ]);
+    }
+
+    shuffle() {
+        this.logger.debug('shuffle');
+        this.drawPile = this.allCards();
+        this.discardPile = [];
+        this.logger.debug('drawPile', this.drawPile);
+        this.logger.debug('discardPile', this.discardPile);
     }
 }
