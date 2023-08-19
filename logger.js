@@ -20,10 +20,10 @@ Logger.standard = new Logger({
 });
 
 Logger.debug = new Logger({
-    log: msg => console.log(msg),
-    debug: msg => console.log('DEBUG', msg),
-    error: msg => {
-        console.error(msg);
+    log: (...args) => console.log(...args),
+    debug: (...args) => console.log('DEBUG', ...args),
+    error: (...args) => {
+        console.error(...args);
         process.exit(1);
     }
 });

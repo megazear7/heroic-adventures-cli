@@ -19,3 +19,5 @@ const encounter = new Encounter({
     creatures: [creature1],
     logger: logger,
 });
+
+encounter.fight();
