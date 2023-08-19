@@ -9,5 +9,6 @@ export default class Card {
         this.init = init;
         this.bonus = bonus;
         this.logger = logger;
+        this.logger.log(100, 'constructor card');
     }
 }

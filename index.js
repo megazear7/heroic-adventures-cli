@@ -3,7 +3,8 @@ import Encounter from "./encounter.js";
 import Logger from "./logger.js";
 import Team from "./team.js";
 
-const logger = Logger.debug;
+// Logger level can be between 0 and 100. The higher the level, the more logs you will see.
+const logger = Logger.consoleLogger(30, true);
 
 const team1 = new Team({
     name: 'Characters',

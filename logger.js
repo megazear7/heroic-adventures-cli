@@ -4,30 +4,32 @@ export default class Logger {
         debug,
         error,
         pause,
+        level,
     }) {
         this.log = log;
         this.debug = debug;
         this.error = error;
         this.pause = pause;
+        this.level = level;
     }
 }
 
-Logger.standard = new Logger({
-    log: msg => console.log(msg),
-    debug: () => undefined,
-    error: msg => {
-        console.error(msg);
-        process.exit(1);
-    },
-    pause: false,
-});
+Logger.consoleLogger = (level, pause) => {
+    const logger = new Logger({
+        pause: pause,
+        level: level,
+    });
 
-Logger.debug = new Logger({
-    log: (...args) => console.log(...args),
-    debug: (...args) => console.log('DEBUG', ...args),
-    error: (...args) => {
+    logger.log = (level, ...args) => {
+        if (level <= logger.level) {
+            console.log(...args);
+        }
+    };
+
+    logger.error = (...args) => {
         console.error(...args);
         process.exit(1);
-    },
-    pause: true,
-});
+    };
+
+    return logger;
+} 

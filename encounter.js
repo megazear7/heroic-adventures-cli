@@ -13,11 +13,11 @@ export default class Encounter {
         this.deck = new Deck({ logger });
         this.previousCard = undefined;
         this.currentCard = undefined;
-        logger.debug('constructor encounter');
+        this.logger.log(100, 'constructor encounter');
     }
 
     async fight() {
-        this.logger.debug('fight');
+        this.logger.log(50, 'fight');
         this.createDeck();
         while (!this.encounterFinished()) {
             if (this.startOfRound()) {
@@ -35,28 +35,28 @@ export default class Encounter {
     }
 
     createDeck() {
-        this.logger.debug('createDeck');
+        this.logger.log(70, 'createDeck');
         this.creatures.forEach(creature => this.deck.addInit(creature.team, creature.init));
     }
 
     initRound() {
-        this.logger.debug('initRound');
+        this.logger.log(70, 'initRound');
         this.deck.shuffle();
         this.creatures.forEach(creature => creature.usedMajorAction = false);
     }
 
     encounterFinished() {
-        this.logger.debug('encounterFinished');
+        this.logger.log(80, 'encounterFinished');
         return false;
     }
 
     startOfRound() {
-        this.logger.debug('startOfRound');
+        this.logger.log(60, 'startOfRound');
         return this.deck.drawPile.length === 0;
     }
 
     creaturesWithMatchingInit(team, init) {
-        this.logger.debug('creaturesWithMatchingInit', team.name, init);
+        this.logger.log(80, 'creaturesWithMatchingInit', team.name, init);
         return team.creatures.filter(creature => creature.init === init);
     }
 
@@ -65,7 +65,7 @@ export default class Encounter {
     }
 
     doTurn() {
-        this.logger.debug('doTurn', this.previousCard?.init, this.currentCard?.init);
+        this.logger.log(70, 'doTurn', this.previousCard?.init, this.currentCard?.init);
         this.previousCard = this.currentCard;
         this.currentCard = this.deck.drawCard();
         const creatures = this.creaturesWithMatchingInit(this.currentCard.team, this.currentCard.init);

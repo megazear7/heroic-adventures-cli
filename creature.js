@@ -21,11 +21,11 @@ export default class Creature {
         this.init = init;
         this.logger = logger;
         this.usedMajorAction = false;
-        logger.debug('constructor creature');
+        this.logger.log(100, 'constructor creature');
     }
 
     takeAction(enemyTeam, isBonus) {
-        this.logger.debug('takeAction', this.team.name, enemyTeam.name, isBonus);
+        this.logger.log(50, 'takeAction', this.name, enemyTeam.name, isBonus);
 
         if (isBonus) {
             this.bonusAction(enemyTeam);
@@ -37,24 +37,24 @@ export default class Creature {
     }
 
     minorAction(enemyTeam) {
-        this.logger.debug('minorAction', this.name, enemyTeam.name);
+        this.logger.log(40, 'minorAction', this.name, enemyTeam.name);
     }
 
     majorAction(enemyTeam) {
-        this.logger.debug('majorAction', this.name, enemyTeam.name);
         const target = enemyTeam.target();
+        this.logger.log(40, 'majorAction', this.name, target.name);
 
         if (target) {
-            this.logger.log(`${this.name} is attacking ${target.name}`);
+            this.logger.log(30, `${this.name} is attacking ${target.name}`);
         }
     }
 
     bonusAction(enemyTeam) {
-        this.logger.debug('bonusAction', this.name, enemyTeam.name);
         const target = enemyTeam.target();
+        this.logger.log(40, 'bonusAction', this.name, target.name);
 
         if (target) {
-            this.logger.log(`${this.name} has bonus attack against ${target.name}`);
+            this.logger.log(30, `${this.name} has bonus attack against ${target.name}`);
         } 
     }
 
