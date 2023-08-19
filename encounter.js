@@ -3,10 +3,12 @@ import { ask, close } from "./utils.js";
 
 export default class Encounter {
     constructor({
-        creatures,
+        team1,
+        team2,
         logger,
     }) {
-        this.creatures = creatures;
+        this.team1 = team1;
+        this.team2 = team2;
         this.logger = logger;
         this.deck = new Deck({ logger });
         logger.debug('constructor encounter');
@@ -24,6 +26,10 @@ export default class Encounter {
         }
 
         close();
+    }
+
+    get creatures() {
+        return [...this.team1.creatures, ...this.team2.creatures ];
     }
 
     createDeck() {
@@ -57,6 +63,6 @@ export default class Encounter {
         this.logger.debug('doTurn');
         const card = this.deck.drawCard();
         const creatures = this.creaturesWithMatchingInit(card.init);
-        creatures.forEach(creature => creature.takeAction(this));
+        creatures.forEach(creature => creature.takeAction(this, creature.team === this.team1 ? this.team2 : this.team1));
     }
 }
