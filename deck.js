@@ -64,4 +64,13 @@ export default class Deck {
         this.logger.debug('drawPile', this.drawPile);
         this.logger.debug('discardPile', this.discardPile);
     }
+
+    drawCard() {
+        this.logger.debug('drawCard');
+        const card = this.drawPile.pop();
+        this.discardPile.push(card);
+        this.logger.debug('drawPile', this.drawPile.length);
+        this.logger.debug('discardPile', this.discardPile.length);
+        return card;
+    }
 }

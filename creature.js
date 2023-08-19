@@ -17,6 +17,12 @@ export default class Creature {
         this.strength = strength;
         this.init = init;
         this.logger = logger;
+        this.usedMajorAction = false;
+        this.usedHeroicAction = false;
         logger.debug('constructor creature');
+    }
+
+    takeAction(encounter) {
+        this.logger.debug('takeAction');
     }
 }
