@@ -84,7 +84,7 @@ export default class Creature {
     }
     
     doDamage(crit) {
-        return rollExplode(this.damage, crit ? CRIT : NO_CRIT);
+        return rollExplode(this.damage, crit ? CRIT : NO_CRIT) + this.strength;
     }
 
     takeDamage(damage) {
@@ -99,6 +99,7 @@ export default class Creature {
         const defenseRoll = target.rollAgility();
 
         if (attackRoll.roll > defenseRoll.roll && !defenseRoll.blocked) {
+            this.logger.log(20, `${this.name} ${attackRoll.crit ? 'critically' : ''} hit ${target.name}`);
             target.takeDamage(this.doDamage(attackRoll.crit));
         }
     }

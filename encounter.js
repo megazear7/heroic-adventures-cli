@@ -27,7 +27,13 @@ export default class Encounter {
             this.logger.pause && await ask('Proceed?');
         }
 
+        const winner = this.team1.lost() ? this.team2 : this.team1;
+        const loser = this.team1.lost() ? this.team1 : this.team2;
+        this.logger.log(20, `${winner.name} defeated ${loser.name}`);
+
         close();
+
+        return { winner, loser };
     }
 
     get creatures() {
@@ -47,7 +53,7 @@ export default class Encounter {
 
     encounterFinished() {
         this.logger.log(80, 'encounterFinished');
-        return false;
+        return this.team1.lost() || this.team2.lost();
     }
 
     startOfRound() {

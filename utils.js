@@ -48,7 +48,7 @@ export const roll = function(diceArg, crit = NO_CRIT, explode = NO_EXPLODE) {
     let total = 0;
     diceVals.forEach(diceVal => {
         const [ count, size ] = diceVal.split('d');
-        const diceCount = count + (crit === CRIT ? 1 : 0);
+        const diceCount = parseInt(count) + (crit === CRIT ? 1 : 0);
         for (var i = 0; i < diceCount; i++) {
             total += explode === EXPLODE ? diceExplode(parseInt(size)) : dice(parseInt(size));
         }

@@ -14,4 +14,8 @@ export default class Team {
     target() {
         return this.creatures.find(creature => creature.alive());
     }
+
+    lost() {
+        return this.creatures.filter(creature => creature.alive()).length === 0;
+    }
 }

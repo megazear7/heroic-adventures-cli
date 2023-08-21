@@ -4,7 +4,7 @@ import Logger from "./logger.js";
 import Team from "./team.js";
 
 // Logger level can be between 0 and 100. The higher the level, the more logs you will see.
-const logger = Logger.consoleLogger(30, true);
+const logger = Logger.consoleLogger(20, true);
 
 const team1 = new Team({
     name: 'Characters',
