@@ -1,3 +1,6 @@
+import { rollExplode, roll } from "./utils.js";
+import { CRIT, NO_CRIT } from "./enums.js";
+
 export default class Creature {
     constructor({
         name,
@@ -8,6 +11,9 @@ export default class Creature {
         willpower,
         strength,
         init,
+        block,
+        damage,
+        toughness,
         logger,
     }) {
         this.name = name;
@@ -19,6 +25,9 @@ export default class Creature {
         this.willpower = willpower;
         this.strength = strength;
         this.init = init;
+        this.block = block;
+        this.damage = damage;
+        this.toughness = toughness;
         this.logger = logger;
         this.usedMajorAction = false;
         this.logger.log(100, 'constructor creature');
@@ -58,8 +67,40 @@ export default class Creature {
         } 
     }
 
+    rollSkill() {
+        const dieRoll = roll('1d12');
+        return {
+            roll: dieRoll + this.skill,
+            crit: dieRoll === 12,
+        };
+    }
+
+    rollAgility() {
+        const dieRoll = roll('1d12');
+        return {
+            roll: dieRoll + this.agility,
+            blocked: roll <= this.block,
+        };
+    }
+    
+    doDamage(crit) {
+        return rollExplode(this.damage, crit ? CRIT : NO_CRIT);
+    }
+
+    takeDamage(damage) {
+        const netDamage = damage > this.toughness ? damage - this.toughness : 0;
+        this.logger.log(20, `${this.name} was hit and took ${netDamage} damage`);
+        this.currentHealth -= netDamage;
+    }
+
     makeAttack(target) {
         this.logger.log(20, `${this.name} is attacking ${target.name}`);
+        const attackRoll = this.rollSkill();
+        const defenseRoll = target.rollAgility();
+
+        if (attackRoll.roll > defenseRoll.roll && !defenseRoll.blocked) {
+            target.takeDamage(this.doDamage(attackRoll.crit));
+        }
     }
 
     alive() {
