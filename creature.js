@@ -83,24 +83,49 @@ export default class Creature {
         };
     }
     
-    doDamage(crit) {
+    rollDamage(crit) {
         return rollExplode(this.damage, crit ? CRIT : NO_CRIT) + this.strength;
     }
 
     takeDamage(damage) {
         const netDamage = damage > this.toughness ? damage - this.toughness : 0;
-        this.logger.log(20, `${this.name} was hit and took ${netDamage} damage`);
+        this.logger.log(20, `${this.name} was hit for ${damage} - ${this.toughness} and took ${netDamage} damage`);
         this.currentHealth -= netDamage;
     }
 
+    checkAttackResult(attackRoll, defenseRoll) {
+        if (defenseRoll.blocked) {
+            return {
+                hit: false,
+                msg: 'was blocked',
+            };
+        } else if (attackRoll.crit && attackRoll.roll > defenseRoll.roll) {
+            return {
+                hit: true,
+                msg: 'critically hit',
+            };
+        } else if (attackRoll.roll > defenseRoll.roll) {
+            return {
+                hit: true,
+                msg: 'hit',
+            };
+        } else {
+            return {
+                hit: false,
+                msg: 'missed',
+            };
+        }
+    }
+
     makeAttack(target) {
-        this.logger.log(20, `${this.name} is attacking ${target.name}`);
         const attackRoll = this.rollSkill();
         const defenseRoll = target.rollAgility();
+        const results = this.checkAttackResult(attackRoll, defenseRoll);
+        this.logger.log(20, `${this.name} is attacking ${target.name}: ${attackRoll.roll} vs. ${defenseRoll.roll} ${results.msg}`);
 
-        if (attackRoll.roll > defenseRoll.roll && !defenseRoll.blocked) {
+        if (results.hit) {
             this.logger.log(20, `${this.name} ${attackRoll.crit ? 'critically' : ''} hit ${target.name}`);
-            target.takeDamage(this.doDamage(attackRoll.crit));
+            target.takeDamage(this.rollDamage(attackRoll.crit));
         }
     }
 

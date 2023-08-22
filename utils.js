@@ -44,20 +44,24 @@ export const diceExplode = function(size) {
  * '1d6 + 2d8'
  */
 export const roll = function(diceArg, crit = NO_CRIT, explode = NO_EXPLODE) {
+    const log = false;
     const diceVals = diceArg.split('+');
     let total = 0;
     diceVals.forEach(diceVal => {
         const [ count, size ] = diceVal.split('d');
         const diceCount = parseInt(count) + (crit === CRIT ? 1 : 0);
         for (var i = 0; i < diceCount; i++) {
-            total += explode === EXPLODE ? diceExplode(parseInt(size)) : dice(parseInt(size));
+            const doExplode = explode === EXPLODE;
+            const rollResult = doExplode ? diceExplode(parseInt(size)) : dice(parseInt(size));
+            log && console.log(`Rolling ${doExplode ? 'exploding ' : ''}${diceVal} and got ${rollResult}`);
+            total += rollResult;
         }
     });
     return total;
 }
 
-export const rollExplode = function(dice) {
-    return roll(dice, EXPLODE);
+export const rollExplode = function(dice, crit = NO_CRIT) {
+    return roll(dice, crit, EXPLODE);
 }
 
 const rl = rlp.createInterface({
