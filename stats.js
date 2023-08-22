@@ -26,6 +26,6 @@ export default class CombatStats {
     }
 
     formatWins(wins) {
-        return ((wins / this.count).toFixed(2) * 100) + '%';
+        return Math.round(((wins / this.count) * 100));
     }
 }

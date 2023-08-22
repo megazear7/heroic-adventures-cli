@@ -83,7 +83,7 @@ export default class Creature {
         const dieRoll = roll('1d12');
         return {
             roll: dieRoll + this.agility,
-            blocked: roll <= this.block,
+            blocked: dieRoll <= this.block,
         };
     }
     
