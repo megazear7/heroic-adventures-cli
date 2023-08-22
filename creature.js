@@ -33,6 +33,10 @@ export default class Creature {
         this.logger.log(100, 'constructor creature');
     }
 
+    reset() {
+        this.currentHealth = this.health;
+    }
+
     takeAction(enemyTeam, isBonus) {
         this.logger.log(50, 'takeAction', this.name, enemyTeam.name, isBonus);
 

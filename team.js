@@ -8,7 +8,13 @@ export default class Team {
         this.creatures = creatures;
         this.logger = logger;
         this.creatures.forEach(creature => creature.team = this);
+        this.wins = 0;
+        this.losses = 0;
         this.logger.log(100, 'constructor team');
+    }
+
+    reset() {
+        this.creatures.forEach(creature => creature.reset());
     }
 
     target() {

@@ -16,6 +16,11 @@ export default class Encounter {
         this.logger.log(100, 'constructor encounter');
     }
 
+    reset() {
+        this.team1.reset();
+        this.team2.reset();
+    }
+
     async fight() {
         this.logger.log(50, 'fight');
         this.createDeck();
