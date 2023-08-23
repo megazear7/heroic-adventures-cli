@@ -12,8 +12,8 @@ export default class Creature {
         willpower,
         strength,
         init,
-        block,
         weapon,
+        shield,
         armor,
         logger,
     }) {
@@ -26,8 +26,8 @@ export default class Creature {
         this.willpower = willpower;
         this.strength = strength;
         this.baseInit = init;
-        this.block = block;
         this.weapon = weapon;
+        this.shield = shield;
         this.armor = armor;
         this.logger = logger;
         this.usedMajorAction = false;
@@ -89,7 +89,14 @@ export default class Creature {
     }
 
     get init() {
-        return this.baseInit + this.weapon.init;
+        const calculatedInit = this.baseInit + this.weapon.init + this.shield.init;
+        if (calculatedInit < 1) {
+            return 1;
+        } else if (calculatedInit > 15) {
+            return 15;
+        } else {
+            return calculatedInit;
+        }
     }
 
     get toughness() {
@@ -98,6 +105,10 @@ export default class Creature {
 
     get damage() {
         return this.weapon.damage;
+    }
+
+    get block() {
+        return this.shield.block;
     }
     
     rollDamage(crit) {

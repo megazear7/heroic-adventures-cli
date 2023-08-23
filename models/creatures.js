@@ -1,10 +1,12 @@
 import Creature from "./creature.js";
 import armorBuilder from "./armor-options.js";
 import weaponBuilder from "./weapon-options.js";
+import shieldBuilder from "./shield-options.js";
 
 export default logger => {
     const armor = armorBuilder(logger);
     const weapons = weaponBuilder(logger);
+    const shields = shieldBuilder(logger);
     
     return {
         slighter: () =>  new Creature({
@@ -16,7 +18,7 @@ export default logger => {
             willpower: 1,
             strength: 1,
             init: 1,
-            block: 1,
+            shield: shields.large,
             weapon: weapons.armingSword,
             armor: armor.gambeson,
             logger,
@@ -30,7 +32,7 @@ export default logger => {
             willpower: 1,
             strength: 2,
             init: 5,
-            block: 1,
+            shield: shields.small,
             weapon: weapons.dagger,
             armor: armor.hide,
             logger,
