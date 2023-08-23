@@ -1,5 +1,6 @@
 import { rollExplode, roll } from "./utils.js";
-import { CRIT, NO_CRIT } from "./enums.js";
+import { CRIT, NO_CRIT, WARBAND, HOST, LEGION } from "./enums.js";
+import Unit from "./unit.js";
 
 export default class Creature {
     constructor({
@@ -128,7 +129,7 @@ export default class Creature {
         this.logger.log(20, `${this.name} is attacking ${target.name}: ${attackRoll.roll} vs. ${defenseRoll.roll} ${results.msg}`);
 
         if (results.hit) {
-            this.logger.log(20, `${this.name} ${attackRoll.crit ? 'critically' : ''} hit ${target.name}`);
+            this.logger.log(20, `${this.name} ${attackRoll.crit ? 'critically ' : ''}hit ${target.name}`);
             target.takeDamage(this.rollDamage(attackRoll.crit));
         }
     }
@@ -138,6 +139,30 @@ export default class Creature {
     }
 
     dead() {
-        return this.currentHealth <= 0;
+        return ! this.alive();
+    }
+
+    warband() {
+        return new Unit({
+            creature: this,
+            type: WARBAND,
+            logger: this.logger,
+        });
+    }
+
+    host() {
+        return new Unit({
+            creature: this,
+            type: HOST,
+            logger: this.logger,
+        });
+    }
+
+    legion() {
+        return new Unit({
+            creature: this,
+            type: LEGION,
+            logger: this.logger,
+        });
     }
 }

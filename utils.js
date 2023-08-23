@@ -36,6 +36,14 @@ export const diceExplode = function(size) {
     return roll === size ? roll + diceExplode(size) : roll;
 }
 
+export const addDice = function(diceArg, amount) {
+    return diceArg.split('+').map(diceVal => {
+        const [ count, size ] = diceVal.split('d');
+        const diceCount = parseInt(count) + amount;
+        return diceCount + 'd' + size;
+    }).join('+');
+}
+
 /**
  * '1d12'
  * '1d12'
@@ -45,17 +53,20 @@ export const diceExplode = function(size) {
  */
 export const roll = function(diceArg, crit = NO_CRIT, explode = NO_EXPLODE) {
     const log = false;
+    const doExplode = explode === EXPLODE;
     const diceVals = diceArg.split('+');
     let total = 0;
     diceVals.forEach(diceVal => {
         const [ count, size ] = diceVal.split('d');
         const diceCount = parseInt(count) + (crit === CRIT ? 1 : 0);
+        log && console.log(`diceCount: ${diceCount}`);
         for (var i = 0; i < diceCount; i++) {
-            const doExplode = explode === EXPLODE;
-            const rollResult = doExplode ? diceExplode(parseInt(size)) : dice(parseInt(size));
-            log && console.log(`Rolling ${doExplode ? 'exploding ' : ''}${diceVal} and got ${rollResult}`);
+            const sizeInt = parseInt(size);
+            const rollResult = doExplode ? diceExplode(sizeInt) : dice(sizeInt);
+            log && console.log(`Rolling ${doExplode ? 'exploding ' : ''}1d${sizeInt} and got ${rollResult}`);
             total += rollResult;
         }
+        log && console.log(`total: ${total}`);
     });
     return total;
 }
