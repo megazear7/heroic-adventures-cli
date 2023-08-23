@@ -6,6 +6,7 @@ export default class Creature {
     constructor({
         name,
         race,
+        charClass,
         weapon,
         shield,
         armor,
@@ -13,6 +14,7 @@ export default class Creature {
     }) {
         this.name = name;
         this.race = race;
+        this.charClass = charClass;
         this.weapon = weapon;
         this.shield = shield;
         this.armor = armor;
@@ -22,7 +24,7 @@ export default class Creature {
     }
 
     get health() {
-        return this.race.health;
+        return this.race.health + this.charClass.health;
     }
 
     get skill() {
