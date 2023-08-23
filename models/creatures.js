@@ -31,7 +31,7 @@ export default logger => {
             strength: 2,
             init: 5,
             block: 1,
-            weapon: weapons.armingSword,
+            weapon: weapons.dagger,
             armor: armor.hide,
             logger,
         }),

@@ -25,7 +25,7 @@ export default class Creature {
         this.arcana = arcana;
         this.willpower = willpower;
         this.strength = strength;
-        this.init = init;
+        this.baseInit = init;
         this.block = block;
         this.weapon = weapon;
         this.armor = armor;
@@ -86,6 +86,10 @@ export default class Creature {
             roll: dieRoll + this.agility + this.armor.agility,
             blocked: dieRoll <= this.block,
         };
+    }
+
+    get init() {
+        return this.baseInit + this.weapon.init;
     }
 
     get toughness() {
