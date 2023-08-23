@@ -9,8 +9,6 @@ node index.js all
 
 ### Next steps
 
-Add level based stat modifications
-
 Add all the monster stats
 
 Create an encounter that does lots of iterations fighting monsters

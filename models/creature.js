@@ -1,5 +1,5 @@
 import { rollExplode, roll } from "../utils/utils.js";
-import { CRIT, NO_CRIT, WARBAND, HOST, LEGION } from "../utils/enums.js";
+import { CRIT, NO_CRIT, WARBAND, HOST, LEGION, SKILL, AGILITY, ARCANA, WILLPOWER, STRENGTH, INIT } from "../utils/enums.js";
 import Unit from "./unit.js";
 
 export default class Creature {
@@ -8,6 +8,7 @@ export default class Creature {
         race,
         charClass,
         statBump,
+        levels,
         weapon,
         shield,
         armor,
@@ -17,6 +18,7 @@ export default class Creature {
         this.race = race;
         this.charClass = charClass;
         this.statBump = statBump;
+        this.levels = levels || [];
         this.weapon = weapon;
         this.shield = shield;
         this.armor = armor;
@@ -26,31 +28,33 @@ export default class Creature {
     }
 
     get health() {
-        return this.race.health + this.charClass.health + this.statBump.health;
+        let levelBonus = 0;
+        this.levels.forEach(() => levelBonus += this.race.healthIncrease + this.charClass.healthIncrease);
+        return this.race.health + this.charClass.health + this.statBump.health + levelBonus;
     }
 
     get skill() {
-        return this.race.skill + this.statBump.skill;
+        return this.race.skill + this.statBump.skill + this.levelBumps(SKILL);
     }
 
     get agility() {
-        return this.race.agility + this.statBump.agility;
+        return this.race.agility + this.statBump.agility + this.levelBumps(AGILITY);
     }
 
     get arcana() {
-        return this.race.arcana + this.statBump.arcana;
+        return this.race.arcana + this.statBump.arcana + this.levelBumps(ARCANA);
     }
 
     get willpower() {
-        return this.race.willpower + this.statBump.willpower;
+        return this.race.willpower + this.statBump.willpower + this.levelBumps(WILLPOWER);
     }
 
     get strength() {
-        return this.race.strength + this.statBump.strength;
+        return this.race.strength + this.statBump.strength + this.levelBumps(STRENGTH);
     }
 
     get init() {
-        const calculatedInit = this.race.init + this.weapon.init + this.shield.init + this.statBump.init;
+        const calculatedInit = this.race.init + this.weapon.init + this.shield.init + this.statBump.init + this.levelBumps(INIT);
         if (calculatedInit < 1) {
             return 1;
         } else if (calculatedInit > 15) {
@@ -70,6 +74,10 @@ export default class Creature {
 
     get block() {
         return this.shield.block;
+    }
+
+    levelBumps(stat) {
+        return this.levels.filter(level => level.includes(stat)).length;
     }
 
     reset() {

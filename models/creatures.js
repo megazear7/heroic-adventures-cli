@@ -18,6 +18,10 @@ export default logger => {
             race: races.human,
             charClass: charClasses.soldier,
             statBump: new StatBump([SKILL, STRENGTH]),
+            levels: [
+                [ SKILL, AGILITY ],
+                [ SKILL, AGILITY ],
+            ],
             shield: shields.large,
             weapon: weapons.armingSword,
             armor: armor.gambeson,
