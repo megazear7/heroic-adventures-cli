@@ -14,7 +14,7 @@ export default class Creature {
         init,
         block,
         damage,
-        toughness,
+        armor,
         logger,
     }) {
         this.name = name;
@@ -28,7 +28,7 @@ export default class Creature {
         this.init = init;
         this.block = block;
         this.damage = damage;
-        this.toughness = toughness;
+        this.armor = armor;
         this.logger = logger;
         this.usedMajorAction = false;
         this.logger.log(100, 'constructor creature');
@@ -86,6 +86,10 @@ export default class Creature {
             roll: dieRoll + this.agility,
             blocked: dieRoll <= this.block,
         };
+    }
+
+    get toughness() {
+        return this.armor.toughness;
     }
     
     rollDamage(crit) {
