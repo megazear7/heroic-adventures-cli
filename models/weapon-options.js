@@ -13,52 +13,142 @@ export default logger => ({
         init: 2,
         logger,
     }),
-    todo: new Weapon({
+    falchion: new Weapon({
+        name: 'Falchion',
+        damage: '1d6',
+        init: 2,
+        logger,
+    }),
+    rapier: new Weapon({
+        name: 'Rapier',
+        damage: '1d6',
+        init: 2,
+        logger,
+    }),
+    cutlass: new Weapon({
         name: 'TODO',
         damage: '1d6',
         init: 2,
         logger,
     }),
-    todo: new Weapon({
-        name: 'TODO',
+    sabre: new Weapon({
+        name: 'Sabre',
         damage: '1d6',
         init: 2,
         logger,
     }),
-    todo: new Weapon({
-        name: 'TODO',
-        damage: '1d6',
+    longsword: new Weapon({
+        name: 'Longsword',
+        damage: '1d8',
         init: 2,
         logger,
     }),
-    todo: new Weapon({
-        name: 'TODO',
-        damage: '1d6',
-        init: 2,
+    bastardSword: new Weapon({
+        name: 'Bastardsword',
+        damage: '1d10',
+        init: 0,
         logger,
     }),
-    todo: new Weapon({
-        name: 'TODO',
-        damage: '1d6',
-        init: 2,
+    greatsword: new Weapon({
+        name: 'Greatsword',
+        damage: '1d12',
+        init: -2,
         logger,
     }),
-    todo: new Weapon({
-        name: 'TODO',
-        damage: '1d6',
-        init: 2,
+    handAxe: new Weapon({
+        name: 'Handaxe',
+        damage: '1d4',
+        init: 1,
         logger,
     }),
-    todo: new Weapon({
-        name: 'TODO',
-        damage: '1d6',
-        init: 2,
+    battleAxe: new Weapon({
+        name: 'Battle Axe',
+        damage: '1d8',
+        init: -1,
         logger,
     }),
-    todo: new Weapon({
-        name: 'TODO',
+    greatAxe: new Weapon({
+        name: 'Great Axe',
+        damage: '1d12',
+        init: -3,
+        logger,
+    }),
+    mace: new Weapon({
+        name: 'Mace',
         damage: '1d6',
-        init: 2,
+        init: 1,
+        logger,
+    }),
+    morningStar: new Weapon({
+        name: 'Morningstar',
+        damage: '1d8',
+        init: 0,
+        logger,
+    }),
+    flail: new Weapon({
+        name: 'Flail',
+        damage: '1d10',
+        init: -2,
+        logger,
+    }),
+    warhammer: new Weapon({
+        name: 'Warhammer',
+        damage: '1d6',
+        init: 0,
+        logger,
+    }),
+    greatHammer: new Weapon({
+        name: 'Great Hammer',
+        damage: '1d12',
+        init: -3,
+        logger,
+    }),
+    club: new Weapon({
+        name: 'Club',
+        damage: '1d4',
+        init: 0,
+        logger,
+    }),
+    spear: new Weapon({
+        name: 'Spear',
+        damage: '1d6',
+        init: 1,
+        logger,
+    }),
+    pike: new Weapon({
+        name: 'Pike',
+        damage: '1d8',
+        init: -2,
+        logger,
+    }),
+    halberd: new Weapon({
+        name: 'Halberd',
+        damage: '1d6',
+        init: -3,
+        logger,
+    }),
+    staff: new Weapon({
+        name: 'Staff',
+        damage: '1d4',
+        init: +4,
+        logger,
+    }),
+    shortbow: new Weapon({
+        name: 'Shortbow',
+        damage: '2d4',
+        init: 0,
+        logger,
+    }),
+    longbow: new Weapon({
+        name: 'Longbow',
+        damage: '2d6',
+        init: -1,
+        logger,
+    }),
+    crossbow: new Weapon({
+        name: 'Crossbow',
+        damage: '2d8',
+        init: -2,
         logger,
     }),
 });
