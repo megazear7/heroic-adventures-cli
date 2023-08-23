@@ -9,8 +9,6 @@ node index.js all
 
 ### Next steps
 
-Add character creation stat modifications
-
 Add level based stat modifications
 
 Add all the monster stats

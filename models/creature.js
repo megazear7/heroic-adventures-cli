@@ -7,6 +7,7 @@ export default class Creature {
         name,
         race,
         charClass,
+        statBump,
         weapon,
         shield,
         armor,
@@ -15,6 +16,7 @@ export default class Creature {
         this.name = name;
         this.race = race;
         this.charClass = charClass;
+        this.statBump = statBump;
         this.weapon = weapon;
         this.shield = shield;
         this.armor = armor;
@@ -24,31 +26,31 @@ export default class Creature {
     }
 
     get health() {
-        return this.race.health + this.charClass.health;
+        return this.race.health + this.charClass.health + this.statBump.health;
     }
 
     get skill() {
-        return this.race.skill;
+        return this.race.skill + this.statBump.skill;
     }
 
     get agility() {
-        return this.race.agility;
+        return this.race.agility + this.statBump.agility;
     }
 
     get arcana() {
-        return this.race.arcana;
+        return this.race.arcana + this.statBump.arcana;
     }
 
     get willpower() {
-        return this.race.willpower;
+        return this.race.willpower + this.statBump.willpower;
     }
 
     get strength() {
-        return this.race.strength;
+        return this.race.strength + this.statBump.strength;
     }
 
     get init() {
-        const calculatedInit = this.race.init + this.weapon.init + this.shield.init;
+        const calculatedInit = this.race.init + this.weapon.init + this.shield.init + this.statBump.init;
         if (calculatedInit < 1) {
             return 1;
         } else if (calculatedInit > 15) {
