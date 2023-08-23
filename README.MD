@@ -9,8 +9,6 @@ node index.js all
 
 ### Next steps
 
-Add shields
-
 Add all the monster stats
 
 Create an encounter that does lots of iterations fighting monsters

@@ -5,33 +5,67 @@ import Unit from "./unit.js";
 export default class Creature {
     constructor({
         name,
-        health,
-        skill,
-        agility,
-        arcana,
-        willpower,
-        strength,
-        init,
+        race,
         weapon,
         shield,
         armor,
         logger,
     }) {
         this.name = name;
-        this.health = health;
-        this.currentHealth = health;
-        this.skill = skill;
-        this.agility = agility;
-        this.arcana = arcana;
-        this.willpower = willpower;
-        this.strength = strength;
-        this.baseInit = init;
+        this.race = race;
         this.weapon = weapon;
         this.shield = shield;
         this.armor = armor;
         this.logger = logger;
         this.usedMajorAction = false;
         this.logger.log(100, 'constructor creature');
+    }
+
+    get health() {
+        return this.race.health;
+    }
+
+    get skill() {
+        return this.race.skill;
+    }
+
+    get agility() {
+        return this.race.agility;
+    }
+
+    get arcana() {
+        return this.race.arcana;
+    }
+
+    get willpower() {
+        return this.race.willpower;
+    }
+
+    get strength() {
+        return this.race.strength;
+    }
+
+    get init() {
+        const calculatedInit = this.race.init + this.weapon.init + this.shield.init;
+        if (calculatedInit < 1) {
+            return 1;
+        } else if (calculatedInit > 15) {
+            return 15;
+        } else {
+            return calculatedInit;
+        }
+    }
+
+    get toughness() {
+        return this.armor.toughness;
+    }
+
+    get damage() {
+        return this.weapon.damage;
+    }
+
+    get block() {
+        return this.shield.block;
     }
 
     reset() {
@@ -86,29 +120,6 @@ export default class Creature {
             roll: dieRoll + this.agility + this.armor.agility,
             blocked: dieRoll <= this.block,
         };
-    }
-
-    get init() {
-        const calculatedInit = this.baseInit + this.weapon.init + this.shield.init;
-        if (calculatedInit < 1) {
-            return 1;
-        } else if (calculatedInit > 15) {
-            return 15;
-        } else {
-            return calculatedInit;
-        }
-    }
-
-    get toughness() {
-        return this.armor.toughness;
-    }
-
-    get damage() {
-        return this.weapon.damage;
-    }
-
-    get block() {
-        return this.shield.block;
     }
     
     rollDamage(crit) {
