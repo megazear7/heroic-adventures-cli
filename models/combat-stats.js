@@ -19,10 +19,19 @@ export default class CombatStats {
     }
 
     report() {
-        this.logger.log(0, JSON.stringify({
-            team1: this.formatWins(this.encounter.team1.wins),
-            team2: this.formatWins(this.encounter.team2.wins),
-        }, undefined, 4));
+        const results = {
+            count: this.count,
+            team1: {
+                creatures: this.encounter.team1.creatures.map(creatures => creatures.name),
+                wins: this.formatWins(this.encounter.team1.wins),
+            },
+            team2: {
+                creatures: this.encounter.team2.creatures.map(creatures => creatures.name),
+                wins:  this.formatWins(this.encounter.team2.wins),
+            },
+        };
+        this.logger.log(10, JSON.stringify(results, undefined, 4));
+        return results;
     }
 
     formatWins(wins) {

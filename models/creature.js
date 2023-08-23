@@ -1,5 +1,5 @@
-import { rollExplode, roll } from "./utils.js";
-import { CRIT, NO_CRIT, WARBAND, HOST, LEGION } from "./enums.js";
+import { rollExplode, roll } from "../utils/utils.js";
+import { CRIT, NO_CRIT, WARBAND, HOST, LEGION } from "../utils/enums.js";
 import Unit from "./unit.js";
 
 export default class Creature {

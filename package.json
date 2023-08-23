@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "simple": "node ./scripts/simple.js",
+    "all": "node ./scripts/all.js"
   },
   "author": "Alex Lockhart",
   "license": "UNLICENSED"

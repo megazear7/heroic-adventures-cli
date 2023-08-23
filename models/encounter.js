@@ -1,5 +1,5 @@
 import Deck from "./deck.js";
-import { ask, close } from "./utils.js";
+import { ask, close } from "../utils/utils.js";
 
 export default class Encounter {
     constructor({

@@ -1,5 +1,5 @@
-import { addDice, rollExplode } from "./utils.js";
-import { CRIT, NO_CRIT } from "./enums.js";
+import { addDice, rollExplode } from "../utils/utils.js";
+import { CRIT, NO_CRIT } from "../utils/enums.js";
 
 export default class Unit {
     constructor({

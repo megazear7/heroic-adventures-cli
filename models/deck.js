@@ -1,5 +1,5 @@
 import Card from "./card.js";
-import { shuffle } from "./utils.js";
+import { shuffle } from "../utils/utils.js";
 
 export default class Deck {
     constructor({
