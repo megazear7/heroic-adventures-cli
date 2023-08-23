@@ -1,8 +1,10 @@
 import Creature from "./creature.js";
 import armorBuilder from "./armor-options.js";
+import weaponBuilder from "./weapon-options.js";
 
 export default logger => {
     const armor = armorBuilder(logger);
+    const weapons = weaponBuilder(logger);
     
     return {
         slighter: () =>  new Creature({
@@ -15,7 +17,7 @@ export default logger => {
             strength: 1,
             init: 1,
             block: 1,
-            damage: '1d6',
+            weapon: weapons.armingSword,
             armor: armor.gambeson,
             logger,
         }),
@@ -29,7 +31,7 @@ export default logger => {
             strength: 2,
             init: 5,
             block: 1,
-            damage: '1d6',
+            weapon: weapons.armingSword,
             armor: armor.hide,
             logger,
         }),

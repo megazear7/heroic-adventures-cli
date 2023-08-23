@@ -21,7 +21,7 @@ export default class Armor {
         });
     }
 
-    artisan() {
+    mastercrafted() {
         return new Armor({
             name: 'Mastercrafted ' + this.name,
             toughness: this.toughness + 2,

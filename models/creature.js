@@ -13,7 +13,7 @@ export default class Creature {
         strength,
         init,
         block,
-        damage,
+        weapon,
         armor,
         logger,
     }) {
@@ -27,7 +27,7 @@ export default class Creature {
         this.strength = strength;
         this.init = init;
         this.block = block;
-        this.damage = damage;
+        this.weapon = weapon;
         this.armor = armor;
         this.logger = logger;
         this.usedMajorAction = false;
@@ -83,13 +83,17 @@ export default class Creature {
     rollAgility() {
         const dieRoll = roll('1d12');
         return {
-            roll: dieRoll + this.agility,
+            roll: dieRoll + this.agility + this.armor.agility,
             blocked: dieRoll <= this.block,
         };
     }
 
     get toughness() {
         return this.armor.toughness;
+    }
+
+    get damage() {
+        return this.weapon.damage;
     }
     
     rollDamage(crit) {

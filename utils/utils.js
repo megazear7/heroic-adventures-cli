@@ -44,6 +44,14 @@ export const addDice = function(diceArg, amount) {
     }).join('+');
 }
 
+export const sum = function(arr) {
+    return arr.reduce((sum, num) => sum + num, 0);
+}
+
+export const removeSmallest = function(arr) {
+    return arr.sort((a, b) => a - b).slice(1, arr.length);
+}
+
 /**
  * '1d12'
  * '1d12'
@@ -53,22 +61,31 @@ export const addDice = function(diceArg, amount) {
  */
 export const roll = function(diceArg, crit = NO_CRIT, explode = NO_EXPLODE) {
     const log = false;
+    const reroll = diceArg.includes('reroll');
+    log && reroll && console.log('Doing reroll');
     const doExplode = explode === EXPLODE;
     const diceVals = diceArg.split('+');
-    let total = 0;
+    let rolls = [];
     diceVals.forEach(diceVal => {
+        log && console.log('diceVal: ' + diceVal);
         const [ count, size ] = diceVal.split('d');
-        const diceCount = parseInt(count) + (crit === CRIT ? 1 : 0);
+        const diceCount = parseInt(count) + (crit === CRIT ? 1 : 0) + (reroll ? 1 : 0);
         log && console.log(`diceCount: ${diceCount}`);
+        const innerRolls = [];
         for (var i = 0; i < diceCount; i++) {
             const sizeInt = parseInt(size);
             const rollResult = doExplode ? diceExplode(sizeInt) : dice(sizeInt);
             log && console.log(`Rolling ${doExplode ? 'exploding ' : ''}1d${sizeInt} and got ${rollResult}`);
-            total += rollResult;
+            innerRolls.push(rollResult);
         }
-        log && console.log(`total: ${total}`);
+        log && console.log('innerRolls: ' + innerRolls);
+        const innerFinalRolls = reroll ? removeSmallest(innerRolls) : innerRolls;
+        log && console.log('innerFinalRolls: ' + innerFinalRolls);
+        const innerTotal = sum(innerFinalRolls);
+        rolls.push(innerTotal);
+        log && console.log(`total: ${sum(rolls)}`);
     });
-    return total;
+    return sum(rolls);
 }
 
 export const rollExplode = function(dice, crit = NO_CRIT) {
