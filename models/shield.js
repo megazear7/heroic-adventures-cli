@@ -8,6 +8,7 @@ export default class Shield {
         this.name = name;
         this.block = block;
         this.init = init;
+        this.enhanced = true;
         this.logger = logger;
         this.logger.log(100, 'constructor armor');
     }

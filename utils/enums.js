@@ -11,3 +11,6 @@ export const ARCANA = 'ARCANA';
 export const WILLPOWER = 'WILLPOWER';
 export const STRENGTH = 'STRENGTH';
 export const INIT = 'INIT';
+export const FEATURE = 'FEATURE';
+export const DOUBLE_HEROIC_ACTION = 'DOUBLE_HEROIC_ACTION';
+export const HEROIC_ACTION = 'HEROIC_ACTION';

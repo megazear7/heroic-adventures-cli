@@ -12,6 +12,9 @@ export default class Creature {
         weapon,
         shield,
         armor,
+        features,
+        minorMove,
+        majorMove,
         logger,
     }) {
         this.name = name;
@@ -22,6 +25,9 @@ export default class Creature {
         this.weapon = weapon;
         this.shield = shield;
         this.armor = armor;
+        this.features = features;
+        this.minorMove = minorMove;
+        this.majorMove = majorMove;
         this.logger = logger;
         this.usedMajorAction = false;
         this.logger.log(100, 'constructor creature');
@@ -94,6 +100,7 @@ export default class Creature {
             willpower: `${this.willpower}: ${this.race.willpower} (race) + ${this.statBump.willpower} (creation) + ${this.levelBumps(WILLPOWER)} (level)`,
             strength: `${this.strength}: ${this.race.strength} (race) + ${this.statBump.strength} (creation) + ${this.levelBumps(STRENGTH)} (level)`,
             init: `${this.init}: ${this.race.init} (race) + ${this.weapon.init} (weapon) - ${Math.abs(this.shield.init)} (shield) + ${this.statBump.init} (creation) + ${this.levelBumps(INIT)} (level)`,
+            features: this.features,
         };
     }
 

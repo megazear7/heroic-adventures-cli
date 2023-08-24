@@ -12,13 +12,13 @@ const creatures = creaturesBuilder(logger);
 const results = await new EncounterTracker({
     encounters: [
         new UnitVsCreature({
-            creature: creatures.goblinSkirmisher,
+            creature: creatures['Goblin Skirmisher'],
             count,
             logger
         }),
         new CreatureVsCreature({
-            creature1: creatures.slighter,
-            creature2: creatures.goblinSkirmisher,
+            creature1: creatures['Slighter'],
+            creature2: creatures['Goblin Skirmisher'],
             count,
             logger
         }),

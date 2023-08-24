@@ -8,6 +8,7 @@ export default class Armor {
         this.name = name;
         this.toughness = toughness;
         this.agility = agility;
+        this.enhanced = true;
         this.logger = logger;
         this.logger.log(100, 'constructor armor');
     }

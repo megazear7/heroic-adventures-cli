@@ -9,8 +9,6 @@ node index.js all
 
 ### Next steps
 
-Add all the monster stats
-
 Create an encounter that does lots of iterations fighting monsters
 against each other randomly, tracking wins and losses, and then
 rank orders how good each monster is and gives them a score.

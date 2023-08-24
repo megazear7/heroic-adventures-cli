@@ -10,6 +10,7 @@ export default class Weapon {
         this.name = name;
         this.damage = damage;
         this.init = init;
+        this.enhanced = true;
         this.logger = logger;
         this.logger.log(100, 'constructor weapon');
     }

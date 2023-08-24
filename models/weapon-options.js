@@ -1,6 +1,12 @@
 import Weapon from "./weapon.js";
 
 export default logger => ({
+    noWeapon: new Weapon({
+        name: 'No weapon',
+        damage: '1d4',
+        init: 0,
+        logger,
+    }),
     dagger: new Weapon({
         name: 'Dagger',
         damage: '1d4',

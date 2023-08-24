@@ -8,8 +8,8 @@ const count = 1000;
 const creatures = creaturesBuilder(logger);
 
 const results = await new CreatureVsCreature({
-    creature1: creatures.slighter,
-    creature2: creatures.goblinSkirmisher,
+    creature1: creatures['Goblin Skirmisher'],
+    creature2: creatures['Gremik'],
     count,
     logger
 }).play();

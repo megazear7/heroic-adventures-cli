@@ -37,8 +37,8 @@ export default class Encounter {
 
     async fight() {
         this.logger.log(50, 'fight');
-        this.createDeck();
         this.logger.log(80, this.stats());
+        this.createDeck();
         while (!this.encounterFinished()) {
             if (this.startOfRound()) {
                 this.initRound();
