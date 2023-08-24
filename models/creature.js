@@ -27,10 +27,14 @@ export default class Creature {
         this.logger.log(100, 'constructor creature');
     }
 
-    get health() {
+    get healthFromLevels() {
         let levelBonus = 0;
         this.levels.forEach(() => levelBonus += this.race.healthIncrease + this.charClass.healthIncrease);
-        return this.race.health + this.charClass.health + this.statBump.health + levelBonus;
+        return levelBonus;
+    }
+
+    get health() {
+        return this.race.health + this.charClass.health + this.statBump.health + this.healthFromLevels;
     }
 
     get skill() {
@@ -38,7 +42,7 @@ export default class Creature {
     }
 
     get agility() {
-        return this.race.agility + this.statBump.agility + this.levelBumps(AGILITY);
+        return this.race.agility + this.statBump.agility + this.levelBumps(AGILITY) + this.armor.agility;
     }
 
     get arcana() {
@@ -78,6 +82,23 @@ export default class Creature {
 
     levelBumps(stat) {
         return this.levels.filter(level => level.includes(stat)).length;
+    }
+
+    stats() {
+        return {
+            name: this.name,
+            health: `${this.health}: ${this.race.health} (race) + ${this.charClass.health} (class) + ${this.statBump.health} (creation) + ${this.healthFromLevels} (levels)`,
+            skill: `${this.skill}: ${this.race.skill} (race) + ${this.statBump.skill} (creation) + ${this.levelBumps(SKILL)} (level)`,
+            agility: `${this.agility}: ${this.race.agility} (race) + ${this.statBump.agility} (creation) + ${this.levelBumps(AGILITY)} (level) - ${Math.abs(this.armor.agility)} (armor)`,
+            arcana: `${this.arcana}: ${this.race.arcana} (race) + ${this.statBump.arcana} (creation) + ${this.levelBumps(ARCANA)} (level)`,
+            willpower: `${this.willpower}: ${this.race.willpower} (race) + ${this.statBump.willpower} (creation) + ${this.levelBumps(WILLPOWER)} (level)`,
+            strength: `${this.strength}: ${this.race.strength} (race) + ${this.statBump.strength} (creation) + ${this.levelBumps(STRENGTH)} (level)`,
+            init: `${this.init}: ${this.race.init} (race) + ${this.weapon.init} (weapon) - ${Math.abs(this.shield.init)} (shield) + ${this.statBump.init} (creation) + ${this.levelBumps(INIT)} (level)`,
+        };
+    }
+
+    status() {
+        return `${this.name} (${this.currentHealth}/${this.health})`;
     }
 
     reset() {
@@ -129,7 +150,7 @@ export default class Creature {
     rollAgility() {
         const dieRoll = roll('1d12');
         return {
-            roll: dieRoll + this.agility + this.armor.agility,
+            roll: dieRoll + this.agility,
             blocked: dieRoll <= this.block,
         };
     }

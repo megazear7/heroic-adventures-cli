@@ -21,13 +21,29 @@ export default class Encounter {
         this.team2.reset();
     }
 
+    stats() {
+        return {
+            team1: this.team1.stats(),
+            team2: this.team2.stats(),
+        }
+    }
+
+    status() {
+        return {
+            team1: this.team1.status(),
+            team2: this.team2.status(),
+        }
+    }
+
     async fight() {
         this.logger.log(50, 'fight');
         this.createDeck();
+        this.logger.log(80, this.stats());
         while (!this.encounterFinished()) {
             if (this.startOfRound()) {
                 this.initRound();
             }
+            this.logger.log(80, this.status());
             this.doTurn();
             this.logger.pause && await ask('Proceed?');
         }
@@ -57,7 +73,6 @@ export default class Encounter {
     }
 
     encounterFinished() {
-        this.logger.log(80, 'encounterFinished');
         return this.team1.lost() || this.team2.lost();
     }
 
@@ -76,7 +91,7 @@ export default class Encounter {
     }
 
     doTurn() {
-        this.logger.log(70, 'doTurn', this.previousCard?.init, this.currentCard?.init);
+        this.logger.log(90, 'doTurn');
         this.previousCard = this.currentCard;
         this.currentCard = this.deck.drawCard();
         const creatures = this.creaturesWithMatchingInit(this.currentCard.team, this.currentCard.init);

@@ -36,6 +36,10 @@ export default class Unit {
         this.casualties = 0;
     }
 
+    status() {
+        return `${this.name} (${this.casualties}/${this.creatures})`;
+    }
+
     reset() {
         this.casualties = 0;
     }

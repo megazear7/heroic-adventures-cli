@@ -13,6 +13,14 @@ export default class Team {
         this.logger.log(100, 'constructor team');
     }
 
+    stats() {
+        return this.creatures.map(creature => creature.stats());
+    }
+
+    status() {
+        return this.creatures.map(creature => creature.status());
+    }
+
     reset() {
         this.creatures.forEach(creature => creature.reset());
     }
