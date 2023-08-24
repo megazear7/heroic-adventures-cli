@@ -4,7 +4,7 @@ import CreatureVsCreature from "../encounters/creature-vs-creature.js";
 
 // Logger level can be between 0 and 100. The higher the level, the more logs you will see.
 const logger = Logger.consoleLogger(0, false);
-const count = 1;
+const count = 1000;
 const creatures = creaturesBuilder(logger);
 
 const results = await new CreatureVsCreature({
