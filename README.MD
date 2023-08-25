@@ -9,9 +9,7 @@ node index.js all
 
 ### Next steps
 
-Create an encounter that does lots of iterations fighting monsters
-against each other randomly, tracking wins and losses, and then
-rank orders how good each monster is and gives them a score.
+Figure out a good measure of strength beyond just calculating the percentage of wins.
 
 Figure out how to make the units equivilent in strength to the same
 number of monsters.

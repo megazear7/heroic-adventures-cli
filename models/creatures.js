@@ -11,7 +11,7 @@ import Armor from "./armor.js";
 import Shield from "./shield.js";
 import monsterBuilder from "./monsters.js";
 
-export default logger => {
+export const creatureList = logger => {
     const armorOptions = armorBuilder(logger);
     const weapons = weaponBuilder(logger);
     const shields = shieldBuilder(logger);
@@ -53,10 +53,13 @@ export default logger => {
         });
     });
 
+    return [...manual, ...monsters];
+};
+
+export default logger => {
     const creatures = {};
-    [...manual, ...monsters].forEach(creature => {
+    creatureList(logger).forEach(creature => {
         creatures[creature().name] = creature;
     });
-
     return creatures;
 };
