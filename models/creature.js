@@ -142,12 +142,14 @@ export default class Creature {
     takeAction(enemyTeam, isBonus) {
         this.logger.log(50, 'takeAction', this.name, enemyTeam.name, isBonus);
 
-        if (isBonus) {
-            this.bonusAction(enemyTeam);
-        } else if (this.usedMajorAction) {
-            this.minorAction(enemyTeam);
-        } else {
-            this.majorAction(enemyTeam);
+        if (this.alive()) {
+            if (isBonus) {
+                this.bonusAction(enemyTeam);
+            } else if (this.usedMajorAction) {
+                this.minorAction(enemyTeam);
+            } else {
+                this.majorAction(enemyTeam);
+            }
         }
     }
 
@@ -230,7 +232,7 @@ export default class Creature {
         this.logger.log(20, `${this.name} is attacking ${target.name}: ${attackRoll.roll} vs. ${defenseRoll.roll} ${results.msg}`);
 
         if (results.hit) {
-            this.logger.log(20, `${this.name} ${attackRoll.crit ? 'critically ' : ''}hit ${target.name}`);
+            this.logger.log(25, `${this.name} ${attackRoll.crit ? 'critically ' : ''}hit ${target.name}`);
             target.takeDamage(this.rollDamage(attackRoll.crit));
         }
     }

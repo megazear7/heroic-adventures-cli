@@ -7,13 +7,13 @@ export default logger => ({
         init: 0,
         logger,
     }),
-    small: new Shield({
+    smallShield: new Shield({
         name: 'Small Shield',
         block: 1,
         init: -3,
         logger,
     }),
-    large: new Shield({
+    largeShield: new Shield({
         name: 'Large Shield',
         block: 2,
         init: -5,

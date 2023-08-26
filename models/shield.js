@@ -17,7 +17,7 @@ export default class Shield {
         return new Armor({
             name: 'Artisan ' + this.name,
             block: this.block,
-            init: this.init - 1,
+            init: this.init + 1,
             logger:  this.logger,
         });
     }
@@ -26,7 +26,7 @@ export default class Shield {
         return new Armor({
             name: 'Mastercrafted ' + this.name,
             block: this.block,
-            init: this.init - 2,
+            init: this.init + 2,
             logger:  this.logger,
         });
     }

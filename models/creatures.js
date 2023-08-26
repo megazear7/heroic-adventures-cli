@@ -28,7 +28,7 @@ export const creatureListBuilder = (logger) => {
                 [ SKILL, AGILITY ],
                 [ INIT, STRENGTH ],
             ],
-            shield: shields.large,
+            shield: shields.largeShield,
             weapon: weapons.armingSword,
             armor: armorOptions.gambeson,
             logger,

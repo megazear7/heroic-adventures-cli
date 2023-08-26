@@ -6,9 +6,12 @@ export default class Ranking {
         this.count = count;
         this.logger = logger;
         this.stats = {};
-        creatures.forEach(creature => {
-            this.stats[creature().id] = {
+        creatures.forEach(creatureBuilder => {
+            const creature = creatureBuilder();
+            this.stats[creature.id] = {
                 wins: 0,
+                level: creature.level,
+                name: creature.name,
             };
         });
         this.fullReportNames = [];
@@ -55,6 +58,7 @@ export default class Ranking {
             name: creatureName,
             wins: this.stats[creatureName].wins,
             percentage: (this.stats[creatureName].wins / this.max()) * 100,
+            level: this.stats[creatureName].level,
         })).sort((a, b) => a.percentage - b.percentage);
     }
 
