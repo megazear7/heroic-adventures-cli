@@ -1,14 +1,17 @@
 import { rollExplode, roll } from "../utils/utils.js";
-import { CRIT, NO_CRIT, WARBAND, HOST, LEGION, SKILL, AGILITY, ARCANA, WILLPOWER, STRENGTH, INIT } from "../utils/enums.js";
+import { CRIT, NO_CRIT, WARBAND, HOST, LEGION, SKILL, AGILITY, ARCANA, WILLPOWER, STRENGTH, INIT, MONSTER } from "../utils/enums.js";
 import Unit from "./unit.js";
 
 export default class Creature {
     constructor({
         name,
+        type,
+        id,
         race,
         charClass,
         statBump,
         levels,
+        minion,
         weapon,
         shield,
         armor,
@@ -18,10 +21,13 @@ export default class Creature {
         logger,
     }) {
         this.name = name;
+        this.type = type || MONSTER;
+        this.innerId = id;
         this.race = race;
         this.charClass = charClass;
         this.statBump = statBump;
         this.levels = levels || [];
+        this.minion = minion || 0;
         this.weapon = weapon;
         this.shield = shield;
         this.armor = armor;
@@ -33,14 +39,35 @@ export default class Creature {
         this.logger.log(100, 'constructor creature');
     }
 
+    get id() {
+        return `${this.name} (${this.innerId})`;
+    }
+
     get healthFromLevels() {
         let levelBonus = 0;
         this.levels.forEach(() => levelBonus += this.race.healthIncrease + this.charClass.healthIncrease);
         return levelBonus;
     }
 
+    get minionHealthDrop() {
+        if (!this.minion) {
+            return 0;
+        } else {
+            let level1Health = this.race.health + this.charClass.health + this.statBump.health;
+            return Math.round((level1Health * this.minion) / 3);
+        }
+    }
+
+    get level() {
+        if (this.minion) {
+            return '1/' + (this.minion + 1);
+        } else {
+            return this.levels.length + 1 + '';
+        }
+    }
+
     get health() {
-        return this.race.health + this.charClass.health + this.statBump.health + this.healthFromLevels;
+        return this.race.health + this.charClass.health + this.statBump.health + this.healthFromLevels - this.minionHealthDrop;
     }
 
     get skill() {
@@ -93,7 +120,7 @@ export default class Creature {
     stats() {
         return {
             name: this.name,
-            health: `${this.health}: ${this.race.health} (race) + ${this.charClass.health} (class) + ${this.statBump.health} (creation) + ${this.healthFromLevels} (levels)`,
+            health: `${this.health}: ${this.race.health} (race) + ${this.charClass.health} (class) + ${this.statBump.health} (creation) + ${this.healthFromLevels} (levels) - ${this.minionHealthDrop} (minion)`,
             skill: `${this.skill}: ${this.race.skill} (race) + ${this.statBump.skill} (creation) + ${this.levelBumps(SKILL)} (level)`,
             agility: `${this.agility}: ${this.race.agility} (race) + ${this.statBump.agility} (creation) + ${this.levelBumps(AGILITY)} (level) - ${Math.abs(this.armor.agility)} (armor)`,
             arcana: `${this.arcana}: ${this.race.arcana} (race) + ${this.statBump.arcana} (creation) + ${this.levelBumps(ARCANA)} (level)`,

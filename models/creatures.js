@@ -11,13 +11,16 @@ import Armor from "./armor.js";
 import Shield from "./shield.js";
 import monsterBuilder from "./monsters.js";
 
-export const creatureList = logger => {
+export const creatureListBuilder = (logger) => {
     const armorOptions = armorBuilder(logger);
     const weapons = weaponBuilder(logger);
     const shields = shieldBuilder(logger);
+    let incrementId = 0;
+    const manualId = incrementId++;
     const manual = [
         () => new Creature({
             name: 'Slighter',
+            id: manualId,
             race: races.human,
             charClass: charClasses.soldier,
             statBump: new StatBump([SKILL, STRENGTH]),
@@ -38,13 +41,17 @@ export const creatureList = logger => {
         const weapon = data.weapon.enhanced ? data.weapon : new Weapon({ ...data.weapon, logger });
         const shield = data.shield.enhanced ? data.shield : new Shield({ ...data.shield, logger });
         const armor = data.armor.enhanced ? data.armor : new Armor({ ...data.armor, logger });
+        const id = incrementId++;
 
         return () => new Creature({
             name: data.name,
+            id: id,
+            type: data.type,
             race: data.race,
             charClass: data.charClass,
             statBump: new StatBump(data.statBumps),
             levels: data.levels,
+            minion: data.minion,
             shield: shield,
             weapon: weapon,
             armor: armor,
@@ -58,7 +65,7 @@ export const creatureList = logger => {
 
 export default logger => {
     const creatures = {};
-    creatureList(logger).forEach(creature => {
+    creatureListBuilder(logger).forEach(creature => {
         creatures[creature().name] = creature;
     });
     return creatures;

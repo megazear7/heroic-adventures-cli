@@ -1,6 +1,6 @@
 import races from "./races.js";
 import charClasses from "./char-classes.js";
-import { SKILL, AGILITY, ARCANA, WILLPOWER, STRENGTH, INIT, FEATURE, HEROIC_ACTION, DOUBLE_HEROIC_ACTION } from "../utils/enums.js";
+import { SKILL, AGILITY, ARCANA, WILLPOWER, STRENGTH, INIT, FEATURE, HEROIC_ACTION, DOUBLE_HEROIC_ACTION, HUNTER, DRUID } from "../utils/enums.js";
 
 export default (armor, weapons, shields) => ([
     {
@@ -143,7 +143,7 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
-        name: 'Bats',
+        name: 'Bat',
         race: races.ape,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2446,6 +2446,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Wolf',
         label: 'This is for the hunter class',
+        type: HUNTER,
         race: races.wolf,
         charClass: charClasses.monsterClass,
         override: {
@@ -2479,6 +2480,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Bear',
         label: 'This is for the hunter class',
+        type: HUNTER,
         race: races.bear,
         charClass: charClasses.monsterClass,
         override: {
@@ -2507,8 +2509,9 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
-        name: 'largeCat',
+        name: 'Panther',
         label: 'This is for the hunter class',
+        type: HUNTER,
         race: races.largeCat,
         charClass: charClasses.monsterClass,
         override: {
@@ -2539,6 +2542,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Snake',
         label: 'This is for the hunter class',
+        type: HUNTER,
         race: races.snake,
         charClass: charClasses.monsterClass,
         override: {
@@ -2572,6 +2576,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Hawk',
         label: 'This is for the hunter class',
+        type: HUNTER,
         race: races.hawk,
         charClass: charClasses.monsterClass,
         override: {
@@ -2601,6 +2606,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Rat',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.rat,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2624,6 +2630,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Eagle',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.hawk,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2640,6 +2647,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Lizard',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.animalLizard,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2660,6 +2668,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Wolf',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.wolf,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2684,6 +2693,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Bear',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.bear,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2708,6 +2718,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Snake',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.snake,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2728,6 +2739,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Tiger',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.largeCat,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2757,40 +2769,8 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Gorilla',
         label: 'This is for the druid class',
-        race: races.largeCat,
-        charClass: charClasses.monsterClass,
-        weapon: {
-            name: 'Pummel',
-            damage: '2d8',
-            init: 0,
-        },
-        shield: {
-            name: 'Swipe away',
-            block: 2,
-            init: 0,
-        },
-        armor: {
-            name: 'Thick skin',
-            toughness: 3,
-            agility: 0,
-        },
-        statBumps: [ STRENGTH, ARCANA ],
-        levels: [
-            [ STRENGTH, ARCANA ],
-            [ SKILL, AGILITY ],
-            [ STRENGTH, ARCANA ],
-            [ SKILL, AGILITY ],
-            [ STRENGTH, ARCANA ],
-        ],
-        features: [{
-            type: HEROIC_ACTION,
-            desc: 'Strangle: If any damage dice explode, the target is grappled and cannot move until the end of the next round.'
-        }]
-    },
-    {
-        name: 'Gorilla',
-        label: 'This is for the druid class',
-        race: races.largeCat,
+        type: DRUID,
+        race: races.ape,
         charClass: charClasses.monsterClass,
         weapon: {
             name: 'Pummel',
@@ -2823,6 +2803,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Shark',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.shark,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2847,7 +2828,6 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Bramblebaum',
-        label: 'This is for the druid class',
         race: races.ent,
         charClass: charClasses.monsterClass,
         override: {
@@ -2911,6 +2891,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Dire Wolf',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.wolf,
         charClass: charClasses.monsterClass,
         weapon: {
@@ -2940,6 +2921,7 @@ export default (armor, weapons, shields) => ([
     {
         name: 'Cave Bear',
         label: 'This is for the druid class',
+        type: DRUID,
         race: races.bear,
         charClass: charClasses.monsterClass,
         weapon: {

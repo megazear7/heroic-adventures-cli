@@ -3,13 +3,14 @@
 Various scripts are listed under `./scripts` and can be run using the `index.js` file as shown below:
 
 ```js
+node index.js stats
+node index.js ranking
 node index.js simple
-node index.js all
 ```
 
 ### Next steps
 
-Figure out a good measure of strength beyond just calculating the percentage of wins.
+Generate json of all the monster stats and import that into photofoundry and the hero app.
 
 Figure out how to make the units equivilent in strength to the same
 number of monsters.

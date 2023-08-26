@@ -5,6 +5,6 @@ import { close } from "../utils/utils.js";
 const logger = Logger.consoleLogger(0, false);
 const creatures = creaturesBuilder(logger);
 
-console.log(creatures['Goblin Skirmisher']().stats());
+console.log(creatures['Orc Soldier']().stats());
 
 close();

@@ -6,15 +6,17 @@ import CreatureVsCreature from "../encounters/creature-vs-creature.js";
 const logger = Logger.consoleLogger(0, false);
 const count = 1000;
 const creatures = creaturesBuilder(logger);
+const creature1 = creatures['Bat'];
+const creature2 = creatures['Orc Soldier'];
 
 const results = await new CreatureVsCreature({
-    creature1: creatures['Goblin Skirmisher'],
-    creature2: creatures['Gremik'],
+    creature1,
+    creature2,
     count,
     logger
 }).play();
 
 logger.log(0, `
-team1: ${results.team1.wins}
-team2: ${results.team2.wins}
+${creature1().name}: ${results.team1.wins}
+${creature2().name}: ${results.team2.wins}
 `.trim());

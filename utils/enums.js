@@ -14,3 +14,6 @@ export const INIT = 'INIT';
 export const FEATURE = 'FEATURE';
 export const DOUBLE_HEROIC_ACTION = 'DOUBLE_HEROIC_ACTION';
 export const HEROIC_ACTION = 'HEROIC_ACTION';
+export const HUNTER = 'HUNTER';
+export const DRUID = 'DRUID';
+export const MONSTER = 'MONSTER';

@@ -7,23 +7,40 @@ export default class Ranking {
         this.logger = logger;
         this.stats = {};
         creatures.forEach(creature => {
-            this.stats[creature().name] = {
+            this.stats[creature().id] = {
                 wins: 0,
             };
         });
+        this.fullReportNames = [];
+    }
+
+    giveFullReport(name) {
+        this.fullReportNames.push(name);
     }
 
     async rank() {
         for (let creature1 of this.creatures) {
             for (let creature2 of this.creatures) {
-                const creature1Name = creature1().name;
-                const creature2Name = creature2().name;
+                const creature1Name = creature1().id;
+                const creature2Name = creature2().id;
                 if (creature1Name !== creature2Name) {
                     const results = await new CreatureVsCreature({ creature1, creature2, count: this.count, logger: this.logger }).play();
-                    this.stats[creature1Name].wins += results.team1.wins;
-                    this.stats[creature2Name].wins += results.team2.wins;
+                    this.updateStats(creature1Name, results.team1.wins, creature2Name);
+                    this.updateStats(creature2Name, results.team2.wins, creature1Name);
                 }
             }
+        }
+    }
+
+    updateStats(name, wins, opponent) {
+        this.stats[name].wins += wins;
+
+        if (this.fullReportNames.includes(name)) {
+            const key = `vs. ${opponent}`;
+            if (!this.stats[name][key]) {
+                this.stats[name][key] = 0;
+            }
+            this.stats[name][key] += wins;
         }
     }
 
@@ -39,5 +56,18 @@ export default class Ranking {
             wins: this.stats[creatureName].wins,
             percentage: (this.stats[creatureName].wins / this.max()) * 100,
         })).sort((a, b) => a.percentage - b.percentage);
+    }
+
+    fullReport() {
+        return Object.keys(this.stats).map(name => {
+            if (this.fullReportNames.includes(name)) {
+                return {
+                    name,
+                    ...this.stats[name],
+                };
+            } else {
+                return undefined;
+            }
+        }).filter(obj => obj != undefined);
     }
 }
