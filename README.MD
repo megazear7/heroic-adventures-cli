@@ -10,7 +10,5 @@ node index.js simple
 
 ### Next steps
 
-Generate json of all the monster stats and import that into photofoundry and the hero app.
-
 Figure out how to make the units equivilent in strength to the same
 number of monsters.

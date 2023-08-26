@@ -1,5 +1,6 @@
 export default {
     human: {
+        name: 'Human',
         minorMove: 2,
         majorMove: 6,
         skill: 1,
@@ -12,6 +13,7 @@ export default {
         healthIncrease: 3,
     },
     dwarf: {
+        name: 'Dwarf',
         minorMove: 1,
         majorMove: 5,
         skill: 1,
@@ -24,6 +26,7 @@ export default {
         healthIncrease: 3,
     },
     elf: {
+        name: 'Elf',
         minorMove: 2,
         majorMove: 7,
         skill: 1,
@@ -36,6 +39,7 @@ export default {
         healthIncrease: 2,
     },
     krimkar: {
+        name: 'Krimkar',
         minorMove: 2,
         majorMove: 6,
         skill: 2,
@@ -48,6 +52,7 @@ export default {
         healthIncrease: 3,
     },
     ghoul: {
+        name: 'Ghoul',
         minorMove: 2,
         majorMove: 6,
         skill: 2,
@@ -60,6 +65,7 @@ export default {
         healthIncrease: 3,
     },
     elemental: {
+        name: 'Elemental',
         minorMove: 4,
         majorMove: 6,
         skill: 1,
@@ -72,6 +78,7 @@ export default {
         healthIncrease: 3,
     },
     druskin: {
+        name: 'Druskin',
         minorMove: 2,
         majorMove: 6,
         skill: 1,
@@ -84,6 +91,7 @@ export default {
         healthIncrease: 3,
     },
     goblin: {
+        name: 'Goblin',
         minorMove: 2,
         majorMove: 5,
         skill: 1,
@@ -96,6 +104,7 @@ export default {
         healthIncrease: 2,
     },
     ratmen: {
+        name: 'Ratmen',
         minorMove: 2,
         majorMove: 5,
         skill: 1,
@@ -108,6 +117,7 @@ export default {
         healthIncrease: 2,
     },
     lizardmen: {
+        name: 'Lizardmen',
         minorMove: 2,
         majorMove: 6,
         skill: 2,
@@ -120,6 +130,7 @@ export default {
         healthIncrease: 3,
     },
     kraken: {
+        name: 'Kraken',
         minorMove: 0,
         majorMove: 12,
         skill: 1,
@@ -132,6 +143,7 @@ export default {
         healthIncrease: 6,
     },
     jungleTerror: {
+        name: 'Jungle Terror',
         minorMove: 2,
         majorMove: 6,
         skill: 1,
@@ -144,6 +156,7 @@ export default {
         healthIncrease: 3,
     },
     kobold: {
+        name: 'Kobold',
         minorMove: 2,
         majorMove: 5,
         skill: 1,
@@ -156,6 +169,7 @@ export default {
         healthIncrease: 1,
     },
     skeleton: {
+        name: 'Skeleton',
         minorMove: 0,
         majorMove: 6,
         skill: 1,
@@ -168,6 +182,7 @@ export default {
         healthIncrease: 3,
     },
     zombie: {
+        name: 'Zombie',
         minorMove: 1,
         majorMove: 5,
         skill: 0,
@@ -180,6 +195,7 @@ export default {
         healthIncrease: 3,
     },
     orc: {
+        name: 'Orc',
         minorMove: 2,
         majorMove: 6,
         skill: 2,
@@ -192,6 +208,7 @@ export default {
         healthIncrease: 3,
     },
     yeti: {
+        name: 'Yeti',
         minorMove: 2,
         majorMove: 6,
         skill: 1,
@@ -204,6 +221,7 @@ export default {
         healthIncrease: 4,
     },
     werecat: {
+        name: 'Werecat',
         minorMove: 2,
         majorMove: 6,
         skill: 2,
@@ -216,6 +234,7 @@ export default {
         healthIncrease: 3,
     },
     werewolf: {
+        name: 'Werewolf',
         minorMove: 3,
         majorMove: 8,
         skill: 2,
@@ -228,6 +247,7 @@ export default {
         healthIncrease: 3,
     },
     ogre: {
+        name: 'Ogre',
         minorMove: 1,
         majorMove: 8,
         skill: 1,
@@ -240,6 +260,7 @@ export default {
         healthIncrease: 4,
     },
     rokum: {
+        name: 'Rokum',
         minorMove: 4,
         majorMove: 12,
         skill: 1,
@@ -252,6 +273,7 @@ export default {
         healthIncrease: 4,
     },
     troll: {
+        name: 'Troll',
         minorMove: 2,
         majorMove: 8,
         skill: 1,
@@ -264,6 +286,7 @@ export default {
         healthIncrease: 3,
     },
     giant: {
+        name: 'Giant',
         minorMove: 2,
         majorMove: 8,
         skill: 1,
@@ -276,6 +299,7 @@ export default {
         healthIncrease: 5,
     },
     minotaur: {
+        name: 'Minotaur',
         minorMove: 2,
         majorMove: 8,
         skill: 2,
@@ -288,6 +312,7 @@ export default {
         healthIncrease: 3,
     },
     spider: {
+        name: 'Spider',
         minorMove: 3,
         majorMove: 5,
         skill: 2,
@@ -300,6 +325,7 @@ export default {
         healthIncrease: 2,
     },
     snake: {
+        name: 'Snake',
         minorMove: 0,
         majorMove: 5,
         skill: 2,
@@ -312,6 +338,7 @@ export default {
         healthIncrease: 3,
     },
     gatorPig: {
+        name: 'Gatorpig',
         minorMove: 1,
         majorMove: 5,
         skill: 0,
@@ -324,6 +351,7 @@ export default {
         healthIncrease: 3,
     },
     ent: {
+        name: 'Ent',
         minorMove: 1,
         majorMove: 8,
         skill: 2,
@@ -336,6 +364,7 @@ export default {
         healthIncrease: 3,
     },
     wolf: {
+        name: 'Wolf',
         minorMove: 3,
         majorMove: 7,
         skill: 2,
@@ -348,6 +377,7 @@ export default {
         healthIncrease: 2,
     },
     bear: {
+        name: 'Bear',
         minorMove: 1,
         majorMove: 6,
         skill: 1,
@@ -360,6 +390,7 @@ export default {
         healthIncrease: 3,
     },
     largeCat: {
+        name: 'Large Cat',
         minorMove: 3,
         majorMove: 8,
         skill: 2,
@@ -372,6 +403,7 @@ export default {
         healthIncrease: 2,
     },
     shark: {
+        name: 'Shark',
         minorMove: 4,
         majorMove: 8,
         skill: 4,
@@ -384,6 +416,7 @@ export default {
         healthIncrease: 3,
     },
     rat: {
+        name: 'Rat',
         minorMove: 3,
         majorMove: 4,
         skill: 2,
@@ -396,6 +429,7 @@ export default {
         healthIncrease: 1,
     },
     animalLizard: {
+        name: 'Lizard',
         minorMove: 3,
         majorMove: 4,
         skill: 2,
@@ -408,6 +442,7 @@ export default {
         healthIncrease: 1,
     },
     snake: {
+        name: 'Snake',
         minorMove: 2,
         majorMove: 5,
         skill: 1,
@@ -420,6 +455,7 @@ export default {
         healthIncrease: 1,
     },
     hawk: {
+        name: 'Hawk',
         minorMove: 4,
         majorMove: 8,
         skill: 1,
@@ -432,6 +468,7 @@ export default {
         healthIncrease: 1,
     },
     dragon: {
+        name: 'Dragon',
         minorMove: 2,
         majorMove: 6,
         skill: 2,
@@ -444,6 +481,7 @@ export default {
         healthIncrease: 5,
     },
     angel: {
+        name: 'Angel',
         minorMove: 2,
         majorMove: 8,
         skill: 2,
@@ -456,6 +494,7 @@ export default {
         healthIncrease: 4,
     },
     demon: {
+        name: 'Demon',
         minorMove: 2,
         majorMove: 8,
         skill: 2,
@@ -468,6 +507,7 @@ export default {
         healthIncrease: 4,
     },
     ape: {
+        name: 'Ape',
         minorMove: 2,
         majorMove: 6,
         skill: 1,
@@ -480,6 +520,7 @@ export default {
         healthIncrease: 3,
     },
     bat: {
+        name: 'Bat',
         minorMove: 4,
         majorMove: 8,
         skill: 1,

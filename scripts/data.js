@@ -4,8 +4,9 @@ import { close } from "../utils/utils.js";
 
 const logger = Logger.consoleLogger(0, false);
 const creatures = creaturesBuilder(logger);
-const creature1 = creatures['Minor Demon'];
-const creature2 = creatures['Skeleton Knight'];
-console.log(creature1);
-console.log(creature2);
+
+console.log(JSON.stringify(Object.keys(creatures).map(creatureName => {
+    return creatures[creatureName]().data();
+}), undefined, 4));
+
 close();

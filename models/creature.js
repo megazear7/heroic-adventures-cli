@@ -117,9 +117,39 @@ export default class Creature {
         return this.levels.filter(level => level.includes(stat)).length;
     }
 
-    stats() {
+    data() {
         return {
             name: this.name,
+            type: this.type,
+            level: this.level,
+            race: this.race,
+            charClass: this.charClass,
+            statBump: this.statBump,
+            levels: this.levels,
+            minion: this.minion,
+            weapon: this.weapon,
+            shield: this.shield,
+            armor: this.armor,
+            features: this.features,
+            stats: this.calculatedStats(),
+            explain: this.stats(),
+        };
+    }
+
+    calculatedStats() {
+        return {
+            health: this.health,
+            skill: this.skill,
+            agility: this.agility,
+            arcana: this.arcana,
+            willpower: this.willpower,
+            strength: this.strength,
+            init: this.init,
+        }
+    }
+
+    stats() {
+        return {
             health: `${this.health}: ${this.race.health} (race) + ${this.charClass.health} (class) + ${this.statBump.health} (creation) + ${this.healthFromLevels} (levels) - ${this.minionHealthDrop} (minion)`,
             skill: `${this.skill}: ${this.race.skill} (race) + ${this.statBump.skill} (creation) + ${this.levelBumps(SKILL)} (level)`,
             agility: `${this.agility}: ${this.race.agility} (race) + ${this.statBump.agility} (creation) + ${this.levelBumps(AGILITY)} (level) - ${Math.abs(this.armor.agility)} (armor)`,
@@ -127,7 +157,6 @@ export default class Creature {
             willpower: `${this.willpower}: ${this.race.willpower} (race) + ${this.statBump.willpower} (creation) + ${this.levelBumps(WILLPOWER)} (level)`,
             strength: `${this.strength}: ${this.race.strength} (race) + ${this.statBump.strength} (creation) + ${this.levelBumps(STRENGTH)} (level)`,
             init: `${this.init}: ${this.race.init} (race) + ${this.weapon.init} (weapon) - ${Math.abs(this.shield.init)} (shield) + ${this.statBump.init} (creation) + ${this.levelBumps(INIT)} (level)`,
-            features: this.features,
         };
     }
 
