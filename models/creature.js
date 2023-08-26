@@ -144,6 +144,7 @@ export default class Creature {
             arcana: this.arcana,
             willpower: this.willpower,
             strength: this.strength,
+            toughness: this.toughness,
             init: this.init,
         }
     }

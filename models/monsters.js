@@ -314,7 +314,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Attacks from demons target WILLPOWER'
+            desc: 'Attacks from demons target willpower'
         }, {
             type: FEATURE,
             desc: 'Demons take half damage from magic'
@@ -858,7 +858,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'If the target of an attack has already been attacked by a gator pig this round, gator pig attack target WILLPOWER'
+            desc: 'If the target of an attack has already been attacked by a gator pig this round, gator pig attack target willpower'
         }]
     },
     {
@@ -1070,7 +1070,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Storm Giant attacks target ARCANA'
+            desc: 'Storm Giant attacks target arcana'
         }, {
             type: HEROIC_ACTION,
             desc: 'Storm Lightning: Make an arcana vs. arcana attack against all enemies with 10 spaces that does 3d8 damage'
@@ -2313,7 +2313,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Huge spear has range 3 and can attack through allies'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Overwhelm: Make an attack against WILLPOWER'
+            desc: 'Overwhelm: Make an attack against willpower'
         }, {
             type: HEROIC_ACTION,
             desc: 'Rush: Make an attack against init'

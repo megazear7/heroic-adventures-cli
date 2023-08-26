@@ -3,8 +3,9 @@
 Various scripts are listed under `./scripts` and can be run using the `index.js` file as shown below:
 
 ```js
+node index.js data > monster-data.json
 node index.js stats
-node index.js ranking
+node index.js ranking > monster-rankings.json
 node index.js simple
 ```
 

@@ -75,6 +75,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 5,
+            "toughness": 2,
             "init": 1
         },
         "explain": {
@@ -205,6 +206,7 @@
             "arcana": 5,
             "willpower": 5,
             "strength": 5,
+            "toughness": 8,
             "init": 10
         },
         "explain": {
@@ -347,6 +349,7 @@
             "arcana": 6,
             "willpower": 6,
             "strength": 6,
+            "toughness": 8,
             "init": 11
         },
         "explain": {
@@ -443,6 +446,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 6,
+            "toughness": 2,
             "init": 5
         },
         "explain": {
@@ -549,6 +553,7 @@
             "arcana": 6,
             "willpower": 1,
             "strength": 9,
+            "toughness": 3,
             "init": 3
         },
         "explain": {
@@ -634,6 +639,7 @@
             "arcana": 0,
             "willpower": 0,
             "strength": 0,
+            "toughness": 0,
             "init": 9
         },
         "explain": {
@@ -725,6 +731,7 @@
             "arcana": 1,
             "willpower": 0,
             "strength": 1,
+            "toughness": 0,
             "init": 9
         },
         "explain": {
@@ -812,6 +819,7 @@
             "arcana": 2,
             "willpower": 2,
             "strength": 3,
+            "toughness": 1,
             "init": 4
         },
         "explain": {
@@ -912,6 +920,7 @@
             "arcana": 2,
             "willpower": 3,
             "strength": 4,
+            "toughness": 1,
             "init": 4
         },
         "explain": {
@@ -1016,6 +1025,7 @@
             "arcana": 2,
             "willpower": 4,
             "strength": 5,
+            "toughness": 4,
             "init": 4
         },
         "explain": {
@@ -1124,6 +1134,7 @@
             "arcana": 2,
             "willpower": 1,
             "strength": 7,
+            "toughness": 4,
             "init": 7
         },
         "explain": {
@@ -1201,7 +1212,7 @@
         "features": [
             {
                 "type": "FEATURE",
-                "desc": "Attacks from demons target WILLPOWER"
+                "desc": "Attacks from demons target willpower"
             },
             {
                 "type": "FEATURE",
@@ -1215,6 +1226,7 @@
             "arcana": 4,
             "willpower": 0,
             "strength": 3,
+            "toughness": 3,
             "init": 5
         },
         "explain": {
@@ -1319,6 +1331,7 @@
             "arcana": 5,
             "willpower": 1,
             "strength": 4,
+            "toughness": 4,
             "init": 8
         },
         "explain": {
@@ -1439,6 +1452,7 @@
             "arcana": 7,
             "willpower": 3,
             "strength": 6,
+            "toughness": 6,
             "init": 5
         },
         "explain": {
@@ -1583,6 +1597,7 @@
             "arcana": 10,
             "willpower": 6,
             "strength": 9,
+            "toughness": 8,
             "init": 5
         },
         "explain": {
@@ -1695,6 +1710,7 @@
             "arcana": 3,
             "willpower": 4,
             "strength": 6,
+            "toughness": 4,
             "init": 5
         },
         "explain": {
@@ -1823,6 +1839,7 @@
             "arcana": 4,
             "willpower": 5,
             "strength": 8,
+            "toughness": 6,
             "init": 6
         },
         "explain": {
@@ -1967,6 +1984,7 @@
             "arcana": 5,
             "willpower": 6,
             "strength": 10,
+            "toughness": 8,
             "init": 7
         },
         "explain": {
@@ -2059,6 +2077,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 3,
+            "toughness": 4,
             "init": 2
         },
         "explain": {
@@ -2163,6 +2182,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 4,
+            "toughness": 4,
             "init": 3
         },
         "explain": {
@@ -2250,6 +2270,7 @@
             "arcana": 2,
             "willpower": 4,
             "strength": 4,
+            "toughness": 4,
             "init": 1
         },
         "explain": {
@@ -2346,6 +2367,7 @@
             "arcana": 3,
             "willpower": 5,
             "strength": 5,
+            "toughness": 6,
             "init": 1
         },
         "explain": {
@@ -2444,6 +2466,7 @@
             "arcana": 4,
             "willpower": 6,
             "strength": 3,
+            "toughness": 2,
             "init": 7
         },
         "explain": {
@@ -2556,6 +2579,7 @@
             "arcana": 4,
             "willpower": 6,
             "strength": 7,
+            "toughness": 6,
             "init": 1
         },
         "explain": {
@@ -2642,6 +2666,7 @@
             "arcana": 3,
             "willpower": 2,
             "strength": 2,
+            "toughness": 4,
             "init": 1
         },
         "explain": {
@@ -2746,6 +2771,7 @@
             "arcana": 3,
             "willpower": 2,
             "strength": 4,
+            "toughness": 5,
             "init": 2
         },
         "explain": {
@@ -2850,6 +2876,7 @@
             "arcana": 6,
             "willpower": 4,
             "strength": 1,
+            "toughness": 0,
             "init": 10
         },
         "explain": {
@@ -2962,6 +2989,7 @@
             "arcana": 3,
             "willpower": 2,
             "strength": 5,
+            "toughness": 5,
             "init": 3
         },
         "explain": {
@@ -3066,6 +3094,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 4,
+            "toughness": 0,
             "init": 6
         },
         "explain": {
@@ -3178,6 +3207,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 5,
+            "toughness": 0,
             "init": 7
         },
         "explain": {
@@ -3282,6 +3312,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 4,
+            "toughness": 0,
             "init": 6
         },
         "explain": {
@@ -3394,6 +3425,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 5,
+            "toughness": 0,
             "init": 7
         },
         "explain": {
@@ -3474,7 +3506,7 @@
         "features": [
             {
                 "type": "FEATURE",
-                "desc": "If the target of an attack has already been attacked by a gator pig this round, gator pig attack target WILLPOWER"
+                "desc": "If the target of an attack has already been attacked by a gator pig this round, gator pig attack target willpower"
             }
         ],
         "stats": {
@@ -3484,6 +3516,7 @@
             "arcana": 0,
             "willpower": 4,
             "strength": 4,
+            "toughness": 3,
             "init": 2
         },
         "explain": {
@@ -3578,6 +3611,7 @@
             "arcana": 2,
             "willpower": 2,
             "strength": 2,
+            "toughness": 0,
             "init": 6
         },
         "explain": {
@@ -3716,6 +3750,7 @@
             "arcana": 3,
             "willpower": 9,
             "strength": 12,
+            "toughness": 4,
             "init": 5
         },
         "explain": {
@@ -3846,6 +3881,7 @@
             "arcana": 3,
             "willpower": 8,
             "strength": 11,
+            "toughness": 4,
             "init": 4
         },
         "explain": {
@@ -3984,6 +4020,7 @@
             "arcana": 3,
             "willpower": 9,
             "strength": 12,
+            "toughness": 4,
             "init": 4
         },
         "explain": {
@@ -4130,6 +4167,7 @@
             "arcana": 3,
             "willpower": 11,
             "strength": 14,
+            "toughness": 10,
             "init": 5
         },
         "explain": {
@@ -4262,7 +4300,7 @@
         "features": [
             {
                 "type": "FEATURE",
-                "desc": "Storm Giant attacks target ARCANA"
+                "desc": "Storm Giant attacks target arcana"
             },
             {
                 "type": "HEROIC_ACTION",
@@ -4276,6 +4314,7 @@
             "arcana": 3,
             "willpower": 11,
             "strength": 14,
+            "toughness": 4,
             "init": 5
         },
         "explain": {
@@ -4357,6 +4396,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 2,
+            "toughness": 2,
             "init": 3
         },
         "explain": {
@@ -4453,6 +4493,7 @@
             "arcana": 2,
             "willpower": 1,
             "strength": 3,
+            "toughness": 3,
             "init": 4
         },
         "explain": {
@@ -4547,6 +4588,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 4,
+            "toughness": 0,
             "init": 9
         },
         "explain": {
@@ -4626,6 +4668,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 1,
+            "toughness": 0,
             "init": 4
         },
         "explain": {
@@ -4713,6 +4756,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 2,
+            "toughness": 2,
             "init": 6
         },
         "explain": {
@@ -4794,6 +4838,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 3,
+            "toughness": 2,
             "init": 1
         },
         "explain": {
@@ -4884,6 +4929,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 4,
+            "toughness": 6,
             "init": 1
         },
         "explain": {
@@ -4980,6 +5026,7 @@
             "arcana": 2,
             "willpower": 2,
             "strength": 4,
+            "toughness": 4,
             "init": 1
         },
         "explain": {
@@ -5088,6 +5135,7 @@
             "arcana": 3,
             "willpower": 2,
             "strength": 5,
+            "toughness": 4,
             "init": 1
         },
         "explain": {
@@ -5172,6 +5220,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 3,
+            "toughness": 2,
             "init": 1
         },
         "explain": {
@@ -5270,6 +5319,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 3,
+            "toughness": 2,
             "init": 2
         },
         "explain": {
@@ -5368,6 +5418,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 4,
+            "toughness": 2,
             "init": 2
         },
         "explain": {
@@ -5498,6 +5549,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 7,
+            "toughness": 4,
             "init": 5
         },
         "explain": {
@@ -5592,6 +5644,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 2,
+            "toughness": 0,
             "init": 7
         },
         "explain": {
@@ -5687,6 +5740,7 @@
             "arcana": 2,
             "willpower": -1,
             "strength": 1,
+            "toughness": 1,
             "init": 5
         },
         "explain": {
@@ -5774,6 +5828,7 @@
             "arcana": 2,
             "willpower": -1,
             "strength": 1,
+            "toughness": 1,
             "init": 7
         },
         "explain": {
@@ -5878,6 +5933,7 @@
             "arcana": 4,
             "willpower": -1,
             "strength": 1,
+            "toughness": 3,
             "init": 11
         },
         "explain": {
@@ -5974,6 +6030,7 @@
             "arcana": 4,
             "willpower": -1,
             "strength": 1,
+            "toughness": 3,
             "init": 11
         },
         "explain": {
@@ -6122,6 +6179,7 @@
             "arcana": 0,
             "willpower": 9,
             "strength": 13,
+            "toughness": 0,
             "init": 10
         },
         "explain": {
@@ -6209,6 +6267,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 2,
+            "toughness": 2,
             "init": 6
         },
         "explain": {
@@ -6301,6 +6360,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 2,
+            "toughness": 2,
             "init": 6
         },
         "explain": {
@@ -6407,6 +6467,7 @@
             "arcana": 2,
             "willpower": 3,
             "strength": 5,
+            "toughness": 3,
             "init": 6
         },
         "explain": {
@@ -6525,6 +6586,7 @@
             "arcana": 2,
             "willpower": 4,
             "strength": 6,
+            "toughness": 3,
             "init": 7
         },
         "explain": {
@@ -6645,6 +6707,7 @@
             "arcana": 6,
             "willpower": 1,
             "strength": 1,
+            "toughness": 4,
             "init": 8
         },
         "explain": {
@@ -6745,6 +6808,7 @@
             "arcana": 0,
             "willpower": 5,
             "strength": 7,
+            "toughness": 4,
             "init": 1
         },
         "explain": {
@@ -6853,6 +6917,7 @@
             "arcana": 0,
             "willpower": 5,
             "strength": 7,
+            "toughness": 6,
             "init": 1
         },
         "explain": {
@@ -6965,6 +7030,7 @@
             "arcana": 2,
             "willpower": 4,
             "strength": 8,
+            "toughness": 5,
             "init": 3
         },
         "explain": {
@@ -7046,6 +7112,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 3,
+            "toughness": 2,
             "init": 1
         },
         "explain": {
@@ -7138,6 +7205,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 4,
+            "toughness": 0,
             "init": 1
         },
         "explain": {
@@ -7234,6 +7302,7 @@
             "arcana": 1,
             "willpower": 4,
             "strength": 4,
+            "toughness": 4,
             "init": 1
         },
         "explain": {
@@ -7338,6 +7407,7 @@
             "arcana": 1,
             "willpower": 5,
             "strength": 5,
+            "toughness": 5,
             "init": 1
         },
         "explain": {
@@ -7419,6 +7489,7 @@
             "arcana": 0,
             "willpower": 0,
             "strength": 2,
+            "toughness": 2,
             "init": 5
         },
         "explain": {
@@ -7500,6 +7571,7 @@
             "arcana": 0,
             "willpower": 0,
             "strength": 2,
+            "toughness": 2,
             "init": 5
         },
         "explain": {
@@ -7596,6 +7668,7 @@
             "arcana": 0,
             "willpower": 0,
             "strength": 4,
+            "toughness": 2,
             "init": 5
         },
         "explain": {
@@ -7692,6 +7765,7 @@
             "arcana": 0,
             "willpower": 0,
             "strength": 4,
+            "toughness": 2,
             "init": 5
         },
         "explain": {
@@ -7788,6 +7862,7 @@
             "arcana": 0,
             "willpower": 0,
             "strength": 4,
+            "toughness": 2,
             "init": 5
         },
         "explain": {
@@ -7916,6 +7991,7 @@
             "arcana": 0,
             "willpower": 8,
             "strength": 10,
+            "toughness": 0,
             "init": 4
         },
         "explain": {
@@ -8001,6 +8077,7 @@
             "arcana": 4,
             "willpower": 5,
             "strength": 1,
+            "toughness": 0,
             "init": 1
         },
         "explain": {
@@ -8086,6 +8163,7 @@
             "arcana": 4,
             "willpower": 5,
             "strength": 1,
+            "toughness": 3,
             "init": 1
         },
         "explain": {
@@ -8180,6 +8258,7 @@
             "arcana": 3,
             "willpower": 4,
             "strength": 4,
+            "toughness": 5,
             "init": 1
         },
         "explain": {
@@ -8290,6 +8369,7 @@
             "arcana": 4,
             "willpower": 5,
             "strength": 5,
+            "toughness": 6,
             "init": 1
         },
         "explain": {
@@ -8400,6 +8480,7 @@
             "arcana": 6,
             "willpower": 5,
             "strength": 1,
+            "toughness": 6,
             "init": 3
         },
         "explain": {
@@ -8485,6 +8566,7 @@
             "arcana": 3,
             "willpower": 1,
             "strength": 1,
+            "toughness": 2,
             "init": 2
         },
         "explain": {
@@ -8587,6 +8669,7 @@
             "arcana": 3,
             "willpower": 3,
             "strength": 3,
+            "toughness": 4,
             "init": 2
         },
         "explain": {
@@ -8666,6 +8749,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 2,
+            "toughness": 0,
             "init": 6
         },
         "explain": {
@@ -8745,6 +8829,7 @@
             "arcana": 1,
             "willpower": 1,
             "strength": 2,
+            "toughness": 1,
             "init": 6
         },
         "explain": {
@@ -8826,6 +8911,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 3,
+            "toughness": 2,
             "init": 6
         },
         "explain": {
@@ -8916,6 +9002,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 5,
+            "toughness": 3,
             "init": 5
         },
         "explain": {
@@ -9014,6 +9101,7 @@
             "arcana": 3,
             "willpower": 4,
             "strength": 6,
+            "toughness": 4,
             "init": 4
         },
         "explain": {
@@ -9144,6 +9232,7 @@
             "arcana": 8,
             "willpower": 8,
             "strength": 9,
+            "toughness": 0,
             "init": 4
         },
         "explain": {
@@ -9238,6 +9327,7 @@
             "arcana": 3,
             "willpower": 3,
             "strength": 5,
+            "toughness": 0,
             "init": 4
         },
         "explain": {
@@ -9327,6 +9417,7 @@
             "arcana": 3,
             "willpower": 4,
             "strength": 3,
+            "toughness": 2,
             "init": 3
         },
         "explain": {
@@ -9435,6 +9526,7 @@
             "arcana": 6,
             "willpower": 8,
             "strength": 7,
+            "toughness": 4,
             "init": 1
         },
         "explain": {
@@ -9571,6 +9663,7 @@
             "arcana": 9,
             "willpower": 11,
             "strength": 9,
+            "toughness": 8,
             "init": 1
         },
         "explain": {
@@ -9683,6 +9776,7 @@
             "arcana": 4,
             "willpower": 2,
             "strength": 4,
+            "toughness": 4,
             "init": 7
         },
         "explain": {
@@ -9791,6 +9885,7 @@
             "arcana": 2,
             "willpower": 5,
             "strength": 6,
+            "toughness": 4,
             "init": 5
         },
         "explain": {
@@ -9899,6 +9994,7 @@
             "arcana": 2,
             "willpower": 5,
             "strength": 6,
+            "toughness": 6,
             "init": 8
         },
         "explain": {
@@ -9997,7 +10093,7 @@
             },
             {
                 "type": "HEROIC_ACTION",
-                "desc": "Overwhelm: Make an attack against WILLPOWER"
+                "desc": "Overwhelm: Make an attack against willpower"
             },
             {
                 "type": "HEROIC_ACTION",
@@ -10011,6 +10107,7 @@
             "arcana": 2,
             "willpower": 5,
             "strength": 6,
+            "toughness": 4,
             "init": 8
         },
         "explain": {
@@ -10111,6 +10208,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 5,
+            "toughness": 2,
             "init": 6
         },
         "explain": {
@@ -10227,6 +10325,7 @@
             "arcana": 2,
             "willpower": 2,
             "strength": 7,
+            "toughness": 4,
             "init": 10
         },
         "explain": {
@@ -10337,6 +10436,7 @@
             "arcana": 4,
             "willpower": 4,
             "strength": 8,
+            "toughness": 6,
             "init": 6
         },
         "explain": {
@@ -10424,6 +10524,7 @@
             "arcana": 1,
             "willpower": 6,
             "strength": 2,
+            "toughness": 0,
             "init": 1
         },
         "explain": {
@@ -10516,6 +10617,7 @@
             "arcana": 1,
             "willpower": 6,
             "strength": 2,
+            "toughness": 0,
             "init": 1
         },
         "explain": {
@@ -10603,6 +10705,7 @@
             "arcana": 1,
             "willpower": 2,
             "strength": 2,
+            "toughness": 2,
             "init": 4
         },
         "explain": {
@@ -10688,6 +10791,7 @@
             "arcana": 1,
             "willpower": 3,
             "strength": 4,
+            "toughness": 3,
             "init": 3
         },
         "explain": {
@@ -10779,6 +10883,7 @@
             "arcana": 2,
             "willpower": 2,
             "strength": 3,
+            "toughness": 2,
             "init": 4
         },
         "explain": {
@@ -10860,6 +10965,7 @@
             "arcana": 5,
             "willpower": 2,
             "strength": 1,
+            "toughness": 1,
             "init": 3
         },
         "explain": {
@@ -10953,6 +11059,7 @@
             "arcana": 5,
             "willpower": 4,
             "strength": 0,
+            "toughness": 0,
             "init": 4
         },
         "explain": {
@@ -11042,6 +11149,7 @@
             "arcana": 1,
             "willpower": 0,
             "strength": -2,
+            "toughness": 0,
             "init": 5
         },
         "explain": {
@@ -11121,6 +11229,7 @@
             "arcana": 5,
             "willpower": 4,
             "strength": 0,
+            "toughness": 0,
             "init": 4
         },
         "explain": {
@@ -11200,6 +11309,7 @@
             "arcana": 1,
             "willpower": 0,
             "strength": -1,
+            "toughness": 2,
             "init": 2
         },
         "explain": {
@@ -11306,6 +11416,7 @@
             "arcana": 0,
             "willpower": 6,
             "strength": 9,
+            "toughness": 0,
             "init": 1
         },
         "explain": {
@@ -11422,6 +11533,7 @@
             "arcana": 3,
             "willpower": 7,
             "strength": 6,
+            "toughness": 0,
             "init": 1
         },
         "explain": {
@@ -11530,6 +11642,7 @@
             "arcana": 1,
             "willpower": 4,
             "strength": 4,
+            "toughness": 2,
             "init": 4
         },
         "explain": {
@@ -11636,6 +11749,7 @@
             "arcana": 1,
             "willpower": 6,
             "strength": 7,
+            "toughness": 3,
             "init": 3
         },
         "explain": {
