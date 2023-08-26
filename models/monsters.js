@@ -42,7 +42,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Incomporeal: Damage from non magical weapons is halved'
         }, {
             type: DOUBLE_HEROIC_ACTION,
-            desc: 'Smite: Make a ranged 10 ARCANA vs. WILLPOWER attack that does 3d12 damage and ignores armor'
+            desc: 'Smite: Make a ranged 10 arcana vs. willpower attack that does 3d12 damage and ignores armor'
         }]
     },
     {
@@ -87,7 +87,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Incomporeal: Damage from non magical weapons is halved'
         }, {
             type: DOUBLE_HEROIC_ACTION,
-            desc: 'Smite: Make a ranged 10 ARCANA vs. WILLPOWER attack that does 4d12 damage and ignores armor'
+            desc: 'Smite: Make a ranged 10 arcana vs. willpower attack that does 4d12 damage and ignores armor'
         }]
     },
     {
@@ -144,7 +144,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Bat',
-        race: races.ape,
+        race: races.bat,
         charClass: charClasses.monsterClass,
         weapon: {
             name: 'Bite',
@@ -296,7 +296,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Minor Demon',
-        race: races.angel,
+        race: races.demon,
         charClass: charClasses.monsterClass,
         weapon: {
             name: 'Hellblade',
@@ -322,7 +322,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Lesser Demon',
-        race: races.angel,
+        race: races.demon,
         charClass: charClasses.monsterClass,
         weapon: {
             name: 'Hellblade',
@@ -342,7 +342,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Attacks from demons are ARCANA vs. WILLPOWER. Shields can still be used.'
+            desc: 'Attacks from demons are arcana vs. WILLPOWER. Shields can still be used.'
         }, {
             type: FEATURE,
             desc: 'Demons take half damage from magic'
@@ -353,7 +353,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Greater Demon',
-        race: races.angel,
+        race: races.demon,
         charClass: charClasses.monsterClass,
         weapon: {
             name: 'Hellblade',
@@ -377,7 +377,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Attacks from demons are ARCANA vs. WILLPOWER and ignores shields.'
+            desc: 'Attacks from demons are arcana vs. willpower and ignores shields.'
         }, {
             type: FEATURE,
             desc: 'Demons take half damage from magic'
@@ -388,7 +388,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Demon Lord',
-        race: races.angel,
+        race: races.demon,
         charClass: charClasses.monsterClass,
         weapon: {
             name: 'Hellblade',
@@ -418,7 +418,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Attacks from demons are ARCANA vs. WILLPOWER and ignores shields'
+            desc: 'Attacks from demons are arcana vs. willpower and ignores shields'
         }, {
             type: FEATURE,
             desc: 'Demon Lords take one fourth damage from magic'
@@ -459,7 +459,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Dragons take half damage from spells'
         }, {
             type: DOUBLE_HEROIC_ACTION,
-            desc: 'Fire breath: Arcana vs. WILLPOWER attack against all creatures in a an adjacent 3x3 area. 2d6 damage that ignores armor.'
+            desc: 'Fire breath: Arcana vs. willpower attack against all creatures in a an adjacent 3x3 area. 2d6 damage that ignores armor.'
         }]
     },
     {
@@ -498,7 +498,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Dragons take half damage from spells'
         }, {
             type: DOUBLE_HEROIC_ACTION,
-            desc: 'Fire breath: Arcana vs. WILLPOWER attack against all creatures in a an adjacent 4x4 area. 3d6 damage that ignores armor.'
+            desc: 'Fire breath: Arcana vs. willpower attack against all creatures in a an adjacent 4x4 area. 3d6 damage that ignores armor.'
         }]
     },
     {
@@ -541,7 +541,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Dragons take half damage from spells'
         }, {
             type: DOUBLE_HEROIC_ACTION,
-            desc: 'Fire breath: Arcana vs. WILLPOWER attack against all creatures in a an adjacent 5x5 area. 4d6 damage that ignores armor.'
+            desc: 'Fire breath: Arcana vs. willpower attack against all creatures in a an adjacent 5x5 area. 4d6 damage that ignores armor.'
         }]
     },
     {
@@ -651,7 +651,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Inspire: Up to 4 dwarf allies within 10 spaces regain 2d6 hitpoints'
         }, {
             type: FEATURE,
-            desc: 'Overwhelm: Attacks target WILLPOWER instead of agility'
+            desc: 'Overwhelm: Attacks target willpower instead of agility'
         }]
     },
     {
@@ -749,7 +749,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Elementals ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Fire explosion: Arcana vs. WILLPOWER attack against all adjacent creatures that does normal damage'
+            desc: 'Fire explosion: Arcana vs. willpower attack against all adjacent creatures that does normal damage'
         }]
     },
     {
@@ -778,7 +778,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Elementals ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Fire explosion: Arcana vs. WILLPOWER attack against all adjacent creatures that does normal damage'
+            desc: 'Fire explosion: Arcana vs. willpower attack against all adjacent creatures that does normal damage'
         }]
     },
     {
@@ -805,7 +805,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Elementals ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Fire explosion: Arcana vs. WILLPOWER attack against all adjacent creatures that does normal damage'
+            desc: 'Fire explosion: Arcana vs. willpower attack against all adjacent creatures that does normal damage'
         }]
     },
     {
@@ -1073,7 +1073,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Storm Giant attacks target ARCANA'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Storm Lightning: Make an ARCANA vs. ARCANA attack against all enemies with 10 spaces that does 3d8 damage'
+            desc: 'Storm Lightning: Make an arcana vs. arcana attack against all enemies with 10 spaces that does 3d8 damage'
         }]
     },
     {
@@ -1319,7 +1319,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Kobolds gain +3 from advantage'
         }, {
             type: FEATURE,
-            desc: 'Kobolds make SKILL vs. init attacks against creatures adjacent to three or more kobolds'
+            desc: 'Kobolds make skill vs. init attacks against creatures adjacent to three or more kobolds'
         }, {
             type: FEATURE,
             desc: 'Kobolds with spears have range 2 and may attack through allies'
@@ -1476,7 +1476,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Rage: Make an attack with double damage dice'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Gore: Make a SKILL vs. init attack that does 2d6 damage'
+            desc: 'Gore: Make a skill vs. init attack that does 2d6 damage'
         }]
     },
     {
@@ -1515,7 +1515,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Rage: Make an attack with double damage dice'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Gore: Make a SKILL vs. init attack that does 2d6 damage'
+            desc: 'Gore: Make a skill vs. init attack that does 2d6 damage'
         }]
     },
     {
@@ -1547,7 +1547,7 @@ export default (armor, weapons, shields) => ([
             desc: "Ocean Lord's have 10 mana and access to the following spells: Gathering Storm, Force Field, Storm of Ice"
         }, {
             type: DOUBLE_HEROIC_ACTION,
-            desc: "Water Strike: Make an ARCANA vs. WILLPOWER attack that does 2d8 damage that ignores armor"
+            desc: "Water Strike: Make an arcana vs. willpower attack that does 2d8 damage that ignores armor"
         }, {
             type: FEATURE,
             desc: "Ocean Lord's gain disadvantage when away from water"
@@ -1710,7 +1710,6 @@ export default (armor, weapons, shields) => ([
         shield: shields.smallShield,
         armor: armor.hide,
         statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
-        minion: 1
     },
     {
         name: 'Ratmen Skirmisher',
@@ -1740,7 +1739,7 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
-        name: 'Swarm Captain',
+        name: 'Ratswarm Captain',
         race: races.ratmen,
         charClass: charClasses.skirmisher,
         weapon: weapons.spear,
@@ -1757,7 +1756,7 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
-        name: 'Swarm Seer',
+        name: 'Ratswarm Seer',
         race: races.ratmen,
         charClass: charClasses.skirmisher,
         weapon: weapons.spear,
@@ -2184,7 +2183,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: HEROIC_ACTION,
-            desc: 'Smash: Make a SKILL vs. init attack that does 4d12 damage'
+            desc: 'Smash: Make a skill vs. init attack that does 4d12 damage'
             
         }, {
             type: HEROIC_ACTION,
@@ -2221,10 +2220,10 @@ export default (armor, weapons, shields) => ([
             desc: 'Heal: After each round of combat heal 1d6 damage'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Puke: Make an ARCANA vs. WILLPOWER attack against all creatures in a 2x2 adjacent area that does 2d6 damage that ignores armor'
+            desc: 'Puke: Make an arcana vs. willpower attack against all creatures in a 2x2 adjacent area that does 2d6 damage that ignores armor'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Stench: Make an ARCANA vs. WILLPOWER attack against all adjacent creatures that does 2d6 damage that ignores armor'
+            desc: 'Stench: Make an arcana vs. willpower attack against all adjacent creatures that does 2d6 damage that ignores armor'
         }]
     },
     {
@@ -2398,7 +2397,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: HEROIC_ACTION,
-            desc: 'Make an attack against WILLPOWER that does 3d8 damage and ignored shields'
+            desc: 'Make an attack against willpower that does 3d8 damage and ignored shields'
         }]
     },
     {
@@ -2417,7 +2416,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: "Zombie attacks target WILLPOWER when two or more zombies are adjacent to the target"
+            desc: "Zombie attacks target willpower when two or more zombies are adjacent to the target"
         }]
     },
     {
@@ -2433,11 +2432,11 @@ export default (armor, weapons, shields) => ([
         armor: armor.noArmor,
         statBumps: [ WILLPOWER, STRENGTH, SKILL, INIT ],
         levels: [
-            [ WILLPOWER, STRENGTH ]
+            [ SKILL, AGILITY ]
         ],
         features: [{
             type: FEATURE,
-            desc: "Zombie attacks target WILLPOWER when two or more zombies are adjacent to the target"
+            desc: "Zombie attacks target willpower when two or more zombies are adjacent to the target"
         }]
     },
 
@@ -2507,7 +2506,7 @@ export default (armor, weapons, shields) => ([
             desc: '(3) Maul: Make an attack against your prey'
         }, {
             type: FEATURE,
-            desc: '(1) Overpower: Make a STRENGTH vs. STRENGTH check against your prey. If successful, move that creature 2 spaces.'
+            desc: '(1) Overpower: Make a strength vs. strength check against your prey. If successful, move that creature 2 spaces.'
         }]
     },
     {
@@ -2569,7 +2568,7 @@ export default (armor, weapons, shields) => ([
             desc: '(2) Bite: Make an attack against any creature'
         }, {
             type: FEATURE,
-            desc: '(4) Sly Strike: Make an ARCANA vs. ARCANA attack that ignores armor against any creature'
+            desc: '(4) Sly Strike: Make an arcana vs. arcana attack that ignores armor against any creature'
         }, {
             type: FEATURE,
             desc: '(2) Serpentine Power: Give one enhancement to a spell or scroll that is being cast by the owner of this pet'
@@ -2599,7 +2598,7 @@ export default (armor, weapons, shields) => ([
             desc: '(1) Talons: Make an attack against your prey'
         }, {
             type: FEATURE,
-            desc: '(2) Distract: Make an ARCANA vs. ARCANA attack against your prey. If successful, that creature has disadvantage on agility until the end of the next round.'
+            desc: '(2) Distract: Make an arcana vs. arcana attack against your prey. If successful, that creature has disadvantage on agility until the end of the next round.'
         }, {
             type: FEATURE,
             desc: '(2) Primal Protection: Reduce the damage taken by you or your owner by half. You must be within 8 spaces of your owner.'

@@ -69,6 +69,8 @@ export default class Encounter {
     initRound() {
         this.logger.log(70, 'initRound');
         this.deck.shuffle();
+        this.previousCard = undefined;
+        this.currentCard = undefined;
         this.creatures.forEach(creature => creature.usedMajorAction = false);
     }
 
@@ -87,7 +89,10 @@ export default class Encounter {
     }
 
     isBonus() {
-        return this.currentCard.bonus && this.currentCard?.init > this.previousCard?.init;
+        if (this.currentCard.bonus && !this.previousCard) {
+            this.logger.log(80, 'Bonus card came up at start of round');
+        }
+        return this.currentCard.bonus && (this.currentCard.init > this.previousCard?.init || !this.previousCard);
     }
 
     doTurn() {

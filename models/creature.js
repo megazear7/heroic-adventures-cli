@@ -46,7 +46,7 @@ export default class Creature {
     get healthFromLevels() {
         let levelBonus = 0;
         this.levels.forEach(() => levelBonus += this.race.healthIncrease + this.charClass.healthIncrease);
-        return levelBonus;
+        return Math.round(levelBonus);
     }
 
     get minionHealthDrop() {

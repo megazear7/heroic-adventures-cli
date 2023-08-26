@@ -452,7 +452,7 @@ export default {
         willpower: 2,
         strength: 2,
         init: 5,
-        health: 10,
+        health: 8,
         healthIncrease: 4,
     },
     demon: {
@@ -464,7 +464,7 @@ export default {
         willpower: 0,
         strength: 2,
         init: 4,
-        health: 8,
+        health: 7,
         healthIncrease: 4,
     },
     ape: {
