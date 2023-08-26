@@ -2,7 +2,7 @@ import Armor from "./armor.js";
 
 export default logger => ({
     noArmor: new Armor({
-        name: 'No Armor',
+        name: '',
         toughness: 0,
         agility: 0,
         logger,

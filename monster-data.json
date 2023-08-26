@@ -16,6 +16,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -105,6 +107,8 @@
             "health": 8,
             "healthIncrease": 4
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -236,6 +240,8 @@
             "health": 8,
             "healthIncrease": 4
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -379,6 +385,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -414,7 +422,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -476,6 +484,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -583,6 +593,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 4,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -607,7 +619,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -617,7 +629,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -669,6 +681,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 4,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -695,7 +709,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -705,7 +719,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -761,6 +775,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -787,7 +803,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -849,6 +865,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -884,7 +902,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -950,6 +968,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -993,7 +1013,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -1055,6 +1075,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1102,7 +1124,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -1164,6 +1186,8 @@
             "health": 7,
             "healthIncrease": 4
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1256,6 +1280,8 @@
             "health": 7,
             "healthIncrease": 4
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1291,7 +1317,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -1361,6 +1387,8 @@
             "health": 7,
             "healthIncrease": 4
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1482,6 +1510,8 @@
             "health": 7,
             "healthIncrease": 4
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1627,6 +1657,8 @@
             "health": 10,
             "healthIncrease": 5
         },
+        "minorMove": 4,
+        "majorMove": 10,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1670,7 +1702,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -1740,6 +1772,8 @@
             "health": 10,
             "healthIncrease": 5
         },
+        "minorMove": 6,
+        "majorMove": 12,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1799,7 +1833,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -1869,6 +1903,8 @@
             "health": 10,
             "healthIncrease": 5
         },
+        "minorMove": 8,
+        "majorMove": 14,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -1944,7 +1980,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -2014,6 +2050,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2107,6 +2145,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2212,6 +2252,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 5,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2238,7 +2280,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -2300,6 +2342,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 5,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2335,7 +2379,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -2397,6 +2441,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 5,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2430,7 +2476,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -2496,6 +2542,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 5,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2609,6 +2657,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 7,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2696,6 +2746,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 7,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2801,6 +2853,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 7,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -2844,7 +2898,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -2854,7 +2908,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -2906,6 +2960,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 7,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -3019,6 +3075,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 4,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3054,7 +3112,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3064,7 +3122,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -3124,6 +3182,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 4,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3167,7 +3227,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3177,7 +3237,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -3237,6 +3297,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 4,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3272,7 +3334,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3282,7 +3344,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -3342,6 +3404,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 4,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3385,7 +3449,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3395,7 +3459,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -3455,6 +3519,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -3484,7 +3550,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3546,6 +3612,8 @@
             "health": 4,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3579,7 +3647,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3589,7 +3657,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -3641,6 +3709,8 @@
             "health": 12,
             "healthIncrease": 5
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3714,7 +3784,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3780,6 +3850,8 @@
             "health": 12,
             "healthIncrease": 5
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3845,7 +3917,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -3911,6 +3983,8 @@
             "health": 12,
             "healthIncrease": 5
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -3980,7 +4054,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -4050,6 +4124,8 @@
             "health": 12,
             "healthIncrease": 5
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -4131,7 +4207,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -4197,6 +4273,8 @@
             "health": 12,
             "healthIncrease": 5
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -4278,7 +4356,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -4344,6 +4422,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -4426,6 +4506,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -4523,6 +4605,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Assassin",
             "health": 2,
@@ -4556,7 +4640,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -4566,7 +4650,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -4618,6 +4702,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Tribalmen",
             "health": 2,
@@ -4642,7 +4728,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -4652,7 +4738,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -4698,6 +4784,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -4724,7 +4812,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -4786,6 +4874,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -4868,6 +4958,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -4959,6 +5051,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -5056,6 +5150,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Soldier",
             "health": 3,
@@ -5165,6 +5261,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -5250,6 +5348,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 5,
+        "majorMove": 10,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -5349,6 +5449,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -5448,6 +5550,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -5579,6 +5683,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -5612,7 +5718,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -5622,7 +5728,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -5674,6 +5780,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -5770,6 +5878,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -5796,7 +5906,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -5858,6 +5968,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -5893,7 +6005,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -5963,6 +6075,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -5998,7 +6112,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6060,6 +6174,8 @@
             "health": 12,
             "healthIncrease": 5
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -6143,7 +6259,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6153,7 +6269,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -6209,6 +6325,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -6235,7 +6353,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6297,6 +6415,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -6328,7 +6448,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6390,6 +6510,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -6427,7 +6549,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6497,6 +6619,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -6616,6 +6740,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -6667,7 +6793,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6737,6 +6863,8 @@
             "health": 8,
             "healthIncrease": 4
         },
+        "minorMove": 1,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -6776,7 +6904,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6838,6 +6966,8 @@
             "health": 8,
             "healthIncrease": 4
         },
+        "minorMove": 1,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -6881,7 +7011,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -6947,6 +7077,8 @@
             "health": 8,
             "healthIncrease": 4
         },
+        "minorMove": 1,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -6994,7 +7126,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -7060,6 +7192,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -7142,6 +7276,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -7183,7 +7319,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -7235,6 +7371,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -7332,6 +7470,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -7437,6 +7577,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -7519,6 +7661,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -7601,6 +7745,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -7698,6 +7844,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -7795,6 +7943,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -7892,6 +8042,8 @@
             "health": 8,
             "healthIncrease": 4
         },
+        "minorMove": 4,
+        "majorMove": 12,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -7955,7 +8107,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -7965,7 +8117,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -8021,6 +8173,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 0,
+        "majorMove": 6,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -8045,7 +8199,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8055,7 +8209,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -8107,6 +8261,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 0,
+        "majorMove": 6,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -8193,6 +8349,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 0,
+        "majorMove": 6,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -8288,6 +8446,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 0,
+        "majorMove": 6,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -8319,7 +8479,7 @@
         ],
         "minion": 0,
         "weapon": {
-            "name": "No weapon",
+            "name": "",
             "damage": "1d4",
             "init": 0,
             "enhanced": true,
@@ -8329,7 +8489,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8399,6 +8559,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 0,
+        "majorMove": 6,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -8430,7 +8592,7 @@
         ],
         "minion": 0,
         "weapon": {
-            "name": "No weapon",
+            "name": "",
             "damage": "1d4",
             "init": 0,
             "enhanced": true,
@@ -8440,7 +8602,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8510,6 +8672,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -8534,7 +8698,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8596,6 +8760,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -8637,7 +8803,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8699,6 +8865,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -8723,7 +8891,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8779,6 +8947,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -8803,7 +8973,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8859,6 +9029,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -8885,7 +9057,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -8941,6 +9113,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -8976,7 +9150,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9032,6 +9206,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 5,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -9075,7 +9251,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9131,6 +9307,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -9206,7 +9384,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9216,7 +9394,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -9262,6 +9440,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -9301,7 +9481,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9311,7 +9491,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -9357,6 +9537,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 8,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -9381,7 +9563,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9447,6 +9629,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 8,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -9494,7 +9678,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9556,6 +9740,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 8,
         "charClass": {
             "name": "Animal",
             "health": 2,
@@ -9623,7 +9809,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9693,6 +9879,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -9736,7 +9924,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9806,6 +9994,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -9849,7 +10039,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -9915,6 +10105,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -9958,7 +10150,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10024,6 +10216,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -10067,7 +10261,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10137,6 +10331,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -10172,7 +10368,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10238,6 +10434,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 3,
+        "majorMove": 8,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -10289,7 +10487,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10355,6 +10553,8 @@
             "health": 8,
             "healthIncrease": 4
         },
+        "minorMove": 2,
+        "majorMove": 6,
         "charClass": {
             "name": "Warrior",
             "health": 4,
@@ -10404,7 +10604,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10466,6 +10666,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -10492,7 +10694,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10502,7 +10704,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -10554,6 +10756,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 5,
         "charClass": {
             "name": "Skirmisher",
             "health": 2,
@@ -10585,7 +10789,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10595,7 +10799,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -10647,6 +10851,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 7,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -10673,7 +10879,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10735,6 +10941,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -10759,7 +10967,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10821,6 +11029,8 @@
             "health": 5,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -10847,7 +11057,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10913,6 +11123,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 2,
+        "majorMove": 5,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -10939,7 +11151,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -10995,6 +11207,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 4,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11019,7 +11233,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -11029,7 +11243,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -11089,6 +11303,8 @@
             "health": 2,
             "healthIncrease": 1
         },
+        "minorMove": 3,
+        "majorMove": 4,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11113,7 +11329,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -11123,7 +11339,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -11179,6 +11395,8 @@
             "health": 3,
             "healthIncrease": 1
         },
+        "minorMove": 4,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11203,7 +11421,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -11213,7 +11431,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -11259,6 +11477,8 @@
             "health": 4,
             "healthIncrease": 1
         },
+        "minorMove": 3,
+        "majorMove": 4,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11283,7 +11503,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -11339,6 +11559,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 4,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11384,7 +11606,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -11394,7 +11616,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -11446,6 +11668,8 @@
             "health": 8,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 8,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11493,7 +11717,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -11503,7 +11727,7 @@
             }
         },
         "armor": {
-            "name": "No Armor",
+            "name": "",
             "toughness": 0,
             "agility": 0,
             "enhanced": true,
@@ -11563,6 +11787,8 @@
             "health": 4,
             "healthIncrease": 2
         },
+        "minorMove": 3,
+        "majorMove": 7,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11610,7 +11836,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,
@@ -11672,6 +11898,8 @@
             "health": 6,
             "healthIncrease": 3
         },
+        "minorMove": 1,
+        "majorMove": 6,
         "charClass": {
             "name": "Monster",
             "health": 4,
@@ -11717,7 +11945,7 @@
             }
         },
         "shield": {
-            "name": "No Shield",
+            "name": "",
             "block": 0,
             "init": 0,
             "enhanced": true,

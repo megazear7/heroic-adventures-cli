@@ -32,8 +32,8 @@ export default class Creature {
         this.shield = shield;
         this.armor = armor;
         this.features = features;
-        this.minorMove = minorMove;
-        this.majorMove = majorMove;
+        this.minorMove = minorMove || race.minorMove;
+        this.majorMove = majorMove || race.majorMove;
         this.logger = logger;
         this.usedMajorAction = false;
         this.logger.log(100, 'constructor creature');
@@ -123,6 +123,8 @@ export default class Creature {
             type: this.type,
             level: this.level,
             race: this.race,
+            minorMove: this.minorMove,
+            majorMove: this.majorMove,
             charClass: this.charClass,
             statBump: this.statBump,
             levels: this.levels,

@@ -48,6 +48,8 @@ export const creatureListBuilder = (logger) => {
             id: id,
             type: data.type,
             race: data.race,
+            minorMove: data.minorMove,
+            majorMove: data.majorMove,
             charClass: data.charClass,
             statBump: new StatBump(data.statBumps),
             levels: data.levels,

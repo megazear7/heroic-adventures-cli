@@ -2,7 +2,7 @@ import Shield from "./shield.js";
 
 export default logger => ({
     noShield: new Shield({
-        name: 'No Shield',
+        name: '',
         block: 0,
         init: 0,
         logger,
