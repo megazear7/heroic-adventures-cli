@@ -1,96 +1,5 @@
 [
     {
-        "name": "Slighter",
-        "type": "MONSTER",
-        "level": "3",
-        "race": {
-            "name": "Human",
-            "minorMove": 2,
-            "majorMove": 6,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 1,
-            "willpower": 1,
-            "strength": 2,
-            "init": 3,
-            "health": 6,
-            "healthIncrease": 3
-        },
-        "minorMove": 2,
-        "majorMove": 6,
-        "charClass": {
-            "name": "Soldier",
-            "health": 3,
-            "healthIncrease": 1
-        },
-        "statBump": {
-            "bumps": [
-                "SKILL",
-                "STRENGTH"
-            ]
-        },
-        "levels": [
-            [
-                "SKILL",
-                "AGILITY"
-            ],
-            [
-                "INIT",
-                "STRENGTH"
-            ]
-        ],
-        "minion": 0,
-        "weapon": {
-            "name": "Arming Sword",
-            "damage": "1d6",
-            "init": 2,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "Large Shield",
-            "block": 2,
-            "init": -5,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "Gambeson",
-            "toughness": 2,
-            "agility": -1,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "stats": {
-            "health": 19,
-            "skill": 4,
-            "agility": 1,
-            "arcana": 1,
-            "willpower": 1,
-            "strength": 5,
-            "toughness": 2,
-            "init": 1
-        },
-        "explain": {
-            "health": "19: 6 (race) + 3 (class) + 2 (creation) + 8 (levels) - 0 (minion)",
-            "skill": "4: 1 (race) + 2 (creation) + 1 (level)",
-            "agility": "1: 1 (race) + 0 (creation) + 1 (level) - 1 (armor)",
-            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "strength": "5: 2 (race) + 2 (creation) + 1 (level)",
-            "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 1 (level)"
-        }
-    },
-    {
         "name": "Angel",
         "type": "MONSTER",
         "level": "10",
@@ -221,7 +130,8 @@
             "willpower": "5: 2 (race) + 0 (creation) + 3 (level)",
             "strength": "5: 2 (race) + 0 (creation) + 3 (level)",
             "init": "10: 5 (race) + 4 (weapon) - 2 (shield) + 0 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "97"
     },
     {
         "name": "Cherubim",
@@ -366,7 +276,8 @@
             "willpower": "6: 2 (race) + 0 (creation) + 4 (level)",
             "strength": "6: 2 (race) + 0 (creation) + 4 (level)",
             "init": "11: 5 (race) + 4 (weapon) - 2 (shield) + 0 (creation) + 4 (level)"
-        }
+        },
+        "combatDifficulty": "100"
     },
     {
         "name": "Ape",
@@ -465,12 +376,13 @@
             "willpower": "3: 1 (race) + 1 (creation) + 1 (level)",
             "strength": "6: 4 (race) + 1 (creation) + 1 (level)",
             "init": "5: 3 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "63"
     },
     {
         "name": "Gorilla",
-        "type": "DRUID",
-        "level": "6",
+        "type": "MONSTER",
+        "level": "5",
         "race": {
             "name": "Ape",
             "minorMove": 2,
@@ -493,14 +405,20 @@
         },
         "statBump": {
             "bumps": [
+                "SKILL",
+                "AGILITY",
                 "STRENGTH",
-                "ARCANA"
+                "WILLPOWER"
             ]
         },
         "levels": [
             [
+                "SKILL",
+                "AGILITY"
+            ],
+            [
                 "STRENGTH",
-                "ARCANA"
+                "WILLPOWER"
             ],
             [
                 "SKILL",
@@ -508,22 +426,14 @@
             ],
             [
                 "STRENGTH",
-                "ARCANA"
-            ],
-            [
-                "SKILL",
-                "AGILITY"
-            ],
-            [
-                "STRENGTH",
-                "ARCANA"
+                "WILLPOWER"
             ]
         ],
         "minion": 0,
         "weapon": {
-            "name": "Pummel",
-            "damage": "2d8",
-            "init": 0,
+            "name": "Fists",
+            "damage": "1d10",
+            "init": 2,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -531,8 +441,8 @@
             }
         },
         "shield": {
-            "name": "Swipe away",
-            "block": 2,
+            "name": "",
+            "block": 0,
             "init": 0,
             "enhanced": true,
             "logger": {
@@ -541,8 +451,8 @@
             }
         },
         "armor": {
-            "name": "Thick skin",
-            "toughness": 3,
+            "name": "Tough Hide",
+            "toughness": 2,
             "agility": 0,
             "enhanced": true,
             "logger": {
@@ -552,29 +462,30 @@
         },
         "features": [
             {
-                "type": "HEROIC_ACTION",
-                "desc": "Strangle: If any damage dice explode, the target is grappled and cannot move until the end of the next round."
+                "type": "FEATURE",
+                "desc": "Strangle: Critical hits leave the target prone and without actions for the remainder of the round"
             }
         ],
         "stats": {
-            "health": 39,
-            "skill": 3,
-            "agility": 3,
-            "arcana": 6,
-            "willpower": 1,
-            "strength": 9,
-            "toughness": 3,
-            "init": 3
+            "health": 36,
+            "skill": 5,
+            "agility": 4,
+            "arcana": 1,
+            "willpower": 4,
+            "strength": 7,
+            "toughness": 2,
+            "init": 5
         },
         "explain": {
-            "health": "39: 8 (race) + 4 (class) + 2 (creation) + 25 (levels) - 0 (minion)",
-            "skill": "3: 1 (race) + 0 (creation) + 2 (level)",
-            "agility": "3: 1 (race) + 0 (creation) + 2 (level) - 0 (armor)",
-            "arcana": "6: 1 (race) + 2 (creation) + 3 (level)",
-            "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "strength": "9: 4 (race) + 2 (creation) + 3 (level)",
-            "init": "3: 3 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+            "health": "36: 8 (race) + 4 (class) + 4 (creation) + 20 (levels) - 0 (minion)",
+            "skill": "5: 1 (race) + 2 (creation) + 2 (level)",
+            "agility": "4: 1 (race) + 1 (creation) + 2 (level) - 0 (armor)",
+            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
+            "willpower": "4: 1 (race) + 1 (creation) + 2 (level)",
+            "strength": "7: 4 (race) + 1 (creation) + 2 (level)",
+            "init": "5: 3 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
+        },
+        "combatDifficulty": "75"
     },
     {
         "name": "Bat",
@@ -662,7 +573,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "0: 0 (race) + 0 (creation) + 0 (level)",
             "init": "9: 5 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "9"
     },
     {
         "name": "Terror Bats",
@@ -756,7 +668,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "1: 0 (race) + 1 (creation) + 0 (level)",
             "init": "9: 5 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "20"
     },
     {
         "name": "Bobcat",
@@ -846,7 +759,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "12"
     },
     {
         "name": "Mountain Lion",
@@ -949,7 +863,8 @@
             "willpower": "3: 1 (race) + 1 (creation) + 1 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "47"
     },
     {
         "name": "Lion",
@@ -1056,11 +971,12 @@
             "willpower": "4: 1 (race) + 1 (creation) + 2 (level)",
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "73"
     },
     {
         "name": "Tiger",
-        "type": "DRUID",
+        "type": "MONSTER",
         "level": "6",
         "race": {
             "name": "Large Cat",
@@ -1084,38 +1000,38 @@
         },
         "statBump": {
             "bumps": [
-                "STRENGTH",
-                "SKILL",
                 "AGILITY",
-                "INIT"
+                "SKILL",
+                "STRENGTH",
+                "WILLPOWER"
             ]
         },
         "levels": [
             [
-                "STRENGTH",
+                "AGILITY",
                 "SKILL"
             ],
             [
-                "AGILITY",
-                "INIT"
+                "STRENGTH",
+                "WILLPOWER"
             ],
             [
-                "STRENGTH",
+                "AGILITY",
                 "SKILL"
             ],
             [
-                "AGILITY",
-                "INIT"
+                "STRENGTH",
+                "WILLPOWER"
             ],
             [
-                "STRENGTH",
+                "AGILITY",
                 "SKILL"
             ]
         ],
         "minion": 0,
         "weapon": {
             "name": "Bite and Claw",
-            "damage": "2d10",
+            "damage": "2d6",
             "init": 0,
             "enhanced": true,
             "logger": {
@@ -1134,7 +1050,7 @@
             }
         },
         "armor": {
-            "name": "Hide",
+            "name": "Tough Hide",
             "toughness": 4,
             "agility": 0,
             "enhanced": true,
@@ -1146,28 +1062,33 @@
         "features": [
             {
                 "type": "HEROIC_ACTION",
-                "desc": "Maul: Attack twice"
+                "desc": "Overwhelm: Attack twice"
+            },
+            {
+                "type": "FEATURE",
+                "desc": "You cannot gain advantage against tigers by flanking"
             }
         ],
         "stats": {
             "health": 33,
             "skill": 6,
-            "agility": 5,
+            "agility": 7,
             "arcana": 2,
-            "willpower": 1,
-            "strength": 7,
+            "willpower": 4,
+            "strength": 5,
             "toughness": 4,
-            "init": 7
+            "init": 4
         },
         "explain": {
             "health": "33: 5 (race) + 4 (class) + 4 (creation) + 20 (levels) - 0 (minion)",
             "skill": "6: 2 (race) + 1 (creation) + 3 (level)",
-            "agility": "5: 2 (race) + 1 (creation) + 2 (level) - 0 (armor)",
+            "agility": "7: 2 (race) + 2 (creation) + 3 (level) - 0 (armor)",
             "arcana": "2: 2 (race) + 0 (creation) + 0 (level)",
-            "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "strength": "7: 2 (race) + 2 (creation) + 3 (level)",
-            "init": "7: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 2 (level)"
-        }
+            "willpower": "4: 1 (race) + 1 (creation) + 2 (level)",
+            "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
+            "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
+        },
+        "combatDifficulty": "79"
     },
     {
         "name": "Minor Demon",
@@ -1261,7 +1182,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
             "init": "5: 4 (race) + 4 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "41"
     },
     {
         "name": "Lesser Demon",
@@ -1368,7 +1290,8 @@
             "willpower": "1: 0 (race) + 0 (creation) + 1 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "8: 4 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "58"
     },
     {
         "name": "Greater Demon",
@@ -1491,7 +1414,8 @@
             "willpower": "3: 0 (race) + 0 (creation) + 3 (level)",
             "strength": "6: 2 (race) + 1 (creation) + 3 (level)",
             "init": "5: 4 (race) + 4 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "87"
     },
     {
         "name": "Demon Lord",
@@ -1638,7 +1562,8 @@
             "willpower": "6: 0 (race) + 0 (creation) + 6 (level)",
             "strength": "9: 2 (race) + 1 (creation) + 6 (level)",
             "init": "5: 4 (race) + 4 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "98"
     },
     {
         "name": "Young Dragon",
@@ -1753,7 +1678,8 @@
             "willpower": "4: 2 (race) + 1 (creation) + 1 (level)",
             "strength": "6: 2 (race) + 2 (creation) + 2 (level)",
             "init": "5: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "82"
     },
     {
         "name": "Adult Dragon",
@@ -1884,7 +1810,8 @@
             "willpower": "5: 2 (race) + 1 (creation) + 2 (level)",
             "strength": "8: 2 (race) + 2 (creation) + 4 (level)",
             "init": "6: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "93"
     },
     {
         "name": "Ancient Dragon",
@@ -2031,7 +1958,8 @@
             "willpower": "6: 2 (race) + 1 (creation) + 3 (level)",
             "strength": "10: 2 (race) + 2 (creation) + 6 (level)",
             "init": "7: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "99"
     },
     {
         "name": "Druskin",
@@ -2126,7 +2054,8 @@
             "willpower": "3: 3 (race) + 0 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
             "init": "2: 4 (race) + 1 (weapon) - 5 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "36"
     },
     {
         "name": "Druskin Desert Chief",
@@ -2233,7 +2162,8 @@
             "willpower": "3: 3 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "3: 4 (race) + 1 (weapon) - 5 (shield) + 1 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "51"
     },
     {
         "name": "Dwarf Warrior",
@@ -2323,7 +2253,8 @@
             "willpower": "4: 3 (race) + 1 (creation) + 0 (level)",
             "strength": "4: 3 (race) + 1 (creation) + 0 (level)",
             "init": "1: 2 (race) + -1 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "33"
     },
     {
         "name": "Dwarf Runeleader",
@@ -2422,7 +2353,8 @@
             "willpower": "5: 3 (race) + 1 (creation) + 1 (level)",
             "strength": "5: 3 (race) + 1 (creation) + 1 (level)",
             "init": "1: 2 (race) + -1 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "53"
     },
     {
         "name": "Dwarf Runecaster",
@@ -2523,7 +2455,8 @@
             "willpower": "6: 3 (race) + 2 (creation) + 1 (level)",
             "strength": "3: 3 (race) + 0 (creation) + 0 (level)",
             "init": "7: 2 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "27"
     },
     {
         "name": "Dwarf Runelord",
@@ -2638,7 +2571,8 @@
             "willpower": "6: 3 (race) + 1 (creation) + 2 (level)",
             "strength": "7: 3 (race) + 1 (creation) + 3 (level)",
             "init": "1: 2 (race) + -1 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "70"
     },
     {
         "name": "Elf Warrior",
@@ -2727,7 +2661,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "37"
     },
     {
         "name": "Elf Captain",
@@ -2834,7 +2769,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "4: 1 (race) + 1 (creation) + 2 (level)",
             "init": "2: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "66"
     },
     {
         "name": "Elf Mage",
@@ -2941,7 +2877,8 @@
             "willpower": "4: 1 (race) + 1 (creation) + 2 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "10: 3 (race) + 4 (weapon) - 0 (shield) + 1 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "31"
     },
     {
         "name": "Elf Lord",
@@ -3056,7 +2993,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "5: 1 (race) + 1 (creation) + 3 (level)",
             "init": "3: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "74"
     },
     {
         "name": "Lesser Fire Elemental",
@@ -3163,7 +3101,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "6: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "58"
     },
     {
         "name": "Greater Fire Elemental",
@@ -3278,7 +3217,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "7: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "80"
     },
     {
         "name": "Lesser Water Elemental",
@@ -3385,7 +3325,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "6: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "55"
     },
     {
         "name": "Greater Water Elemental",
@@ -3500,7 +3441,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "7: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "78"
     },
     {
         "name": "Gator Pig",
@@ -3593,7 +3535,8 @@
             "willpower": "4: 2 (race) + 2 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 2 (creation) + 0 (level)",
             "init": "2: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "26"
     },
     {
         "name": "Ghoul",
@@ -3690,7 +3633,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 2 (race) + 0 (creation) + 0 (level)",
             "init": "6: 4 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "54"
     },
     {
         "name": "Fire Giant",
@@ -3831,7 +3775,8 @@
             "willpower": "9: 1 (race) + 2 (creation) + 6 (level)",
             "strength": "12: 4 (race) + 2 (creation) + 6 (level)",
             "init": "5: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "95"
     },
     {
         "name": "Hill Giant",
@@ -3964,7 +3909,8 @@
             "willpower": "8: 1 (race) + 2 (creation) + 5 (level)",
             "strength": "11: 4 (race) + 2 (creation) + 5 (level)",
             "init": "4: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "87"
     },
     {
         "name": "Ice Giant",
@@ -4105,7 +4051,8 @@
             "willpower": "9: 1 (race) + 2 (creation) + 6 (level)",
             "strength": "12: 4 (race) + 2 (creation) + 6 (level)",
             "init": "4: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "89"
     },
     {
         "name": "Mountain Giant",
@@ -4254,7 +4201,8 @@
             "willpower": "11: 1 (race) + 2 (creation) + 8 (level)",
             "strength": "14: 4 (race) + 2 (creation) + 8 (level)",
             "init": "5: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "99"
     },
     {
         "name": "Storm Giant",
@@ -4403,7 +4351,8 @@
             "willpower": "11: 1 (race) + 2 (creation) + 8 (level)",
             "strength": "14: 4 (race) + 2 (creation) + 8 (level)",
             "init": "5: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "96"
     },
     {
         "name": "Goblin Skirmisher",
@@ -4487,7 +4436,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "3: 4 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "18"
     },
     {
         "name": "Goblin Chief",
@@ -4586,7 +4536,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "3: 1 (race) + 1 (creation) + 1 (level)",
             "init": "4: 4 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "32"
     },
     {
         "name": "Goblin Assassin",
@@ -4683,7 +4634,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 1 (race) + 2 (creation) + 1 (level)",
             "init": "9: 4 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "30"
     },
     {
         "name": "Goblin Villager",
@@ -4765,7 +4717,8 @@
             "willpower": "3: 1 (race) + 2 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "8"
     },
     {
         "name": "Gremik",
@@ -4855,7 +4808,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "6: 4 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "22"
     },
     {
         "name": "Human Soldier",
@@ -4939,7 +4893,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
             "init": "1: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "25"
     },
     {
         "name": "Human Knight",
@@ -5032,7 +4987,8 @@
             "willpower": "3: 1 (race) + 1 (creation) + 1 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "51"
     },
     {
         "name": "Human Captain",
@@ -5131,7 +5087,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "46"
     },
     {
         "name": "Human Warlord",
@@ -5242,7 +5199,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "59"
     },
     {
         "name": "Krimkar Warrior",
@@ -5329,7 +5287,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 0 (creation) + 1 (level)",
             "init": "1: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "38"
     },
     {
         "name": "Krimkar Raider",
@@ -5430,7 +5389,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 0 (creation) + 1 (level)",
             "init": "2: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "46"
     },
     {
         "name": "Krimkar Warchief",
@@ -5531,7 +5491,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 0 (creation) + 2 (level)",
             "init": "2: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "55"
     },
     {
         "name": "Kram Krimkar",
@@ -5664,7 +5625,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "7: 2 (race) + 0 (creation) + 5 (level)",
             "init": "5: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 4 (level)"
-        }
+        },
+        "combatDifficulty": "94"
     },
     {
         "name": "Jungle Terror",
@@ -5761,7 +5723,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 0 (creation) + 1 (level)",
             "init": "7: 4 (race) + 0 (weapon) - 0 (shield) + 2 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "47"
     },
     {
         "name": "Kobold Spearmen",
@@ -5859,7 +5822,8 @@
             "willpower": "-1: -1 (race) + 0 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "5: 5 (race) + 1 (weapon) - 3 (shield) + 2 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "22"
     },
     {
         "name": "Kobold Archer",
@@ -5949,7 +5913,8 @@
             "willpower": "-1: -1 (race) + 0 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "7: 5 (race) + 0 (weapon) - 0 (shield) + 2 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "27"
     },
     {
         "name": "Kobold Tribe Chief",
@@ -6056,7 +6021,8 @@
             "willpower": "-1: -1 (race) + 0 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "11: 5 (race) + 4 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "28"
     },
     {
         "name": "Kobold Tribe Shaman",
@@ -6155,7 +6121,8 @@
             "willpower": "-1: -1 (race) + 0 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "11: 5 (race) + 4 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "29"
     },
     {
         "name": "Kraken",
@@ -6306,7 +6273,8 @@
             "willpower": "9: 1 (race) + 1 (creation) + 7 (level)",
             "strength": "13: 4 (race) + 2 (creation) + 7 (level)",
             "init": "10: 2 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 7 (level)"
-        }
+        },
+        "combatDifficulty": "99"
     },
     {
         "name": "Kruelkin",
@@ -6396,7 +6364,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "6: 4 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "22"
     },
     {
         "name": "Lizardmen",
@@ -6491,7 +6460,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "6: 4 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "36"
     },
     {
         "name": "Minotaur Dungeon Dweller",
@@ -6600,7 +6570,8 @@
             "willpower": "3: 2 (race) + 0 (creation) + 1 (level)",
             "strength": "5: 2 (race) + 2 (creation) + 1 (level)",
             "init": "6: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "67"
     },
     {
         "name": "Minotaur Dungeon Lord",
@@ -6721,7 +6692,8 @@
             "willpower": "4: 2 (race) + 0 (creation) + 2 (level)",
             "strength": "6: 2 (race) + 2 (creation) + 2 (level)",
             "init": "7: 4 (race) + 0 (weapon) - 1 (shield) + 0 (creation) + 4 (level)"
-        }
+        },
+        "combatDifficulty": "84"
     },
     {
         "name": "Ocean Lord",
@@ -6844,7 +6816,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "8: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "82"
     },
     {
         "name": "Ogre",
@@ -6947,7 +6920,8 @@
             "willpower": "5: 3 (race) + 1 (creation) + 1 (level)",
             "strength": "7: 3 (race) + 2 (creation) + 2 (level)",
             "init": "1: 1 (race) + -2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "65"
     },
     {
         "name": "Ogre Warrior",
@@ -7058,7 +7032,8 @@
             "willpower": "5: 3 (race) + 1 (creation) + 1 (level)",
             "strength": "7: 3 (race) + 2 (creation) + 2 (level)",
             "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "75"
     },
     {
         "name": "Ogre Chief",
@@ -7173,7 +7148,8 @@
             "willpower": "4: 3 (race) + 1 (creation) + 0 (level)",
             "strength": "8: 3 (race) + 2 (creation) + 3 (level)",
             "init": "3: 1 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "77"
     },
     {
         "name": "Orc Soldier",
@@ -7257,7 +7233,8 @@
             "willpower": "3: 2 (race) + 1 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
             "init": "1: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "26"
     },
     {
         "name": "Orc Berserker",
@@ -7352,7 +7329,8 @@
             "willpower": "3: 2 (race) + 1 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + -1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "39"
     },
     {
         "name": "Orc Captain",
@@ -7451,7 +7429,8 @@
             "willpower": "4: 2 (race) + 1 (creation) + 1 (level)",
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "47"
     },
     {
         "name": "Orc Chief",
@@ -7558,7 +7537,8 @@
             "willpower": "5: 2 (race) + 1 (creation) + 2 (level)",
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "1: 3 (race) + -1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "63"
     },
     {
         "name": "Ratmen Slave",
@@ -7642,7 +7622,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "15"
     },
     {
         "name": "Ratmen Skirmisher",
@@ -7726,7 +7707,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "23"
     },
     {
         "name": "Ratbeast",
@@ -7825,7 +7807,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 1 (race) + 1 (creation) + 2 (level)",
             "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "45"
     },
     {
         "name": "Ratswarm Captain",
@@ -7924,7 +7907,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 1 (race) + 1 (creation) + 2 (level)",
             "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "45"
     },
     {
         "name": "Ratswarm Seer",
@@ -8023,7 +8007,8 @@
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 1 (race) + 1 (creation) + 2 (level)",
             "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "45"
     },
     {
         "name": "Rokum",
@@ -8154,7 +8139,8 @@
             "willpower": "8: 3 (race) + 1 (creation) + 4 (level)",
             "strength": "10: 3 (race) + 2 (creation) + 5 (level)",
             "init": "4: 3 (race) + 1 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "89"
     },
     {
         "name": "Dusty Bones",
@@ -8242,7 +8228,8 @@
             "willpower": "5: 3 (race) + 2 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "5"
     },
     {
         "name": "Skeleton Warrior",
@@ -8330,7 +8317,8 @@
             "willpower": "5: 3 (race) + 2 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "1: 1 (race) + 2 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "11"
     },
     {
         "name": "Skeleton Knight",
@@ -8427,7 +8415,8 @@
             "willpower": "4: 3 (race) + 0 (creation) + 1 (level)",
             "strength": "4: 1 (race) + 2 (creation) + 1 (level)",
             "init": "1: 1 (race) + 2 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "39"
     },
     {
         "name": "Skeleton Lord",
@@ -8540,7 +8529,8 @@
             "willpower": "5: 3 (race) + 0 (creation) + 2 (level)",
             "strength": "5: 1 (race) + 2 (creation) + 2 (level)",
             "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "50"
     },
     {
         "name": "Skeleton Mage",
@@ -8653,7 +8643,8 @@
             "willpower": "5: 3 (race) + 0 (creation) + 2 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "3: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "34"
     },
     {
         "name": "Large Snake",
@@ -8741,7 +8732,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "2: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "16"
     },
     {
         "name": "Slithering Behemoth",
@@ -8846,7 +8838,8 @@
             "willpower": "3: 1 (race) + 0 (creation) + 2 (level)",
             "strength": "3: 1 (race) + 0 (creation) + 2 (level)",
             "init": "2: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "51"
     },
     {
         "name": "Large Spider",
@@ -8928,7 +8921,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 2 (race) + 0 (creation) + 0 (level)",
             "init": "6: 4 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "13"
     },
     {
         "name": "Huge Spider",
@@ -9010,7 +9004,8 @@
             "willpower": "1: 1 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 2 (race) + 0 (creation) + 0 (level)",
             "init": "6: 4 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "19"
     },
     {
         "name": "Giant Spider",
@@ -9094,7 +9089,8 @@
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
             "init": "6: 4 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "31"
     },
     {
         "name": "Massive Spider",
@@ -9187,7 +9183,8 @@
             "willpower": "3: 1 (race) + 1 (creation) + 1 (level)",
             "strength": "5: 2 (race) + 2 (creation) + 1 (level)",
             "init": "5: 4 (race) + 1 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "50"
     },
     {
         "name": "Gargantuan Spider",
@@ -9288,7 +9285,8 @@
             "willpower": "4: 1 (race) + 1 (creation) + 2 (level)",
             "strength": "6: 2 (race) + 2 (creation) + 2 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "58"
     },
     {
         "name": "Swamp Behemoth",
@@ -9421,7 +9419,8 @@
             "willpower": "8: 1 (race) + 1 (creation) + 6 (level)",
             "strength": "9: 1 (race) + 2 (creation) + 6 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "87"
     },
     {
         "name": "Swamp Monster",
@@ -9518,7 +9517,8 @@
             "willpower": "3: 1 (race) + 1 (creation) + 1 (level)",
             "strength": "5: 1 (race) + 2 (creation) + 2 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "50"
     },
     {
         "name": "Sproutling",
@@ -9610,12 +9610,13 @@
             "willpower": "4: 4 (race) + 0 (creation) + 0 (level)",
             "strength": "3: 3 (race) + 0 (creation) + 0 (level)",
             "init": "3: 1 (race) + 0 (weapon) - 0 (shield) + 2 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "18"
     },
     {
         "name": "Treefolk",
         "type": "MONSTER",
-        "level": "6",
+        "level": "3",
         "race": {
             "name": "Ent",
             "minorMove": 1,
@@ -9647,29 +9648,17 @@
         "levels": [
             [
                 "SKILL",
-                "STRENGTH"
+                "AGILITY"
             ],
             [
-                "ARCANA",
-                "WILLPOWER"
-            ],
-            [
-                "SKILL",
-                "STRENGTH"
-            ],
-            [
-                "ARCANA",
-                "WILLPOWER"
-            ],
-            [
-                "SKILL",
-                "STRENGTH"
+                "STRENGTH",
+                "SKILL"
             ]
         ],
         "minion": 0,
         "weapon": {
             "name": "Tree Strike",
-            "damage": "2d12",
+            "damage": "1d8",
             "init": 0,
             "enhanced": true,
             "logger": {
@@ -9688,7 +9677,7 @@
             }
         },
         "armor": {
-            "name": "Punch",
+            "name": "Barkskin",
             "toughness": 4,
             "agility": 0,
             "enhanced": true,
@@ -9700,28 +9689,37 @@
         "features": [
             {
                 "type": "FEATURE",
-                "desc": "Strangle: Medium sized and smaller reatures are considered strangled and cannot move until the end of the round after being damaged"
+                "desc": "Strangle: Medium sized and smaller reatures are considered strangled until the end of the round after being damaged by an entling attack"
+            },
+            {
+                "type": "FEATURE",
+                "desc": "Strangled creatures cannot move for the rest of the round"
+            },
+            {
+                "type": "FEATURE",
+                "desc": "Gain advantage against strangled creatures"
             }
         ],
         "stats": {
-            "health": 34,
-            "skill": 6,
-            "agility": 0,
-            "arcana": 6,
-            "willpower": 8,
-            "strength": 7,
+            "health": 22,
+            "skill": 5,
+            "agility": 1,
+            "arcana": 4,
+            "willpower": 6,
+            "strength": 5,
             "toughness": 4,
             "init": 1
         },
         "explain": {
-            "health": "34: 8 (race) + 2 (class) + 4 (creation) + 20 (levels) - 0 (minion)",
-            "skill": "6: 2 (race) + 1 (creation) + 3 (level)",
-            "agility": "0: 0 (race) + 0 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "6: 3 (race) + 1 (creation) + 2 (level)",
-            "willpower": "8: 4 (race) + 2 (creation) + 2 (level)",
-            "strength": "7: 3 (race) + 1 (creation) + 3 (level)",
+            "health": "22: 8 (race) + 2 (class) + 4 (creation) + 8 (levels) - 0 (minion)",
+            "skill": "5: 2 (race) + 1 (creation) + 2 (level)",
+            "agility": "1: 0 (race) + 0 (creation) + 1 (level) - 0 (armor)",
+            "arcana": "4: 3 (race) + 1 (creation) + 0 (level)",
+            "willpower": "6: 4 (race) + 2 (creation) + 0 (level)",
+            "strength": "5: 3 (race) + 1 (creation) + 1 (level)",
             "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "51"
     },
     {
         "name": "Tree Shepherd",
@@ -9860,7 +9858,8 @@
             "willpower": "11: 4 (race) + 2 (creation) + 5 (level)",
             "strength": "9: 3 (race) + 1 (creation) + 5 (level)",
             "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "89"
     },
     {
         "name": "Swamp Troll",
@@ -9975,7 +9974,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 2 (race) + 2 (creation) + 0 (level)",
             "init": "7: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 2 (level)"
-        }
+        },
+        "combatDifficulty": "72"
     },
     {
         "name": "Hill Troll",
@@ -10086,7 +10086,8 @@
             "willpower": "5: 2 (race) + 1 (creation) + 2 (level)",
             "strength": "6: 2 (race) + 2 (creation) + 2 (level)",
             "init": "5: 4 (race) + -1 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "73"
     },
     {
         "name": "Mountain Troll",
@@ -10197,7 +10198,8 @@
             "willpower": "5: 2 (race) + 1 (creation) + 2 (level)",
             "strength": "6: 2 (race) + 2 (creation) + 2 (level)",
             "init": "8: 4 (race) + 2 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "75"
     },
     {
         "name": "Cave Troll",
@@ -10312,7 +10314,8 @@
             "willpower": "5: 2 (race) + 1 (creation) + 2 (level)",
             "strength": "6: 2 (race) + 2 (creation) + 2 (level)",
             "init": "8: 4 (race) + 2 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "70"
     },
     {
         "name": "Werecat Warrior",
@@ -10415,7 +10418,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "5: 2 (race) + 2 (creation) + 1 (level)",
             "init": "6: 3 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
-        }
+        },
+        "combatDifficulty": "48"
     },
     {
         "name": "Werewolf",
@@ -10534,7 +10538,8 @@
             "willpower": "2: 2 (race) + 0 (creation) + 0 (level)",
             "strength": "7: 2 (race) + 2 (creation) + 3 (level)",
             "init": "10: 3 (race) + 3 (weapon) - 0 (shield) + 1 (creation) + 3 (level)"
-        }
+        },
+        "combatDifficulty": "90"
     },
     {
         "name": "Yeti",
@@ -10647,7 +10652,8 @@
             "willpower": "4: 1 (race) + 0 (creation) + 3 (level)",
             "strength": "8: 3 (race) + 2 (creation) + 3 (level)",
             "init": "6: 3 (race) + 3 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "86"
     },
     {
         "name": "Shambling Zombie",
@@ -10737,7 +10743,8 @@
             "willpower": "6: 4 (race) + 2 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "1: 0 (race) + -2 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "8"
     },
     {
         "name": "Frenzied Zombie",
@@ -10832,824 +10839,8 @@
             "willpower": "6: 4 (race) + 2 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "1: 0 (race) + -2 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Wolf",
-        "type": "DRUID",
-        "level": "1",
-        "race": {
-            "name": "Wolf",
-            "minorMove": 3,
-            "majorMove": 7,
-            "skill": 2,
-            "agility": 2,
-            "arcana": 1,
-            "willpower": 1,
-            "strength": 1,
-            "init": 4,
-            "health": 4,
-            "healthIncrease": 2
         },
-        "minorMove": 3,
-        "majorMove": 7,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "SKILL",
-                "AGILITY",
-                "STRENGTH",
-                "WILLPOWER"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d6",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "Hide",
-            "toughness": 2,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "features": [
-            {
-                "type": "HEROIC_ACTION",
-                "desc": "Make a major movement without drawing opportunity attacks and make an attack with advantage"
-            }
-        ],
-        "stats": {
-            "health": 12,
-            "skill": 4,
-            "agility": 3,
-            "arcana": 1,
-            "willpower": 2,
-            "strength": 2,
-            "toughness": 2,
-            "init": 4
-        },
-        "explain": {
-            "health": "12: 4 (race) + 4 (class) + 4 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "4: 2 (race) + 2 (creation) + 0 (level)",
-            "agility": "3: 2 (race) + 1 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
-            "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
-            "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Bear",
-        "type": "DRUID",
-        "level": "1",
-        "race": {
-            "name": "Bear",
-            "minorMove": 1,
-            "majorMove": 6,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 1,
-            "willpower": 1,
-            "strength": 2,
-            "init": 3,
-            "health": 6,
-            "healthIncrease": 3
-        },
-        "minorMove": 1,
-        "majorMove": 6,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "STRENGTH",
-                "WILLPOWER"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d6",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "Hide",
-            "toughness": 3,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "features": [
-            {
-                "type": "HEROIC_ACTION",
-                "desc": "Do this action as soon as an ally damages an adjacent enemy. Make two attacks against that creature."
-            }
-        ],
-        "stats": {
-            "health": 12,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 1,
-            "willpower": 3,
-            "strength": 4,
-            "toughness": 3,
-            "init": 3
-        },
-        "explain": {
-            "health": "12: 6 (race) + 4 (class) + 2 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "agility": "1: 1 (race) + 0 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "willpower": "3: 1 (race) + 2 (creation) + 0 (level)",
-            "strength": "4: 2 (race) + 2 (creation) + 0 (level)",
-            "init": "3: 3 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Panther",
-        "type": "HUNTER",
-        "level": "1",
-        "race": {
-            "name": "Large Cat",
-            "minorMove": 3,
-            "majorMove": 8,
-            "skill": 2,
-            "agility": 2,
-            "arcana": 2,
-            "willpower": 1,
-            "strength": 2,
-            "init": 4,
-            "health": 5,
-            "healthIncrease": 2
-        },
-        "minorMove": 3,
-        "majorMove": 8,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "SKILL",
-                "AGILITY",
-                "STRENGTH",
-                "WILLPOWER"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d6",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "Hide",
-            "toughness": 2,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "features": [
-            {
-                "type": "FEATURE",
-                "desc": "(2) Bite: Make an attack against your prey"
-            },
-            {
-                "type": "FEATURE",
-                "desc": "(4) Pounce: Make a major movement without drawing opportunity attacks and then attack twice against any creature"
-            }
-        ],
-        "stats": {
-            "health": 13,
-            "skill": 4,
-            "agility": 3,
-            "arcana": 2,
-            "willpower": 2,
-            "strength": 3,
-            "toughness": 2,
-            "init": 4
-        },
-        "explain": {
-            "health": "13: 5 (race) + 4 (class) + 4 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "4: 2 (race) + 2 (creation) + 0 (level)",
-            "agility": "3: 2 (race) + 1 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "2: 2 (race) + 0 (creation) + 0 (level)",
-            "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
-            "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
-            "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Snake",
-        "type": "DRUID",
-        "level": "1",
-        "race": {
-            "name": "Snake",
-            "minorMove": 2,
-            "majorMove": 5,
-            "skill": 1,
-            "agility": 2,
-            "arcana": 3,
-            "willpower": 1,
-            "strength": 1,
-            "init": 2,
-            "health": 3,
-            "healthIncrease": 1
-        },
-        "minorMove": 2,
-        "majorMove": 5,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "ARCANA",
-                "AGILITY",
-                "INIT",
-                "WILLPOWER"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d4",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "Scales",
-            "toughness": 1,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "stats": {
-            "health": 11,
-            "skill": 1,
-            "agility": 3,
-            "arcana": 5,
-            "willpower": 2,
-            "strength": 1,
-            "toughness": 1,
-            "init": 3
-        },
-        "explain": {
-            "health": "11: 3 (race) + 4 (class) + 4 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "agility": "3: 2 (race) + 1 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "5: 3 (race) + 2 (creation) + 0 (level)",
-            "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
-            "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "init": "3: 2 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Hawk",
-        "type": "HUNTER",
-        "level": "1",
-        "race": {
-            "name": "Hawk",
-            "minorMove": 4,
-            "majorMove": 8,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 3,
-            "willpower": 2,
-            "strength": 0,
-            "init": 4,
-            "health": 3,
-            "healthIncrease": 1
-        },
-        "minorMove": 4,
-        "majorMove": 8,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "ARCANA",
-                "WILLPOWER"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d4",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "",
-            "toughness": 0,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "features": [
-            {
-                "type": "FEATURE",
-                "desc": "(1) Talons: Make an attack against your prey"
-            },
-            {
-                "type": "FEATURE",
-                "desc": "(2) Distract: Make an arcana vs. arcana attack against your prey. If successful, that creature has disadvantage on agility until the end of the next round."
-            },
-            {
-                "type": "FEATURE",
-                "desc": "(2) Primal Protection: Reduce the damage taken by you or your owner by half. You must be within 8 spaces of your owner."
-            }
-        ],
-        "stats": {
-            "health": 9,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 5,
-            "willpower": 4,
-            "strength": 0,
-            "toughness": 0,
-            "init": 4
-        },
-        "explain": {
-            "health": "9: 3 (race) + 4 (class) + 2 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "agility": "1: 1 (race) + 0 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "5: 3 (race) + 2 (creation) + 0 (level)",
-            "willpower": "4: 2 (race) + 2 (creation) + 0 (level)",
-            "strength": "0: 0 (race) + 0 (creation) + 0 (level)",
-            "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Rat",
-        "type": "DRUID",
-        "level": "1",
-        "race": {
-            "name": "Rat",
-            "minorMove": 3,
-            "majorMove": 4,
-            "skill": 2,
-            "agility": 2,
-            "arcana": 1,
-            "willpower": 0,
-            "strength": -2,
-            "init": 5,
-            "health": 2,
-            "healthIncrease": 1
-        },
-        "minorMove": 3,
-        "majorMove": 4,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "SKILL",
-                "AGILITY"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d4",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "",
-            "toughness": 0,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "features": [
-            {
-                "type": "FEATURE",
-                "desc": "Rats are tiny and can into through small openings and pass by unnoticed"
-            },
-            {
-                "type": "FEATURE",
-                "desc": "Rats gain +5 to sneak checks"
-            }
-        ],
-        "stats": {
-            "health": 8,
-            "skill": 4,
-            "agility": 4,
-            "arcana": 1,
-            "willpower": 0,
-            "strength": -2,
-            "toughness": 0,
-            "init": 5
-        },
-        "explain": {
-            "health": "8: 2 (race) + 4 (class) + 2 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "4: 2 (race) + 2 (creation) + 0 (level)",
-            "agility": "4: 2 (race) + 2 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
-            "strength": "-2: -2 (race) + 0 (creation) + 0 (level)",
-            "init": "5: 5 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Eagle",
-        "type": "DRUID",
-        "level": "1",
-        "race": {
-            "name": "Hawk",
-            "minorMove": 4,
-            "majorMove": 8,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 3,
-            "willpower": 2,
-            "strength": 0,
-            "init": 4,
-            "health": 3,
-            "healthIncrease": 1
-        },
-        "minorMove": 4,
-        "majorMove": 8,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "ARCANA",
-                "WILLPOWER"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d6",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "",
-            "toughness": 0,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "stats": {
-            "health": 9,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 5,
-            "willpower": 4,
-            "strength": 0,
-            "toughness": 0,
-            "init": 4
-        },
-        "explain": {
-            "health": "9: 3 (race) + 4 (class) + 2 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "agility": "1: 1 (race) + 0 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "5: 3 (race) + 2 (creation) + 0 (level)",
-            "willpower": "4: 2 (race) + 2 (creation) + 0 (level)",
-            "strength": "0: 0 (race) + 0 (creation) + 0 (level)",
-            "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Lizard",
-        "type": "DRUID",
-        "level": "1",
-        "race": {
-            "name": "Lizard",
-            "minorMove": 3,
-            "majorMove": 4,
-            "skill": 2,
-            "agility": 2,
-            "arcana": 1,
-            "willpower": 0,
-            "strength": -1,
-            "init": 2,
-            "health": 4,
-            "healthIncrease": 1
-        },
-        "minorMove": 3,
-        "majorMove": 4,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "SKILL",
-                "AGILITY"
-            ]
-        },
-        "levels": [],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d4",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "Scales",
-            "toughness": 2,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "stats": {
-            "health": 10,
-            "skill": 4,
-            "agility": 4,
-            "arcana": 1,
-            "willpower": 0,
-            "strength": -1,
-            "toughness": 2,
-            "init": 2
-        },
-        "explain": {
-            "health": "10: 4 (race) + 4 (class) + 2 (creation) + 0 (levels) - 0 (minion)",
-            "skill": "4: 2 (race) + 2 (creation) + 0 (level)",
-            "agility": "4: 2 (race) + 2 (creation) + 0 (level) - 0 (armor)",
-            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
-            "strength": "-1: -1 (race) + 0 (creation) + 0 (level)",
-            "init": "2: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Shark",
-        "type": "DRUID",
-        "level": "6",
-        "race": {
-            "name": "Shark",
-            "minorMove": 4,
-            "majorMove": 8,
-            "skill": 4,
-            "agility": 0,
-            "arcana": 0,
-            "willpower": 4,
-            "strength": 4,
-            "init": 1,
-            "health": 6,
-            "healthIncrease": 3
-        },
-        "minorMove": 4,
-        "majorMove": 8,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "STRENGTH",
-                "SKILL"
-            ]
-        },
-        "levels": [
-            [
-                "STRENGTH",
-                "SKILL"
-            ],
-            [
-                "AGILITY",
-                "WILLPOWER"
-            ],
-            [
-                "STRENGTH",
-                "SKILL"
-            ],
-            [
-                "AGILITY",
-                "WILLPOWER"
-            ],
-            [
-                "STRENGTH",
-                "SKILL"
-            ]
-        ],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "2d12",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "",
-            "toughness": 0,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "features": [
-            {
-                "type": "FEATURE",
-                "desc": "A shark can only move in deep water and attack creatures that are within 1 space of the edge of deep water."
-            }
-        ],
-        "stats": {
-            "health": 37,
-            "skill": 9,
-            "agility": 2,
-            "arcana": 0,
-            "willpower": 6,
-            "strength": 9,
-            "toughness": 0,
-            "init": 1
-        },
-        "explain": {
-            "health": "37: 6 (race) + 4 (class) + 2 (creation) + 25 (levels) - 0 (minion)",
-            "skill": "9: 4 (race) + 2 (creation) + 3 (level)",
-            "agility": "2: 0 (race) + 0 (creation) + 2 (level) - 0 (armor)",
-            "arcana": "0: 0 (race) + 0 (creation) + 0 (level)",
-            "willpower": "6: 4 (race) + 0 (creation) + 2 (level)",
-            "strength": "9: 4 (race) + 2 (creation) + 3 (level)",
-            "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        "combatDifficulty": "13"
     },
     {
         "name": "Bramblebaum",
@@ -11768,175 +10959,67 @@
             "willpower": "7: 4 (race) + 1 (creation) + 2 (level)",
             "strength": "6: 3 (race) + 1 (creation) + 2 (level)",
             "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+        },
+        "combatDifficulty": "67"
     },
     {
-        "name": "Dire Wolf",
-        "type": "DRUID",
+        "name": "Treefolk",
+        "type": "MONSTER",
         "level": "6",
         "race": {
-            "name": "Wolf",
-            "minorMove": 3,
-            "majorMove": 7,
-            "skill": 2,
-            "agility": 2,
-            "arcana": 1,
-            "willpower": 1,
-            "strength": 1,
-            "init": 4,
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "minorMove": 3,
-        "majorMove": 7,
-        "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
-        },
-        "statBump": {
-            "bumps": [
-                "SKILL",
-                "AGILITY",
-                "STRENGTH",
-                "WILLPOWER"
-            ]
-        },
-        "levels": [
-            [
-                "SKILL",
-                "AGILITY"
-            ],
-            [
-                "STRENGTH",
-                "WILLPOWER"
-            ],
-            [
-                "SKILL",
-                "AGILITY"
-            ],
-            [
-                "STRENGTH",
-                "WILLPOWER"
-            ],
-            [
-                "SKILL",
-                "AGILITY"
-            ]
-        ],
-        "minion": 0,
-        "weapon": {
-            "name": "Bite",
-            "damage": "1d6",
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "armor": {
-            "name": "Hide",
-            "toughness": 2,
-            "agility": 0,
-            "enhanced": true,
-            "logger": {
-                "pause": false,
-                "level": 0
-            }
-        },
-        "features": [
-            {
-                "type": "HEROIC_ACTION",
-                "desc": "Make a major movement without drawing opportunity attacks and make an attack with advantage"
-            }
-        ],
-        "stats": {
-            "health": 32,
-            "skill": 7,
-            "agility": 6,
-            "arcana": 1,
-            "willpower": 4,
-            "strength": 4,
-            "toughness": 2,
-            "init": 4
-        },
-        "explain": {
-            "health": "32: 4 (race) + 4 (class) + 4 (creation) + 20 (levels) - 0 (minion)",
-            "skill": "7: 2 (race) + 2 (creation) + 3 (level)",
-            "agility": "6: 2 (race) + 1 (creation) + 3 (level) - 0 (armor)",
-            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "willpower": "4: 1 (race) + 1 (creation) + 2 (level)",
-            "strength": "4: 1 (race) + 1 (creation) + 2 (level)",
-            "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
-    },
-    {
-        "name": "Cave Bear",
-        "type": "DRUID",
-        "level": "6",
-        "race": {
-            "name": "Bear",
+            "name": "Ent",
             "minorMove": 1,
-            "majorMove": 6,
-            "skill": 1,
-            "agility": 1,
-            "arcana": 1,
-            "willpower": 1,
-            "strength": 2,
-            "init": 3,
-            "health": 6,
+            "majorMove": 8,
+            "skill": 2,
+            "agility": 0,
+            "arcana": 3,
+            "willpower": 4,
+            "strength": 3,
+            "init": 1,
+            "health": 8,
             "healthIncrease": 3
         },
         "minorMove": 1,
-        "majorMove": 6,
+        "majorMove": 8,
         "charClass": {
-            "name": "Monster",
-            "health": 4,
-            "healthIncrease": 2
+            "name": "Animal",
+            "health": 2,
+            "healthIncrease": 1
         },
         "statBump": {
             "bumps": [
+                "WILLPOWER",
                 "STRENGTH",
-                "WILLPOWER"
+                "ARCANA",
+                "SKILL"
             ]
         },
         "levels": [
             [
-                "STRENGTH",
+                "SKILL",
+                "STRENGTH"
+            ],
+            [
+                "ARCANA",
                 "WILLPOWER"
             ],
             [
                 "SKILL",
-                "AGILITY"
+                "STRENGTH"
             ],
             [
-                "STRENGTH",
+                "ARCANA",
                 "WILLPOWER"
             ],
             [
                 "SKILL",
-                "AGILITY"
-            ],
-            [
-                "STRENGTH",
-                "WILLPOWER"
+                "STRENGTH"
             ]
         ],
         "minion": 0,
         "weapon": {
-            "name": "Bite",
-            "damage": "2d10",
+            "name": "Tree Strike",
+            "damage": "2d12",
             "init": 0,
             "enhanced": true,
             "logger": {
@@ -11955,8 +11038,8 @@
             }
         },
         "armor": {
-            "name": "Hide",
-            "toughness": 3,
+            "name": "Punch",
+            "toughness": 4,
             "agility": 0,
             "enhanced": true,
             "logger": {
@@ -11966,28 +11049,29 @@
         },
         "features": [
             {
-                "type": "HEROIC_ACTION",
-                "desc": "Do this action as soon as an ally damages an adjacent enemy. Make two attacks against that creature."
+                "type": "FEATURE",
+                "desc": "Strangle: Medium sized and smaller reatures are considered strangled and cannot move until the end of the round after being damaged"
             }
         ],
         "stats": {
-            "health": 37,
-            "skill": 3,
-            "agility": 3,
-            "arcana": 1,
-            "willpower": 6,
+            "health": 34,
+            "skill": 6,
+            "agility": 0,
+            "arcana": 6,
+            "willpower": 8,
             "strength": 7,
-            "toughness": 3,
-            "init": 3
+            "toughness": 4,
+            "init": 1
         },
         "explain": {
-            "health": "37: 6 (race) + 4 (class) + 2 (creation) + 25 (levels) - 0 (minion)",
-            "skill": "3: 1 (race) + 0 (creation) + 2 (level)",
-            "agility": "3: 1 (race) + 0 (creation) + 2 (level) - 0 (armor)",
-            "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "willpower": "6: 1 (race) + 2 (creation) + 3 (level)",
-            "strength": "7: 2 (race) + 2 (creation) + 3 (level)",
-            "init": "3: 3 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
-        }
+            "health": "34: 8 (race) + 2 (class) + 4 (creation) + 20 (levels) - 0 (minion)",
+            "skill": "6: 2 (race) + 1 (creation) + 3 (level)",
+            "agility": "0: 0 (race) + 0 (creation) + 0 (level) - 0 (armor)",
+            "arcana": "6: 3 (race) + 1 (creation) + 2 (level)",
+            "willpower": "8: 4 (race) + 2 (creation) + 2 (level)",
+            "strength": "7: 3 (race) + 1 (creation) + 3 (level)",
+            "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
+        },
+        "combatDifficulty": "75"
     }
 ]

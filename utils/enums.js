@@ -17,3 +17,4 @@ export const HEROIC_ACTION = 'HEROIC_ACTION';
 export const HUNTER = 'HUNTER';
 export const DRUID = 'DRUID';
 export const MONSTER = 'MONSTER';
+export const MANUAL = 'MANUAL';

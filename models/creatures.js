@@ -5,7 +5,7 @@ import shieldBuilder from "./shield-options.js";
 import races from "./races.js";
 import charClasses from "./char-classes.js";
 import StatBump from "./stat-bumps.js";
-import { AGILITY, SKILL, STRENGTH, INIT } from "../utils/enums.js";
+import { AGILITY, SKILL, STRENGTH, INIT, MANUAL } from "../utils/enums.js";
 import Weapon from "./weapon.js";
 import Armor from "./armor.js";
 import Shield from "./shield.js";
@@ -21,6 +21,7 @@ export const creatureListBuilder = (logger) => {
         () => new Creature({
             name: 'Slighter',
             id: manualId,
+            type: MANUAL,
             race: races.human,
             charClass: charClasses.soldier,
             statBump: new StatBump([SKILL, STRENGTH]),
