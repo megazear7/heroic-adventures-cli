@@ -48,6 +48,10 @@ export const sum = function(arr) {
     return arr.reduce((sum, num) => sum + num, 0);
 }
 
+export const avg = function(arr) {
+    return sum(arr) / arr.length;
+}
+
 export const removeSmallest = function(arr) {
     return arr.sort((a, b) => a - b).slice(1, arr.length);
 }

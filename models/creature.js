@@ -300,4 +300,12 @@ export default class Creature {
             logger: this.logger,
         });
     }
+
+    unit(type) {
+        return {
+            [WARBAND]: this.warband(),
+            [HOST]: this.host(),
+            [LEGION]: this.legion(),
+        }[type];
+    }
 }

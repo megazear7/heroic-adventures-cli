@@ -1,14 +1,17 @@
 import Encounter from "../models/encounter.js";
 import CombatStats from "../models/combat-stats.js";
 import Team from "../models/team.js";
+import { CREATURE_MAPPING } from "../models/unit.js";
 
 export default class UnitVsCreature {
     constructor({
         creature,
+        type,
         count,
         logger,
     }) {
         this.creature = creature;
+        this.type = type;
         this.count = count;
         this.logger = logger;
 
@@ -18,21 +21,22 @@ export default class UnitVsCreature {
     async play() {
         this.logger.log(100, 'UnitVsCreature play');
 
+        const creatures = [];
+
+        for (let i = 0; i < CREATURE_MAPPING[this.type]; i++) {
+            creatures.push(this.creature());
+        }
+
         const team1 = new Team({
             name: 'Team 1',
-            creatures: [
-                this.creature(),
-                this.creature(),
-                this.creature(),
-                this.creature(),
-            ],
+            creatures,
             logger: this.logger,
         });
         
         const team2 = new Team({
             name: 'Team 2',
             creatures: [
-                this.creature().warband()
+                this.creature().unit(this.type)
             ],
             logger: this.logger,
         });

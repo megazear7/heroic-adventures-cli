@@ -1,6 +1,12 @@
 import { addDice, rollExplode } from "../utils/utils.js";
 import { CRIT, NO_CRIT } from "../utils/enums.js";
 
+export const CREATURE_MAPPING = {
+    WARBAND: 5,
+    HOST:    10,
+    LEGION:  20,
+};
+
 export default class Unit {
     constructor({
         creature,
@@ -10,11 +16,7 @@ export default class Unit {
         this.creature = creature;
         this.type = type;
         this.logger = logger;
-        this.creatures = {
-            WARBAND: 5,
-            HOST:    10,
-            LEGION:  20,
-        }[type];
+        this.creatures = CREATURE_MAPPING[type];
         this.statBump = {
             WARBAND: 2,
             HOST:    3,
@@ -25,14 +27,13 @@ export default class Unit {
             HOST:    this.creature.name + ' host',
             LEGION:  this.creature.name + ' legion',
         }[type];
-        this.damageDiceBump = {
-            WARBAND: 1,
-            HOST:    2,
-            LEGION:  3,
-        }[type];
         this.init = this.creature.init;
         this.team = this.creature.team;
-        this.damage = addDice(this.creature.damage, this.damageDiceBump);
+        this.damage = {
+            WARBAND: addDice(this.creature.damage, 1),//this.creature.damage + ' reroll',
+            HOST:    addDice(this.creature.damage, 2),
+            LEGION:  addDice(this.creature.damage, 3),
+        }[type];        
         this.casualties = 0;
     }
 
