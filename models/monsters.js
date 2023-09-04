@@ -352,6 +352,37 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
+        name: 'Demon Fire Wielder',
+        race: races.demon,
+        charClass: charClasses.monsterClass,
+        weapon: {
+            name: 'Molten rocks',
+            damage: '2d8',
+            init: 4,
+        },
+        shield: shields.noShield,
+        armor: {
+            name: 'Hellskin',
+            toughness: 4,
+            agility: -2,
+        },
+        statBumps: [ ARCANA, SKILL ],
+        levels: [
+            [ ARCANA, WILLPOWER ],
+            [ STRENGTH, SKILL ]
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Molten rocks are ranged 10 attacks.'
+        }, {
+            type: FEATURE,
+            desc: 'Demons take half damage from magic'
+        }, {
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Hellfire: Make an attack that ignores shields and armor'
+        }]
+    },
+    {
         name: 'Greater Demon',
         race: races.demon,
         charClass: charClasses.monsterClass,
@@ -558,6 +589,46 @@ export default (armor, weapons, shields) => ([
         features: [{
             type: FEATURE,
             desc: 'Druskin gain +3 from advantage'
+        }]
+    },
+    {
+        name: 'Druskin Scout',
+        race: races.druskin,
+        charClass: charClasses.soldier,
+        weapon: weapons.longbow,
+        shield: shields.noShield,
+        armor: armor.chainmail,
+        statBumps: [ SKILL, INIT ],
+        levels: [
+            [ AGILITY, INIT ]
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Druskin gain +3 from advantage'
+        }]
+    },
+    {
+        name: 'Druskin Raider',
+        race: races.druskin,
+        minorMove: 4,
+        majorMove: 10,
+        charClass: charClasses.soldier,
+        weapon: weapons.spear,
+        shield: shields.noShield,
+        armor: armor.gambeson,
+        statBumps: [ SKILL, STRENGTH ],
+        levels: [
+            [ AGILITY, INIT ]
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Druskin Raiders are mounted on Krungin'
+        }, {
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Charge 4 or more spaces and gain advantage on the attack'
+        }, {
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Make a thrown spear attack with range 10 that does 2d8 damage.'
         }]
     },
     {
@@ -1086,6 +1157,31 @@ export default (armor, weapons, shields) => ([
         statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
     },
     {
+        name: 'Goblin Archer',
+        race: races.goblin,
+        charClass: charClasses.skirmisher,
+        weapon: weapons.shortbow,
+        shield: shields.noShield,
+        armor: armor.hide,
+        statBumps: [ SKILL, INIT ],
+    },
+    {
+        name: 'Goblin Spider Rider',
+        race: races.goblin,
+        charClass: charClasses.skirmisher,
+        weapon: weapons.shortbow,
+        shield: shields.noShield,
+        armor: armor.hide,
+        statBumps: [ SKILL, INIT ],
+        features: [{
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Make a ranged attack without drawing opportunity attacks.'
+        }, {
+            type: FEATURE,
+            desc: 'Spider Riders can make minor movements on vertical surfaces.'
+        }]
+    },
+    {
         name: 'Goblin Chief',
         race: races.goblin,
         charClass: charClasses.skirmisher,
@@ -1136,6 +1232,9 @@ export default (armor, weapons, shields) => ([
         features: [{
             type: FEATURE,
             desc: 'Gremik gain +3 from advantage'
+        }, {
+            type: HEROIC_ACTION,
+            desc: 'Make a thrown spear attack of range 10 that does 2d6 damage.'
         }]
     },
     {
@@ -1143,6 +1242,15 @@ export default (armor, weapons, shields) => ([
         race: races.human,
         charClass: charClasses.soldier,
         weapon: weapons.spear,
+        shield: shields.smallShield,
+        armor: armor.gambeson,
+        statBumps: [ SKILL, AGILITY, WILLPOWER, STRENGTH ],
+    },
+    {
+        name: 'Human Archer',
+        race: races.human,
+        charClass: charClasses.soldier,
+        weapon: weapons.crossbow,
         shield: shields.smallShield,
         armor: armor.gambeson,
         statBumps: [ SKILL, AGILITY, WILLPOWER, STRENGTH ],
@@ -1210,6 +1318,10 @@ export default (armor, weapons, shields) => ([
         levels: [
             [ STRENGTH, SKILL ],
         ],
+        features: [{
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Make a thrown spear attack with range 15 that does 2d8 damage.'
+        }]
     },
     {
         name: 'Krimkar Raider',
@@ -1231,6 +1343,9 @@ export default (armor, weapons, shields) => ([
         }, {
             type: FEATURE,
             desc: 'When charging do one extra damage dice'
+        }, {
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Make a thrown spear attack with range 15 that does 2d8 damage.'
         }]
     },
     {
@@ -1448,6 +1563,22 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
+        name: 'Lizardmen Archer',
+        race: races.lizardmen,
+        charClass: charClasses.skirmisher,
+        weapon: weapons.shortbow,
+        shield: shields.noShield,
+        armor: armor.hide,
+        statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
+        levels: [
+            [ AGILITY, SKILL ]
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Lizardmen can swim at full speed in water and gain advantage against creatures in water'
+        }]
+    },
+    {
         name: 'Minotaur Dungeon Dweller',
         race: races.minotaur,
         charClass: charClasses.warrior,
@@ -1650,6 +1781,15 @@ export default (armor, weapons, shields) => ([
         statBumps: [ SKILL, STRENGTH, AGILITY, WILLPOWER ],
     },
     {
+        name: 'Orc Archer',
+        race: races.orc,
+        charClass: charClasses.warrior,
+        weapon: weapons.shortbow,
+        shield: shields.smallShield,
+        armor: armor.hide,
+        statBumps: [ SKILL, STRENGTH, AGILITY, WILLPOWER ],
+    },
+    {
         name: 'Orc Berserker',
         race: races.orc,
         charClass: charClasses.warrior,
@@ -1707,6 +1847,20 @@ export default (armor, weapons, shields) => ([
         charClass: charClasses.skirmisher,
         minion: 2,
         weapon: weapons.spear,
+        shield: shields.smallShield,
+        armor: armor.hide,
+        statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
+    },
+    {
+        name: 'Ratmen Slinger',
+        race: races.ratmen,
+        charClass: charClasses.skirmisher,
+        minion: 2,
+        weapon: {
+            name: 'Sling',
+            damage: '1d6',
+            init: 2,
+        },
         shield: shields.smallShield,
         armor: armor.hide,
         statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
@@ -1828,6 +1982,21 @@ export default (armor, weapons, shields) => ([
         race: races.skeleton,
         charClass: charClasses.skirmisher,
         weapon: weapons.armingSword,
+        shield: shields.smallShield,
+        armor: armor.scalemail,
+        statBumps: [ ARCANA, WILLPOWER ],
+        levels: [
+        ],
+        features: [{
+            type: FEATURE,
+            desc: "Piercing attacks do half damage against skeletons"
+        }]
+    },
+    {
+        name: 'Skeleton Archer',
+        race: races.skeleton,
+        charClass: charClasses.skirmisher,
+        weapon: weapons.longbow,
         shield: shields.smallShield,
         armor: armor.scalemail,
         statBumps: [ ARCANA, WILLPOWER ],

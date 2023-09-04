@@ -1,104 +1,114 @@
 Dusty Bones               Difficulty   4%   Level 1/2
 Shambling Zombie          Difficulty   6%   Level 1
 Goblin Villager           Difficulty   6%   Level 1
-Bat                       Difficulty   7%   Level 1/3
-Skeleton Warrior          Difficulty   8%   Level 1
-Bobcat                    Difficulty   9%   Level 1/3
-Frenzied Zombie           Difficulty   9%   Level 2
-Large Spider              Difficulty  11%   Level 1/3
-Ratmen Slave              Difficulty  12%   Level 1/3
-Large Snake               Difficulty  13%   Level 1
-Sproutling                Difficulty  14%   Level 1
-Goblin Skirmisher         Difficulty  15%   Level 1
-Huge Spider               Difficulty  16%   Level 1/2
-Terror Bats               Difficulty  16%   Level 1
-Gremik                    Difficulty  18%   Level 1
-Kruelkin                  Difficulty  18%   Level 1
-Ratmen Skirmisher         Difficulty  19%   Level 1/2
-Kobold Spearmen           Difficulty  19%   Level 1
-Human Soldier             Difficulty  20%   Level 1
-Orc Soldier               Difficulty  22%   Level 1
-Gator Pig                 Difficulty  22%   Level 2
-Kobold Archer             Difficulty  23%   Level 1
-Dwarf Runecaster          Difficulty  23%   Level 3
-Kobold Tribe Shaman       Difficulty  24%   Level 3
-Kobold Tribe Chief        Difficulty  24%   Level 3
-Elf Mage                  Difficulty  26%   Level 5
-Giant Spider              Difficulty  27%   Level 1
-Goblin Assassin           Difficulty  27%   Level 3
-Goblin Chief              Difficulty  28%   Level 3
-Dwarf Warrior             Difficulty  29%   Level 1
-Skeleton Mage             Difficulty  30%   Level 5
-Lizardmen                 Difficulty  32%   Level 2
-Druskin                   Difficulty  32%   Level 2
-Elf Warrior               Difficulty  33%   Level 2
-Krimkar Warrior           Difficulty  35%   Level 2
-Skeleton Knight           Difficulty  36%   Level 3
-Orc Berserker             Difficulty  36%   Level 2
-Minor Demon               Difficulty  37%   Level 1
-Slighter                  Difficulty  38%   Level 3
-Ratswarm Seer             Difficulty  42%   Level 3
-Ratbeast                  Difficulty  42%   Level 3
-Krimkar Raider            Difficulty  42%   Level 3
-Ratswarm Captain          Difficulty  42%   Level 3
-Human Captain             Difficulty  42%   Level 3
-Orc Captain               Difficulty  44%   Level 3
-Jungle Terror             Difficulty  44%   Level 3
-Mountain Lion             Difficulty  44%   Level 3
-Werecat Warrior           Difficulty  46%   Level 3
-Swamp Monster             Difficulty  47%   Level 4
-Skeleton Lord             Difficulty  47%   Level 5
-Massive Spider            Difficulty  48%   Level 3
-Druskin Desert Chief      Difficulty  48%   Level 4
-Slithering Behemoth       Difficulty  48%   Level 5
-Human Knight              Difficulty  48%   Level 3
-Treefolk                  Difficulty  48%   Level 3
-Dwarf Runeleader          Difficulty  50%   Level 3
-Ghoul                     Difficulty  51%   Level 3
-Krimkar Warchief          Difficulty  52%   Level 4
-Lesser Water Elemental    Difficulty  52%   Level 3
-Lesser Fire Elemental     Difficulty  56%   Level 3
-Lesser Demon              Difficulty  56%   Level 3
-Human Warlord             Difficulty  56%   Level 5
-Gargantuan Spider         Difficulty  56%   Level 5
-Ape                       Difficulty  60%   Level 3
-Orc Chief                 Difficulty  61%   Level 5
-Elf Captain               Difficulty  64%   Level 5
-Ogre                      Difficulty  64%   Level 4
-Minotaur Dungeon Dweller  Difficulty  65%   Level 4
-Bramblebaum               Difficulty  65%   Level 6
-Cave Troll                Difficulty  68%   Level 5
-Dwarf Runelord            Difficulty  68%   Level 6
-Swamp Troll               Difficulty  70%   Level 5
-Hill Troll                Difficulty  71%   Level 5
-Lion                      Difficulty  72%   Level 5
-Elf Lord                  Difficulty  73%   Level 7
-Treefolk                  Difficulty  73%   Level 6
-Gorilla                   Difficulty  73%   Level 5
-Mountain Troll            Difficulty  73%   Level 5
-Ogre Warrior              Difficulty  74%   Level 5
-Ogre Chief                Difficulty  75%   Level 6
-Greater Water Elemental   Difficulty  77%   Level 5
-Tiger                     Difficulty  78%   Level 6
-Greater Fire Elemental    Difficulty  78%   Level 5
-Young Dragon              Difficulty  81%   Level 5
-Ocean Lord                Difficulty  81%   Level 7
-Minotaur Dungeon Lord     Difficulty  83%   Level 7
-Yeti                      Difficulty  85%   Level 7
-Greater Demon             Difficulty  85%   Level 7
-Swamp Behemoth            Difficulty  86%   Level 13
-Hill Giant                Difficulty  86%   Level 11
-Tree Shepherd             Difficulty  88%   Level 11
-Ice Giant                 Difficulty  88%   Level 12
-Rokum                     Difficulty  88%   Level 10
-Werewolf                  Difficulty  89%   Level 7
+Bat                       Difficulty   8%   Level 1/3
+Skeleton Warrior          Difficulty   9%   Level 1
+Frenzied Zombie           Difficulty  10%   Level 2
+Bobcat                    Difficulty  10%   Level 1/3
+Large Spider              Difficulty  12%   Level 1/3
+Ratmen Slave              Difficulty  13%   Level 1/3
+Ratmen Slinger            Difficulty  13%   Level 1/3
+Large Snake               Difficulty  14%   Level 1
+Sproutling                Difficulty  15%   Level 1
+Goblin Skirmisher         Difficulty  16%   Level 1
+Huge Spider               Difficulty  17%   Level 1/2
+Terror Bats               Difficulty  17%   Level 1
+Skeleton Archer           Difficulty  18%   Level 1
+Goblin Spider Rider       Difficulty  19%   Level 1
+Goblin Archer             Difficulty  19%   Level 1
+Kruelkin                  Difficulty  19%   Level 1
+Gremik                    Difficulty  19%   Level 1
+Ratmen Skirmisher         Difficulty  20%   Level 1/2
+Kobold Spearmen           Difficulty  21%   Level 1
+Human Soldier             Difficulty  22%   Level 1
+Gator Pig                 Difficulty  23%   Level 2
+Orc Soldier               Difficulty  23%   Level 1
+Kobold Archer             Difficulty  25%   Level 1
+Dwarf Runecaster          Difficulty  25%   Level 3
+Kobold Tribe Shaman       Difficulty  26%   Level 3
+Kobold Tribe Chief        Difficulty  26%   Level 3
+Elf Mage                  Difficulty  29%   Level 5
+Goblin Assassin           Difficulty  29%   Level 3
+Giant Spider              Difficulty  29%   Level 1
+Orc Archer                Difficulty  30%   Level 1
+Skeleton Mage             Difficulty  31%   Level 5
+Dwarf Warrior             Difficulty  31%   Level 1
+Goblin Chief              Difficulty  31%   Level 3
+Druskin Raider            Difficulty  33%   Level 2
+Druskin                   Difficulty  34%   Level 2
+Lizardmen                 Difficulty  34%   Level 2
+Elf Warrior               Difficulty  36%   Level 2
+Human Archer              Difficulty  36%   Level 1
+Krimkar Warrior           Difficulty  37%   Level 2
+Skeleton Knight           Difficulty  37%   Level 3
+Orc Berserker             Difficulty  38%   Level 2
+Minor Demon               Difficulty  39%   Level 1
+Slighter                  Difficulty  41%   Level 3
+Lizardmen Archer          Difficulty  43%   Level 2
+Druskin Scout             Difficulty  43%   Level 2
+Ratbeast                  Difficulty  44%   Level 3
+Ratswarm Captain          Difficulty  44%   Level 3
+Ratswarm Seer             Difficulty  44%   Level 3
+Krimkar Raider            Difficulty  44%   Level 3
+Human Captain             Difficulty  45%   Level 3
+Orc Captain               Difficulty  46%   Level 3
+Mountain Lion             Difficulty  47%   Level 3
+Jungle Terror             Difficulty  47%   Level 3
+Werecat Warrior           Difficulty  48%   Level 3
+Skeleton Lord             Difficulty  49%   Level 5
+Swamp Monster             Difficulty  49%   Level 4
+Massive Spider            Difficulty  50%   Level 3
+Druskin Desert Chief      Difficulty  50%   Level 4
+Human Knight              Difficulty  51%   Level 3
+Slithering Behemoth       Difficulty  51%   Level 5
+Treefolk                  Difficulty  51%   Level 3
+Dwarf Runeleader          Difficulty  52%   Level 3
+Ghoul                     Difficulty  54%   Level 3
+Krimkar Warchief          Difficulty  55%   Level 4
+Lesser Water Elemental    Difficulty  55%   Level 3
+Lesser Demon              Difficulty  58%   Level 3
+Gargantuan Spider         Difficulty  58%   Level 5
+Lesser Fire Elemental     Difficulty  59%   Level 3
+Human Warlord             Difficulty  59%   Level 5
+Ape                       Difficulty  63%   Level 3
+Orc Chief                 Difficulty  64%   Level 5
+Elf Captain               Difficulty  66%   Level 5
+Demon Fire Wielder        Difficulty  66%   Level 3
+Ogre                      Difficulty  66%   Level 4
+Bramblebaum               Difficulty  67%   Level 6
+Minotaur Dungeon Dweller  Difficulty  67%   Level 4
+Cave Troll                Difficulty  70%   Level 5
+Dwarf Runelord            Difficulty  70%   Level 6
+Swamp Troll               Difficulty  73%   Level 5
+Hill Troll                Difficulty  73%   Level 5
+Lion                      Difficulty  74%   Level 5
+Elf Lord                  Difficulty  75%   Level 7
+Gorilla                   Difficulty  75%   Level 5
+Treefolk                  Difficulty  76%   Level 6
+Mountain Troll            Difficulty  76%   Level 5
+Ogre Warrior              Difficulty  76%   Level 5
+Ogre Chief                Difficulty  78%   Level 6
+Greater Water Elemental   Difficulty  78%   Level 5
+Tiger                     Difficulty  79%   Level 6
+Greater Fire Elemental    Difficulty  80%   Level 5
+Young Dragon              Difficulty  82%   Level 5
+Ocean Lord                Difficulty  82%   Level 7
+Minotaur Dungeon Lord     Difficulty  84%   Level 7
+Yeti                      Difficulty  86%   Level 7
+Greater Demon             Difficulty  86%   Level 7
+Swamp Behemoth            Difficulty  87%   Level 13
+Hill Giant                Difficulty  87%   Level 11
+Rokum                     Difficulty  89%   Level 10
+Ice Giant                 Difficulty  89%   Level 12
+Tree Shepherd             Difficulty  89%   Level 11
+Werewolf                  Difficulty  90%   Level 7
 Adult Dragon              Difficulty  93%   Level 9
 Kram Krimkar              Difficulty  93%   Level 10
-Fire Giant                Difficulty  94%   Level 13
+Fire Giant                Difficulty  95%   Level 13
 Storm Giant               Difficulty  96%   Level 15
 Angel                     Difficulty  97%   Level 10
-Demon Lord                Difficulty  97%   Level 13
+Demon Lord                Difficulty  98%   Level 13
 Mountain Giant            Difficulty  98%   Level 15
-Kraken                    Difficulty  99%   Level 15
 Ancient Dragon            Difficulty  99%   Level 13
+Kraken                    Difficulty  99%   Level 15
 Cherubim                  Difficulty 100%   Level 13
