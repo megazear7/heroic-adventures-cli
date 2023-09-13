@@ -342,7 +342,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Attacks from demons are arcana vs. WILLPOWER. Shields can still be used.'
+            desc: 'Attacks from demons are arcana vs. willpower. Shields can still be used.'
         }, {
             type: FEATURE,
             desc: 'Demons take half damage from magic'
@@ -699,7 +699,7 @@ export default (armor, weapons, shields) => ([
             desc: 'All dwarves withen 10 spaces ignore half magic damage'
         }, {
             type: FEATURE,
-            desc: 'Attack: Arcana vs. WILLPOWER. 2d4 damage that ignores armor'
+            desc: 'Attack: Arcana vs. willpower. 2d4 damage that ignores armor'
         }]
     },
     {
@@ -905,7 +905,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Elementals ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Deluge: Make a agility vs. init attack against adjacent creatures. If hit, they fall prone cannot take actions until the next round'
+            desc: 'Deluge: Make an agility vs. init attack against all adjacent creatures. If hit, they fall prone cannot take actions until the next round'
         }]
     },
     {
@@ -929,7 +929,35 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'If the target of an attack has already been attacked by a gator pig this round, gator pig attack target willpower'
+            desc: 'If the target is adjacent to two or more gator pigs, attacks target willpower'
+        }]
+    },
+    {
+        name: 'Ghost',
+        race: races.ghost,
+        charClass: charClasses.monsterClass,
+        weapon: {
+            name: 'Weaken',
+            damage: '1d6',
+            init: 2,
+        },
+        shield: shields.noShield,
+        armor: armor.noArmor,
+        statBumps: [ INIT, ARCANA, AGILITY, WILLPOWER ],
+        levels: [
+            [ ARCANA, STRENGTH ],
+            [ SKILL, INIT ],
+            [ ARCANA, STRENGTH ],
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Ghost attacks target willpower'
+        }, {
+            type: FEATURE,
+            desc: 'Ghosts ignore all damage reduction and shields.'
+        }, {
+            type: FEATURE,
+            desc: 'Ghosts ignore damage from non magical sources'
         }]
     },
     {
@@ -1144,7 +1172,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Storm Giant attacks target arcana'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Storm Lightning: Make an arcana vs. arcana attack against all enemies with 10 spaces that does 3d8 damage'
+            desc: 'Storm Lightning: Make an arcana vs. arcana attack against all enemies within 10 spaces that does 3d8 damage'
         }]
     },
     {
@@ -1223,7 +1251,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Gremik',
-        race: races.goblin,
+        race: races.gremik,
         charClass: charClasses.skirmisher,
         weapon: weapons.spear,
         shield: shields.noShield,
@@ -2221,7 +2249,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Swamp Behemoth',
-        race: races.lizardmen,
+        race: races.swampBehemoth,
         charClass: charClasses.animalClass,
         weapon: {
             name: 'Claws',

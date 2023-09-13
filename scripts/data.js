@@ -9,6 +9,13 @@ const creaturesList = creatureListBuilder(logger);
 const ranking = await new Ranking(creaturesList, 100, logger).rank();
 const rankings = ranking.report();
 const monsters = creaturesList.filter(creature => [ MONSTER ].includes(creature().type));
+monsters.sort((a, b) =>  a().name - b().name);
+
+monsters.sort((a, b) => {
+    const nameA = a().race.name.toUpperCase();
+    const nameB = b().race.name.toUpperCase();
+    return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
+});
 
 console.log(JSON.stringify(monsters.map(monster => {
     const creature = monster();
