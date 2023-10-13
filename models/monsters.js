@@ -1442,7 +1442,10 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: HEROIC_ACTION,
-            desc: 'Gain advantage from opportunity attacks'
+            desc: 'When a creature makes a ranged attack or spell attack against you, jump up to 6 spaces and make an attack against them.'
+        }, {
+            type: FEATURE,
+            desc: 'Gain advantage when making opportunity attacks'
         }]
     },
     {
@@ -1604,6 +1607,32 @@ export default (armor, weapons, shields) => ([
         features: [{
             type: FEATURE,
             desc: 'Lizardmen can swim at full speed in water and gain advantage against creatures in water'
+        }]
+    },
+    {
+        name: 'Mind Slayer',
+        race: races.mindSlayer,
+        charClass: charClasses.soldier,
+        weapon: weapons.staff,
+        shield: shields.noShield,
+        armor: armor.noArmor,
+        statBumps: [ ARCANA, WILLPOWER ],
+        levels: [
+            [ ARCANA, WILLPOWER ],
+            [ SKILL, AGILITY ],
+            [ ARCANA, WILLPOWER ],
+            [ SKILL, AGILITY ],
+            [ ARCANA, WILLPOWER ],
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Mind Slayers can spend 3 mana per round and has access to any spell any creature within 10 spaces has access to.'
+        }, {
+            type: FEATURE,
+            desc: 'Make a ranged 10 Arcana vs. Willpower attack. If successful, the target is under your control for the remainder of the turn.'
+        }, {
+            type: HEROIC_ACTION,
+            desc: 'All creatures under your control may move and attack the nearest enemy creature.'
         }]
     },
     {
