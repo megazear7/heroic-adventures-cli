@@ -1842,7 +1842,7 @@ export default (armor, weapons, shields) => ([
         race: races.orc,
         charClass: charClasses.warrior,
         weapon: weapons.shortbow,
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: armor.hide,
         statBumps: [ SKILL, STRENGTH, AGILITY, WILLPOWER ],
     },
@@ -1918,7 +1918,7 @@ export default (armor, weapons, shields) => ([
             damage: '1d6',
             init: 2,
         },
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: armor.hide,
         statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
     },
@@ -1937,7 +1937,7 @@ export default (armor, weapons, shields) => ([
         race: races.ratmen,
         charClass: charClasses.skirmisher,
         weapon: weapons.spear,
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: armor.hide,
         statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
         levels: [
@@ -1971,7 +1971,7 @@ export default (armor, weapons, shields) => ([
         race: races.ratmen,
         charClass: charClasses.skirmisher,
         weapon: weapons.spear,
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: armor.hide,
         statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
         levels: [
@@ -2320,6 +2320,16 @@ export default (armor, weapons, shields) => ([
             [ WILLPOWER, ARCANA ],
             [ STRENGTH, SKILL ],
         ],
+        features: [{
+            type: FEATURE,
+            desc: 'After hitting with an attack, make a minor movement and drag the target of the attack with you.'
+        }, {
+            type: FEATURE,
+            desc: 'After missing with an attack, make a minor movement.'
+        }, {
+            type: FEATURE,
+            desc: 'If in waste deep water or deeper, the swamp monster may dissapear into the water'
+        }]
     },
     {
         name: 'Sproutling',
@@ -2595,6 +2605,29 @@ export default (armor, weapons, shields) => ([
         }, {
             type: FEATURE,
             desc: 'Gain 1d8 damage dice when you have advantage'
+        }]
+    },
+    {
+        name: 'Wolf',
+        race: races.wolf,
+        charClass: charClasses.animalClass,
+        weapon: {
+            name: 'Claws',
+            damage: '1d8',
+            init: 3,
+        },
+        shield: shields.noShield,
+        armor: {
+            name: 'Tough Hide',
+            toughness: 2,
+            agility: 0,
+        },
+        statBumps: [ STRENGTH, AGILITY, SKILL, INIT ],
+        levels: [
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Gain +3 from advantage'
         }]
     },
     {
