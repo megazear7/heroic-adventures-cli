@@ -303,7 +303,7 @@ export default (armor, weapons, shields) => ([
             damage: '1d8',
             init: 4,
         },
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: {
             name: 'Hellskin',
             toughness: 3,
@@ -657,7 +657,7 @@ export default (armor, weapons, shields) => ([
         race: races.dwarf,
         charClass: charClasses.soldier,
         weapon: weapons.battleAxe,
-        shield: shields.noShield,
+        shield: shields.largeShield,
         armor: armor.chainmail,
         statBumps: [ SKILL, STRENGTH, WILLPOWER, ARCANA ],
         features: [{
@@ -1279,7 +1279,7 @@ export default (armor, weapons, shields) => ([
         race: races.human,
         charClass: charClasses.soldier,
         weapon: weapons.crossbow,
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: armor.gambeson,
         statBumps: [ SKILL, AGILITY, WILLPOWER, STRENGTH ],
     },
@@ -1314,7 +1314,7 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
-        name: 'Human Warlord',
+        name: 'Human Lord',
         race: races.human,
         charClass: charClasses.soldier,
         weapon: weapons.armingSword,
@@ -1676,11 +1676,7 @@ export default (armor, weapons, shields) => ([
             damage: '1d12',
             init: 0,
         },
-        shield: {
-            name: "Hell's Shield",
-            block: 2,
-            init: -1,
-        },
+        shield: shields.noShield,
         armor: {
             name: 'Tough Hide',
             toughness: 3,
@@ -1904,7 +1900,7 @@ export default (armor, weapons, shields) => ([
         charClass: charClasses.skirmisher,
         minion: 2,
         weapon: weapons.spear,
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: armor.hide,
         statBumps: [ AGILITY, SKILL, INIT, STRENGTH ],
     },
@@ -2039,7 +2035,7 @@ export default (armor, weapons, shields) => ([
         race: races.skeleton,
         charClass: charClasses.skirmisher,
         weapon: weapons.armingSword,
-        shield: shields.smallShield,
+        shield: shields.largeShield,
         armor: armor.scalemail,
         statBumps: [ ARCANA, WILLPOWER ],
         levels: [
@@ -2054,7 +2050,7 @@ export default (armor, weapons, shields) => ([
         race: races.skeleton,
         charClass: charClasses.skirmisher,
         weapon: weapons.longbow,
-        shield: shields.smallShield,
+        shield: shields.noShield,
         armor: armor.scalemail,
         statBumps: [ ARCANA, WILLPOWER ],
         levels: [
@@ -2069,7 +2065,7 @@ export default (armor, weapons, shields) => ([
         race: races.skeleton,
         charClass: charClasses.skirmisher,
         weapon: weapons.armingSword,
-        shield: shields.smallShield,
+        shield: shields.largeShield,
         armor: armor.halfplate,
         statBumps: [ SKILL, STRENGTH ],
         levels: [

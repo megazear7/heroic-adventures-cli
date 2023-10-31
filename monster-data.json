@@ -377,7 +377,7 @@
             "strength": "6: 4 (race) + 1 (creation) + 1 (level)",
             "init": "5: 3 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "66"
+        "combatDifficulty": "65"
     },
     {
         "name": "Gorilla",
@@ -972,7 +972,7 @@
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "75"
+        "combatDifficulty": "76"
     },
     {
         "name": "Tiger",
@@ -1135,9 +1135,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -1172,7 +1172,7 @@
             "willpower": 0,
             "strength": 3,
             "toughness": 3,
-            "init": 5
+            "init": 8
         },
         "explain": {
             "health": "15: 7 (race) + 4 (class) + 4 (creation) + 0 (levels) - 0 (minion)",
@@ -1181,9 +1181,9 @@
             "arcana": "4: 2 (race) + 2 (creation) + 0 (level)",
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
-            "init": "5: 4 (race) + 4 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
+            "init": "8: 4 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "43"
+        "combatDifficulty": "40"
     },
     {
         "name": "Lesser Demon",
@@ -1291,7 +1291,7 @@
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "8: 4 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "60"
+        "combatDifficulty": "61"
     },
     {
         "name": "Demon Fire Wielder",
@@ -1397,7 +1397,7 @@
             "strength": "3: 2 (race) + 0 (creation) + 1 (level)",
             "init": "8: 4 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "68"
+        "combatDifficulty": "69"
     },
     {
         "name": "Greater Demon",
@@ -2255,7 +2255,7 @@
             "strength": "2: 2 (race) + 0 (creation) + 0 (level)",
             "init": "6: 4 (race) + -1 (weapon) - 0 (shield) + 2 (creation) + 1 (level)"
         },
-        "combatDifficulty": "47"
+        "combatDifficulty": "46"
     },
     {
         "name": "Druskin Raider",
@@ -2512,9 +2512,9 @@
             }
         },
         "shield": {
-            "name": "",
-            "block": 0,
-            "init": 0,
+            "name": "Large Shield",
+            "block": 2,
+            "init": -5,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -2554,9 +2554,9 @@
             "arcana": "2: 1 (race) + 1 (creation) + 0 (level)",
             "willpower": "4: 3 (race) + 1 (creation) + 0 (level)",
             "strength": "4: 3 (race) + 1 (creation) + 0 (level)",
-            "init": "1: 2 (race) + -1 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
+            "init": "1: 2 (race) + -1 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "35"
+        "combatDifficulty": "39"
     },
     {
         "name": "Dwarf Runeleader",
@@ -2656,7 +2656,7 @@
             "strength": "5: 3 (race) + 1 (creation) + 1 (level)",
             "init": "1: 2 (race) + -1 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "55"
+        "combatDifficulty": "56"
     },
     {
         "name": "Dwarf Runecaster",
@@ -3322,7 +3322,7 @@
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "7: 4 (race) + 0 (weapon) - 0 (shield) + 1 (creation) + 2 (level)"
         },
-        "combatDifficulty": "79"
+        "combatDifficulty": "80"
     },
     {
         "name": "Elf Warrior",
@@ -4324,7 +4324,7 @@
             "strength": "11: 4 (race) + 2 (creation) + 5 (level)",
             "init": "4: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 2 (level)"
         },
-        "combatDifficulty": "89"
+        "combatDifficulty": "88"
     },
     {
         "name": "Ice Giant",
@@ -4466,7 +4466,7 @@
             "strength": "12: 4 (race) + 2 (creation) + 6 (level)",
             "init": "4: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 2 (level)"
         },
-        "combatDifficulty": "90"
+        "combatDifficulty": "91"
     },
     {
         "name": "Mountain Giant",
@@ -5551,7 +5551,7 @@
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "6: 4 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
         },
-        "combatDifficulty": "22"
+        "combatDifficulty": "23"
     },
     {
         "name": "Gremik",
@@ -5646,7 +5646,7 @@
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "6: 4 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
         },
-        "combatDifficulty": "22"
+        "combatDifficulty": "23"
     },
     {
         "name": "Human Soldier",
@@ -5778,9 +5778,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -5814,9 +5814,9 @@
             "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
             "willpower": "2: 1 (race) + 1 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
-            "init": "1: 3 (race) + -2 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
+            "init": "1: 3 (race) + -2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "40"
+        "combatDifficulty": "37"
     },
     {
         "name": "Human Knight",
@@ -5910,7 +5910,7 @@
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "53"
+        "combatDifficulty": "54"
     },
     {
         "name": "Human Captain",
@@ -6010,10 +6010,10 @@
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "48"
+        "combatDifficulty": "49"
     },
     {
-        "name": "Human Warlord",
+        "name": "Human Lord",
         "type": "MONSTER",
         "level": "5",
         "race": {
@@ -6122,7 +6122,7 @@
             "strength": "5: 2 (race) + 1 (creation) + 2 (level)",
             "init": "1: 3 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "61"
+        "combatDifficulty": "62"
     },
     {
         "name": "Krimkar Warrior",
@@ -7486,7 +7486,7 @@
             "strength": "5: 1 (race) + 2 (creation) + 2 (level)",
             "init": "4: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "52"
+        "combatDifficulty": "53"
     },
     {
         "name": "Mind Slayer",
@@ -7604,7 +7604,7 @@
             "strength": "2: 2 (race) + 0 (creation) + 0 (level)",
             "init": "7: 3 (race) + 4 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "37"
+        "combatDifficulty": "38"
     },
     {
         "name": "Minotaur Dungeon Dweller",
@@ -7784,9 +7784,9 @@
             }
         },
         "shield": {
-            "name": "Hell's Shield",
-            "block": 2,
-            "init": -1,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -7825,7 +7825,7 @@
             "willpower": 4,
             "strength": 6,
             "toughness": 3,
-            "init": 7
+            "init": 8
         },
         "explain": {
             "health": "41: 8 (race) + 4 (class) + 2 (creation) + 27 (levels) - 0 (minion)",
@@ -7834,9 +7834,9 @@
             "arcana": "2: 2 (race) + 0 (creation) + 0 (level)",
             "willpower": "4: 2 (race) + 0 (creation) + 2 (level)",
             "strength": "6: 2 (race) + 2 (creation) + 2 (level)",
-            "init": "7: 4 (race) + 0 (weapon) - 1 (shield) + 0 (creation) + 4 (level)"
+            "init": "8: 4 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 4 (level)"
         },
-        "combatDifficulty": "85"
+        "combatDifficulty": "82"
     },
     {
         "name": "Ogre",
@@ -8300,9 +8300,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -8327,7 +8327,7 @@
             "willpower": 3,
             "strength": 3,
             "toughness": 2,
-            "init": 1
+            "init": 3
         },
         "explain": {
             "health": "14: 6 (race) + 4 (class) + 4 (creation) + 0 (levels) - 0 (minion)",
@@ -8336,9 +8336,9 @@
             "arcana": "1: 1 (race) + 0 (creation) + 0 (level)",
             "willpower": "3: 2 (race) + 1 (creation) + 0 (level)",
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
-            "init": "1: 3 (race) + 0 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
+            "init": "3: 3 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "34"
+        "combatDifficulty": "31"
     },
     {
         "name": "Orc Berserker",
@@ -8434,7 +8434,7 @@
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + -1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "42"
+        "combatDifficulty": "41"
     },
     {
         "name": "Orc Captain",
@@ -8534,7 +8534,7 @@
             "strength": "4: 2 (race) + 1 (creation) + 1 (level)",
             "init": "1: 3 (race) + 1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "49"
+        "combatDifficulty": "50"
     },
     {
         "name": "Orc Chief",
@@ -8689,9 +8689,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -8716,7 +8716,7 @@
             "willpower": 0,
             "strength": 2,
             "toughness": 2,
-            "init": 5
+            "init": 8
         },
         "explain": {
             "health": "3: 4 (race) + 2 (class) + 4 (creation) + 0 (levels) - 7 (minion)",
@@ -8725,9 +8725,9 @@
             "arcana": "0: 0 (race) + 0 (creation) + 0 (level)",
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
-            "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
+            "init": "8: 6 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
         },
-        "combatDifficulty": "16"
+        "combatDifficulty": "14"
     },
     {
         "name": "Ratmen Slinger",
@@ -8774,9 +8774,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -8801,7 +8801,7 @@
             "willpower": 0,
             "strength": 2,
             "toughness": 2,
-            "init": 6
+            "init": 9
         },
         "explain": {
             "health": "3: 4 (race) + 2 (class) + 4 (creation) + 0 (levels) - 7 (minion)",
@@ -8810,9 +8810,9 @@
             "arcana": "0: 0 (race) + 0 (creation) + 0 (level)",
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
-            "init": "6: 6 (race) + 2 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
+            "init": "9: 6 (race) + 2 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
         },
-        "combatDifficulty": "16"
+        "combatDifficulty": "14"
     },
     {
         "name": "Ratmen Skirmisher",
@@ -8897,7 +8897,7 @@
             "strength": "2: 1 (race) + 1 (creation) + 0 (level)",
             "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
         },
-        "combatDifficulty": "24"
+        "combatDifficulty": "23"
     },
     {
         "name": "Ratbeast",
@@ -8953,9 +8953,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -8986,7 +8986,7 @@
             "willpower": 0,
             "strength": 4,
             "toughness": 2,
-            "init": 5
+            "init": 8
         },
         "explain": {
             "health": "15: 4 (race) + 2 (class) + 4 (creation) + 5 (levels) - 0 (minion)",
@@ -8995,9 +8995,9 @@
             "arcana": "0: 0 (race) + 0 (creation) + 0 (level)",
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 1 (race) + 1 (creation) + 2 (level)",
-            "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
+            "init": "8: 6 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
         },
-        "combatDifficulty": "48"
+        "combatDifficulty": "44"
     },
     {
         "name": "Ratswarm Captain",
@@ -9153,9 +9153,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -9186,7 +9186,7 @@
             "willpower": 0,
             "strength": 4,
             "toughness": 2,
-            "init": 5
+            "init": 8
         },
         "explain": {
             "health": "15: 4 (race) + 2 (class) + 4 (creation) + 5 (levels) - 0 (minion)",
@@ -9195,9 +9195,9 @@
             "arcana": "0: 0 (race) + 0 (creation) + 0 (level)",
             "willpower": "0: 0 (race) + 0 (creation) + 0 (level)",
             "strength": "4: 1 (race) + 1 (creation) + 2 (level)",
-            "init": "5: 6 (race) + 1 (weapon) - 3 (shield) + 1 (creation) + 0 (level)"
+            "init": "8: 6 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 0 (level)"
         },
-        "combatDifficulty": "47"
+        "combatDifficulty": "44"
     },
     {
         "name": "Rokum",
@@ -9463,9 +9463,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "Large Shield",
+            "block": 2,
+            "init": -5,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -9505,9 +9505,9 @@
             "arcana": "4: 2 (race) + 2 (creation) + 0 (level)",
             "willpower": "5: 3 (race) + 2 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "init": "1: 1 (race) + 2 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
+            "init": "1: 1 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "12"
+        "combatDifficulty": "13"
     },
     {
         "name": "Skeleton Archer",
@@ -9552,9 +9552,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "",
+            "block": 0,
+            "init": 0,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -9594,9 +9594,9 @@
             "arcana": "4: 2 (race) + 2 (creation) + 0 (level)",
             "willpower": "5: 3 (race) + 2 (creation) + 0 (level)",
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
-            "init": "1: 1 (race) + -1 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
+            "init": "1: 1 (race) + -1 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "21"
+        "combatDifficulty": "19"
     },
     {
         "name": "Skeleton Knight",
@@ -9650,9 +9650,9 @@
             }
         },
         "shield": {
-            "name": "Small Shield",
-            "block": 1,
-            "init": -3,
+            "name": "Large Shield",
+            "block": 2,
+            "init": -5,
             "enhanced": true,
             "logger": {
                 "pause": false,
@@ -9692,9 +9692,9 @@
             "arcana": "3: 2 (race) + 0 (creation) + 1 (level)",
             "willpower": "4: 3 (race) + 0 (creation) + 1 (level)",
             "strength": "4: 1 (race) + 2 (creation) + 1 (level)",
-            "init": "1: 1 (race) + 2 (weapon) - 3 (shield) + 0 (creation) + 0 (level)"
+            "init": "1: 1 (race) + 2 (weapon) - 5 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "41"
+        "combatDifficulty": "43"
     },
     {
         "name": "Skeleton Lord",
@@ -9808,7 +9808,7 @@
             "strength": "5: 1 (race) + 2 (creation) + 2 (level)",
             "init": "1: 1 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "52"
+        "combatDifficulty": "53"
     },
     {
         "name": "Skeleton Mage",
@@ -10011,7 +10011,7 @@
             "strength": "1: 1 (race) + 0 (creation) + 0 (level)",
             "init": "2: 2 (race) + 0 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "16"
+        "combatDifficulty": "17"
     },
     {
         "name": "Slithering Behemoth",
@@ -10283,7 +10283,7 @@
             "strength": "2: 2 (race) + 0 (creation) + 0 (level)",
             "init": "6: 4 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "20"
+        "combatDifficulty": "21"
     },
     {
         "name": "Giant Spider",
@@ -10368,7 +10368,7 @@
             "strength": "3: 2 (race) + 1 (creation) + 0 (level)",
             "init": "6: 4 (race) + 2 (weapon) - 0 (shield) + 0 (creation) + 0 (level)"
         },
-        "combatDifficulty": "32"
+        "combatDifficulty": "33"
     },
     {
         "name": "Massive Spider",
@@ -11831,7 +11831,7 @@
             "strength": "5: 2 (race) + 2 (creation) + 1 (level)",
             "init": "6: 3 (race) + 1 (weapon) - 0 (shield) + 1 (creation) + 1 (level)"
         },
-        "combatDifficulty": "51"
+        "combatDifficulty": "52"
     },
     {
         "name": "Werewolf",
