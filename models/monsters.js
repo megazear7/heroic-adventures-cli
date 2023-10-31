@@ -1530,7 +1530,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Kraken',
-        race: races.giant,
+        race: races.kraken,
         charClass: charClasses.monsterClass,
         weapon: {
             name: 'Tenticle Swipe',
@@ -1566,7 +1566,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Kruelkin',
-        race: races.goblin,
+        race: races.kruelkin,
         charClass: charClasses.skirmisher,
         weapon: weapons.spear,
         shield: shields.noShield,
@@ -1704,7 +1704,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Ocean Lord',
-        race: races.lizardmen,
+        race: races.oceanLord,
         charClass: charClasses.warrior,
         weapon: {
             name: 'Trident',
@@ -2301,7 +2301,7 @@ export default (armor, weapons, shields) => ([
     },
     {
         name: 'Swamp Monster',
-        race: races.lizardmen,
+        race: races.swampMonster,
         charClass: charClasses.animalClass,
         weapon: {
             name: 'Claws',
