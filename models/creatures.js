@@ -3,7 +3,7 @@ import armorBuilder from "./armor-options.js";
 import weaponBuilder from "./weapon-options.js";
 import shieldBuilder from "./shield-options.js";
 import races from "./races.js";
-import charClasses from "./char-classes.js";
+import charClasses from "./monster-classes.js";
 import StatBump from "./stat-bumps.js";
 import { AGILITY, SKILL, STRENGTH, INIT, MANUAL } from "../utils/enums.js";
 import Weapon from "./weapon.js";

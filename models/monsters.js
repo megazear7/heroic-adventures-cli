@@ -1,5 +1,5 @@
 import races from "./races.js";
-import charClasses from "./char-classes.js";
+import charClasses from "./monster-classes.js";
 import { SKILL, AGILITY, ARCANA, WILLPOWER, STRENGTH, INIT, FEATURE, HEROIC_ACTION, DOUBLE_HEROIC_ACTION, HUNTER, DRUID } from "../utils/enums.js";
 
 export default (armor, weapons, shields) => ([
