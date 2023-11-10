@@ -602,7 +602,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Maul: Attack twice'
         },{
             type: HEROIC_ACTION,
-            desc: 'Toughness: Use after taking damage. Ignore half that damage.'
+            desc: 'Toughness: Use after taking damage. Ignore half of the damage.'
         }]
     },
     {
@@ -634,7 +634,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Maul: Attack twice'
         },{
             type: HEROIC_ACTION,
-            desc: 'Toughness: Use after taking damage. Ignore half that damage.'
+            desc: 'Toughness: Use after taking damage. Ignore half of the damage.'
         }]
     },
     {
@@ -668,7 +668,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Maul: Attack twice'
         }, {
             type: HEROIC_ACTION,
-            desc: 'Toughness: Use after taking damage. Ignore half that damage.'
+            desc: 'Toughness: Use after taking damage. Ignore half of the damage.'
         }]
     },
     {
@@ -691,13 +691,13 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Brain eater attacks are range 20, target willpower, and ignore all damage reduction.'
+            desc: 'Brain Eater attacks are range 20, do not require line of sight, target willpower, and ignore all damage reduction.'
         }, {
             type: FEATURE,
-            desc: 'When a brain eater is reduced to 0 hitpoints, it makes an attack against every creature in sight.'
+            desc: 'When a Brain Eater is reduced to 0 hitpoints, it makes an attack against every creature in sight.'
         }, {
             type: DOUBLE_HEROIC_ACTION,
-            desc: 'Cast any spell with 5 enhancements'
+            desc: 'Cast any spell with 3 enhancements'
         }]
     },
     {
@@ -2775,7 +2775,7 @@ export default (armor, weapons, shields) => ([
             desc: 'Gain +3 from advantage'
         },{
             type: HEROIC_ACTION,
-            desc: 'Jump 6 spaces without taking an attack of opportunity and make an attack with an extra damage dice.'
+            desc: 'Jump 6 spaces without giving opportunity and make an attack with an extra damage dice.'
         }]
     },
     {
