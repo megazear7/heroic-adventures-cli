@@ -681,7 +681,7 @@ export default (armor, weapons, shields) => ([
             init: 0,
         },
         shield: shields.noShield,
-        armor: noArmor,
+        armor: armor.noArmor,
         statBumps: [ ARCANA, WILLPOWER ],
         levels: [
             [ ARCANA, WILLPOWER ],
