@@ -1735,6 +1735,31 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
+        name: 'Manifest',
+        race: races.manifest,
+        charClass: charClasses.soldier,
+        weapon: weapons.sword,
+        shield: shields.noShield,
+        armor: armor.chainmail,
+        statBumps: [ ARCANA, WILLPOWER, SKILL, AGILITY ],
+        levels: [
+            [ SKILL, INIT ],
+            [ AGILITY, STRENGTH ],
+            [ ARCANA, WILLPOWER ],
+            [ SKILL, AGILITY ]
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Minor action: Make a ranged 10 willpower vs. willpower attack. If successful, gain 1 skill and agility. Otherwise, lose 1 skill and agility.'
+        }, {
+            type: FEATURE,
+            desc: 'After being damaged by a spell, a Manifest can cast the same spell with the same number of enhancements on its following turn.'
+        }, {
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Shapeshift into one creature within sight, of level 5 or lower.'
+        }]
+    },
+    {
         name: 'Mind Slayer',
         race: races.mindSlayer,
         charClass: charClasses.soldier,
