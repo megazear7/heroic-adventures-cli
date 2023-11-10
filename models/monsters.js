@@ -1738,9 +1738,13 @@ export default (armor, weapons, shields) => ([
         name: 'Manifest',
         race: races.manifest,
         charClass: charClasses.soldier,
-        weapon: weapons.sword,
+        weapon: {
+            name: "Choke",
+            damage: '1d4',
+            init: 4,
+        },
         shield: shields.noShield,
-        armor: armor.chainmail,
+        armor: armor.noArmor,
         statBumps: [ ARCANA, WILLPOWER, SKILL, AGILITY ],
         levels: [
             [ SKILL, INIT ],
