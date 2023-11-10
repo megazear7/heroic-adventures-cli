@@ -576,6 +576,131 @@ export default (armor, weapons, shields) => ([
         }]
     },
     {
+        name: 'Black Bear',
+        race: races.bear,
+        charClass: charClasses.monsterClass,
+        weapon: {
+            name: 'Bite and Claw',
+            damage: '2d10',
+            init: 0,
+        },
+        shield: shields.noShield,
+        armor: {
+            name: 'Hide',
+            toughness: 4,
+            agility: 0,
+        },
+        statBumps: [ STRENGTH, SKILL ],
+        levels: [
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ],
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ]
+        ],
+        features: [{
+            type: HEROIC_ACTION,
+            desc: 'Maul: Attack twice'
+        },{
+            type: HEROIC_ACTION,
+            desc: 'Toughness: Use after taking damage. Ignore half that damage.'
+        }]
+    },
+    {
+        name: 'Gizzly Bear',
+        race: races.bear,
+        charClass: charClasses.monsterClass,
+        weapon: {
+            name: 'Bite and Claw',
+            damage: '2d12',
+            init: 0,
+        },
+        shield: shields.noShield,
+        armor: {
+            name: 'Hide',
+            toughness: 4,
+            agility: 0,
+        },
+        statBumps: [ STRENGTH, SKILL ],
+        levels: [
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ],
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ],
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ]
+        ],
+        features: [{
+            type: HEROIC_ACTION,
+            desc: 'Maul: Attack twice'
+        },{
+            type: HEROIC_ACTION,
+            desc: 'Toughness: Use after taking damage. Ignore half that damage.'
+        }]
+    },
+    {
+        name: 'Cave Bear',
+        race: races.bear,
+        charClass: charClasses.monsterClass,
+        weapon: {
+            name: 'Bite and Claw',
+            damage: '3d8',
+            init: 0,
+        },
+        shield: shields.noShield,
+        armor: {
+            name: 'Hide',
+            toughness: 4,
+            agility: 0,
+        },
+        statBumps: [ STRENGTH, SKILL ],
+        levels: [
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ],
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ],
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ],
+            [ STRENGTH, SKILL ],
+            [ AGILITY, INIT ]
+        ],
+        features: [{
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Maul: Attack twice'
+        }, {
+            type: HEROIC_ACTION,
+            desc: 'Toughness: Use after taking damage. Ignore half that damage.'
+        }]
+    },
+    {
+        name: 'Brain Eater',
+        race: races.brainEater,
+        charClass: charClasses.monsterClass,
+        weapon: {
+            name: 'Physcic Pain',
+            damage: '2d6',
+            init: 0,
+        },
+        shield: shields.noShield,
+        armor: noArmor,
+        statBumps: [ ARCANA, WILLPOWER ],
+        levels: [
+            [ ARCANA, WILLPOWER ],
+            [ INIT, AGILITY ],
+            [ ARCANA, WILLPOWER ],
+            [ INIT, AGILITY ],
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Brain eater attacks are range 20, target willpower, and ignore all damage reduction.'
+        }, {
+            type: FEATURE,
+            desc: 'When a brain eater is reduced to 0 hitpoints, it makes an attack against every creature in sight.'
+        }, {
+            type: DOUBLE_HEROIC_ACTION,
+            desc: 'Cast any spell with 5 enhancements'
+        }]
+    },
+    {
         name: 'Druskin',
         race: races.druskin,
         charClass: charClasses.soldier,
@@ -2624,6 +2749,33 @@ export default (armor, weapons, shields) => ([
         features: [{
             type: FEATURE,
             desc: 'Gain +3 from advantage'
+        }]
+    },
+    {
+        name: 'Dire Wolf',
+        race: races.wolf,
+        charClass: charClasses.animalClass,
+        weapon: {
+            name: 'Claws',
+            damage: '2d8',
+            init: 3,
+        },
+        shield: shields.noShield,
+        armor: {
+            name: 'Tough Hide',
+            toughness: 2,
+            agility: 0,
+        },
+        statBumps: [ STRENGTH, AGILITY, SKILL, INIT ],
+        levels: [
+            [ AGILITY, SKILL ],
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Gain +3 from advantage'
+        },{
+            type: HEROIC_ACTION,
+            desc: 'Jump 6 spaces without taking an attack of opportunity and make an attack with an extra damage dice.'
         }]
     },
     {
