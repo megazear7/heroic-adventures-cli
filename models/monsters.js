@@ -1138,7 +1138,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Giant attacks ignore armor and shields'
+            desc: 'Giant attacks are range 3 and ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
             desc: 'Stomp: Skill vs. Initiative attack that does 4d12 damage and ignores armor and shields'
@@ -1174,7 +1174,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Giant attacks ignore armor and shields'
+            desc: 'Giant attacks are range 3 and ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
             desc: 'Stomp: Skill vs. Initiative attack that does 4d12 damage and ignores armor and shields'
@@ -1211,7 +1211,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Giant attacks ignore armor and shields'
+            desc: 'Giant attacks are range 3 and ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
             desc: 'Stomp: Skill vs. Initiative attack that does 4d12 damage and ignores armor and shields'
@@ -1254,7 +1254,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Giant attacks ignore armor and shields'
+            desc: 'Giant attacks are range 3 and ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
             desc: 'Stomp: Skill vs. Initiative attack that does 4d12 damage and ignores armor and shields'
@@ -1294,7 +1294,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Storm Giant attacks target arcana'
+            desc: 'Storm Giant attacks are range 3 and target arcana'
         }, {
             type: HEROIC_ACTION,
             desc: 'Storm Lightning: Make an arcana vs. arcana attack against all enemies within 10 spaces that does 3d8 damage'
@@ -1571,6 +1571,34 @@ export default (armor, weapons, shields) => ([
         }, {
             type: FEATURE,
             desc: 'Gain advantage when making opportunity attacks'
+        }]
+    },
+    {
+        name: 'Kelpie',
+        race: races.kelpie,
+        charClass: charClasses.monsterClass,
+        weapon: {
+            name: 'Bite',
+            damage: '1d6',
+            init: 0,
+        },
+        shield: shields.noShield,
+        armor: {
+            name: 'Tough skin',
+            toughness: 1,
+            agility: 0,
+        },
+        statBumps: [ INIT, AGILITY ],
+        levels: [
+            [ ARCANA, AGILITY ],
+            [ SKILL, STRENGTH ],
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Take half damage from spells'
+        }, {
+            type: FEATURE,
+            desc: 'After biting a target move both the kelpie and the target 4 spaces. The target cannot take actions until the next round.'
         }]
     },
     {
@@ -1914,7 +1942,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Ogre attacks ignore shields'
+            desc: 'Ogre attacks are range 2 and ignore shields'
         }]
     },
     {
@@ -1941,7 +1969,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Ogre attacks ignore shields'
+            desc: 'Ogre attacks are range 2 and ignore shields'
         }, {
             type: HEROIC_ACTION,
             desc: 'Make an attack with advantage'
@@ -1972,7 +2000,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Ogre attacks ignore shields'
+            desc: 'Ogre attacks are range 2 and ignore shields'
         }, {
             type: HEROIC_ACTION,
             desc: 'Two other ogres may make attacks'
@@ -2636,7 +2664,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Hill Trolls ignore armor and shields'
+            desc: 'Hill Troll attacks are range 2 and ignore armor and shields'
         }, {
             type: FEATURE,
             desc: 'Advantage provides +3 to your attack roll'
@@ -2666,7 +2694,7 @@ export default (armor, weapons, shields) => ([
         ],
         features: [{
             type: FEATURE,
-            desc: 'Mountain Trolls ignore armor and shields'
+            desc: 'Mountain Troll attacks are range 2 and ignore armor and shields'
         }, {
             type: HEROIC_ACTION,
             desc: 'Make an attack against two adjacent targets and damage either or both targets if you succeed in your attack'
