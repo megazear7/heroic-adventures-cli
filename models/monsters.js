@@ -854,13 +854,21 @@ export default (armor, weapons, shields) => ([
         name: 'Elf Warrior',
         race: races.elf,
         charClass: charClasses.soldier,
-        weapon: weapons.armingSword.artisan(),
+        weapon: {
+            name: 'Artisan Arming Sword',
+            damage: '2d6',
+            init: 0,
+        },
         shield: shields.largeShield,
         armor: armor.scalemail.artisan(),
         statBumps: [ SKILL, STRENGTH, WILLPOWER, ARCANA ],
         levels: [
             [ INIT, AGILITY ],
         ],
+        features: [{
+            type: FEATURE,
+            desc: 'Roll one additional damage dice and take the higher result'
+        }]
     },
     {
         name: 'Elf Captain',
