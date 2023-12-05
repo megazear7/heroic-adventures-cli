@@ -856,8 +856,29 @@ export default (armor, weapons, shields) => ([
         charClass: charClasses.soldier,
         weapon: {
             name: 'Artisan Arming Sword',
+            damage: '1d6',
+            init: 2,
+        },
+        shield: shields.largeShield,
+        armor: armor.scalemail.artisan(),
+        statBumps: [ SKILL, STRENGTH, WILLPOWER, ARCANA ],
+        levels: [
+            [ INIT, AGILITY ],
+        ],
+        features: [{
+            type: FEATURE,
+            desc: 'Roll one additional damage dice and take the higher result'
+        }]
+    },
+    {
+        name: 'Elf Archer',
+        race: races.elf,
+        charClass: charClasses.soldier,
+        weapon: {
+            name: 'Artisan Longbow',
             damage: '2d6',
-            init: 0,
+            init: -1,
+            ranged: true,
         },
         shield: shields.largeShield,
         armor: armor.scalemail.artisan(),

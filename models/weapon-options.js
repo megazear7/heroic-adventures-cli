@@ -142,18 +142,21 @@ export default logger => ({
     shortbow: new Weapon({
         name: 'Shortbow',
         damage: '2d4',
+        ranged: true,
         init: 0,
         logger,
     }),
     longbow: new Weapon({
         name: 'Longbow',
         damage: '2d6',
+        ranged: true,
         init: -1,
         logger,
     }),
     crossbow: new Weapon({
         name: 'Crossbow',
         damage: '2d8',
+        ranged: true,
         init: -2,
         logger,
     }),
